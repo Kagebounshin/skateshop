@@ -9,9 +9,10 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
-footer {
+/* footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -19,7 +20,7 @@ footer {
     height: 10rem;
     background-color: white;
     border-top: 1px solid black;
-}
+} */
 
 .uppercase {
     text-transform: uppercase;
@@ -142,4 +143,35 @@ a.nav-link:hover {
 }
 
 
-/* ----------------------  ---------------------- */
+/* ---------------------- INDEX.HTML ---------------------- */
+
+.hero-container {
+    min-height: 60vh;
+}
+
+#shopnow {
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    min-height: 15rem;
+}
+#shopnow h1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* 
+
+@media (min-width: 1200px) {
+    #shopnow {
+        height: 180px;
+        width: 180px;
+        
+    }
+} */
+
+.shopnow-container {
+    margin: 0 auto;
+    margin-top: 300px;
+}
