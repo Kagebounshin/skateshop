@@ -40,17 +40,17 @@
 </head>
 
 <body>
-    <header class="container-fluid fixed-top bg-warning">
+    <header class="container-fluid fixed-top bg-light">
         <div id="topnav" class="row d-none d-lg-flex">
-            <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 text-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
+            <div class="col-12 col-md-2 col-lg-3 text-left">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link navbar-brand">
                     <h2 class="logo-font text-black my-0">SkateShop.</h2>
                 </a>
             </div>
-            <div class="col-12 col-lg-6 my-auto py-1 py-lg-0">
+            <div class="col-12 col-md-6 col-lg-6 my-auto text-center">
                 <ul class="list-inline list-unstyled text-lg-right my-0 uppercase">
                     <li class="list-inline-item">
-                        <a href="" class="nav-link">Skate Decks</a>
+                        <a href="" class="nav-link">Decks</a>
                     </li>
                     <li class="list-inline-item">
                         <a href="" class="nav-link">Wheels</a>
@@ -70,8 +70,8 @@
                 </ul>
             </div>
 
-            <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 text-right">
-                <ul class="list-inline list-unstyled text-lg-right my-0">
+            <div class="col-12 col-lg-3 my-auto text-right search-container">
+                <ul class="list-inline list-unstyled my-0">
                     <li class="list-inline-item">
                         <a class="nav-link" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
@@ -116,16 +116,16 @@
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                             href="">
                             {% if grand_total %}
-                            ${{ grand_total|floatformat:2 }}
+                            BAG ${{ grand_total|floatformat:2 }}
                             {% else %}
-                            $0.00
+                            BAG ($0.00)
                             {% endif %}
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="row d-block d-lg-none">
+        <div id="mobile-nav" class="row d-block d-lg-none">
         <nav class="navbar navbar-expand-lg navbar-light w-100">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                 aria-controls="main-nav" aria-expanded="false" aria-label="Toggle Navigation">

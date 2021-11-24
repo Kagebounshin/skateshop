@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 html {
     height: 100%;
 }
@@ -5,6 +7,7 @@ html {
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 .uppercase {
@@ -14,11 +17,118 @@ body {
 
 /* ---------------------- NAVBAR ---------------------- */
 
+#topnav,
+#mobile-nav {
+    border-bottom: 1px solid black;
+}
+
+a.nav-link {
+    font-size: .7rem;
+    font-weight: 700;
+    color: black!important;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem;
+}
+
+.bg-light {
+    background-color: rgb(255, 255, 255)!important;
+}
+
+.mobile-top-header li {
+    padding-top: 1.3rem;
+}
+
+.dropdown-menu a {
+    font-weight: 700;
+}
+
 /* ---------------------- CONTAINERS ---------------------- */
+
+.search-container {
+    text-align: end;
+} 
 
 /* ---------------------- ADDITIONAL STYING ---------------------- */
 
 /* ---------------------- HOVER ---------------------- */
 
+a.nav-link:hover {
+    /* border: 2px solid black;
+    border-radius: 25px; */
+    color: rgb(136, 15, 100)!important;
+    transition: 4ms ease-in-out;
+}
+
+/* a.nav-link::after {
+    border: 2px solid black;
+    border-radius: 25px;
+} */
+
+
 /* ---------------------- MEDIA QUERIES ---------------------- */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    a.nav-link {
+        padding-left: .1rem;
+        padding-right: .1rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    a.nav-link {
+        padding-left: .1rem;
+        padding-right: .1rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    #main-nav a.nav-link {
+        font-size: 1.5rem;
+        padding-top: 1.4rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    a.nav-link {
+        padding-left: .4rem;
+        padding-right: .4rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    a.nav-link {
+        padding-left: .8rem;
+        padding-right: .8rem;
+    }
+}
+
+/* XX-large devices (xx-large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    a.nav-link {
+        font-size: .9rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+
 /* ----------------------  ---------------------- */
