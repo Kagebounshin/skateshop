@@ -93,6 +93,11 @@ This is an E-commerce web application, the company is fictional, and this site i
         - Home
             - [Home](wireframes/wireframeHome.png)
             - [Products](wireframes/wireframeProducts.png)
+            - [Info](wireframes/wireframeInfo.png)
+            - [Register](wireframes/wireframeReg.png)
+            - [Sign In](wireframes/wireframeSign.png)
+            - [Bag](wireframes/wireframeBag.png)
+            - [Toast](wireframes/wireframeToast.png)
 
 ---
 
