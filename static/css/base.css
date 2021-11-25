@@ -1,26 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-html {
-    /* height: 100%; */
-}
-
 body {
+    background-color: #EEEEEE;
     min-height: 100vh;
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
+    color: #222831;
 }
 
-/* footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 10rem;
-    background-color: white;
-    border-top: 1px solid black;
-} */
+footer {
+    border-top: 2px solid #222831;
+}
 
 .uppercase {
     text-transform: uppercase;
@@ -31,7 +23,7 @@ body {
 
 #topnav,
 #mobile-nav {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid #222831;
 }
 
 a.nav-link {
@@ -52,7 +44,7 @@ a.nav-link {
 }
 
 .bg-light {
-    background-color: rgb(255, 255, 255)!important;
+    background-color: #EEEEEE!important;
 }
 
 .mobile-top-header li {
@@ -147,31 +139,124 @@ a.nav-link:hover {
 
 .hero-container {
     min-height: 60vh;
+    border-bottom: 2px solid #222831;
+}
+
+a#shopnow {
+    text-decoration: none;
+    color: black;
+}
+
+a#shopnow:hover {
+    color: #fd7014!important;
+    transition: 4ms ease-in-out;
 }
 
 #shopnow {
-    background-color: white;
-    border: 1px solid black;
     text-align: center;
     min-height: 15rem;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
-#shopnow h1 {
+
+
+#shopnow-inner {
+    background-color: white;
+    border: 2px solid #222831;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#shopnow-inner h1 {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 12;
 }
-/* 
 
-@media (min-width: 1200px) {
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
     #shopnow {
-        height: 180px;
-        width: 180px;
-        
+        min-height: 8rem;
     }
-} */
+
+    #shopnow:first-child,
+    #shopnow:nth-child(2),
+    #shopnow:nth-child(3),
+    #shopnow:nth-child(4) {
+        padding-bottom: 6px;
+    }
+
+    #shopnow:nth-child(3),
+    #shopnow:nth-child(4),
+    #shopnow:nth-child(5),
+    #shopnow:last-child {
+        padding-top: 6px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #shopnow:first-child,
+    #shopnow:nth-child(2),
+    #shopnow:nth-child(3),
+    #shopnow:nth-child(4) {
+        padding-bottom: 6px;
+    }
+
+    #shopnow:nth-child(3),
+    #shopnow:nth-child(4),
+    #shopnow:nth-child(5),
+    #shopnow:last-child {
+        padding-top: 6px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #shopnow:first-child,
+    #shopnow:nth-child(2),
+    #shopnow:nth-child(3) {
+        padding-bottom: 6px;
+    }
+
+    
+    #shopnow:nth-child(3) {
+        padding-top: 12px;
+    }
+
+    #shopnow:nth-child(4) {
+        padding-bottom: 12px;
+    }
+
+    #shopnow:last-child,
+    #shopnow:nth-child(4),
+    #shopnow:nth-child(5) {
+        padding-top: 6px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #shopnow:first-child,
+    #shopnow:nth-child(2),
+    #shopnow:nth-child(3) {
+        padding-bottom: 12px;
+    }
+
+    #shopnow:last-child,
+    #shopnow:nth-child(4),
+    #shopnow:nth-child(5) {
+        padding-top: 12px;
+    }
+}
+
 
 .shopnow-container {
     margin: 0 auto;
-    margin-top: 300px;
 }
