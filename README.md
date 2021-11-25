@@ -2,8 +2,11 @@
 
 [View the live project here.]()
 
-
 <h2 align="center"><img src=""></h2>
+
+The SkateShop is a place where you can assemble a skateboard of you choice, or just buy single items for you setup. 
+
+This is an E-commerce web application, the company is fictional, and this site is a assignment from Code Institute. 
 
 ## Table Of Content
 1.[**UX**](#user-experience) 
@@ -39,8 +42,37 @@
 -   ### User stories
 
     -   #### First Time Visitor Goals
+        1. As a first time visitor, at the first look, I want to understand what the site is all about.
+        2.  As a first time visitor, I want the site to be easliy navigated, I would like to find what i'm searching for quick and easy.
+        3.  As a first time visitor,  I want the site to be well structred the sites features should be where there expected to be.
+        4.  As a first time visitor, I would like the site to look clean and modern. Good color matching, readble texts etc. 
+        5.  As a first time visitor, I Would like to register to the page. 
+        6.  As a first time visitor, I want to be able to contact the site owner if I have a problem or just need some information
+        7.  As a first time visitor, 
+        8.  As a first time visitor, 
 
     -   #### Frequent User Goals
+        1. As a Frequent User, I Like the login process to be smooth.
+        2. As a Frequent User, I would like to access a profile page to manage my order history, and save personal details. 
+        3. As a Frequent User, I if I lost my password, I want to have the choice to set a new password. 
+        4. As a Frequent User, I want to search for specific products on the site. 
+        5. As a Frequent User, I want to search for a specific category on the site.
+        6. As a Frequent User, I would like to add products to my bag easily.
+        7. As a Frequent User, I would like to remove/update products in my bag. 
+        8. As a Frequent User, I want to see the shopping bag total amount all the time. 
+        9. As a Frequent User, I want to review my cart	before checkout. 
+        9. As a Frequent User, I want to View confirmation of order before completing purchase.
+        10. As a Frequent User, I want to easily enter my payment information, so that the checkout is quick and easy. 
+        11. As a Frequent User, I want to feel that my payment and personal information is secured. 
+        12. As a Frequent User, I would like to get better shipping prices as my bags total increases. 
+    
+    -   #### Returning Visitor Goals
+        1. As a returning visitor, 
+        2. As a returning visitor, 
+        3. As a returning visitor, 
+        4. As a returning visitor,  
+
+
 
 ---
 
@@ -54,7 +86,13 @@
 
 - ### Skeleton
     - ### Wireframes
-   
+        - Mobile
+            - [First](wireframes/wireframesMobile1.png)
+            - [Second](wireframes/wireframesMobile2.png)
+            - [Third](wireframes/wireframesMobile3.png)
+        - Home
+            - [Home](wireframes/wireframeHome.png)
+            - [Products](wireframes/wireframeProducts.png)
 
 ---
 
@@ -66,6 +104,8 @@
     -   #### Typography
 
     -   #### Imagery
+
+    -   #### Icons
 
 ---
 
@@ -110,6 +150,8 @@
 - [Am I Responsive](http://ami.responsivedesign.is/#) - Tested responsivness & the images at the top of the readMe.
 
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse) - Lighthouse was used to test the performanceof the website.
+
+- [hover.css](http://ianlunn.github.io/Hover/#effects) - hover effects on links and buttons
 
 ---
 
