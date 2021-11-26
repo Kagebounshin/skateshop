@@ -141,7 +141,7 @@ This is an E-commerce web application, the company is fictional, and this site i
 
 ### Frameworks, Libraries & Programs Used
 
-- [jQuery](https://jquery.com/) - Used for materialize compontents.
+- [jQuery](https://jquery.com/) 
 
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) - The project uses Flask, which is a Python microframework. 
 
@@ -153,7 +153,7 @@ This is an E-commerce web application, the company is fictional, and this site i
 
 - [FontAwesome](https://fontawesome.com/) - Provides icons across the site
 
-- [GoogleFonts](https://fonts.google.com/) - Main font and header font. 
+- [GoogleFonts](https://fonts.google.com/) - Main font.
 
 - [Git](https://git-scm.com/) - Git was used for version control.
 
