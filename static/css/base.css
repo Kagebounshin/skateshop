@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 body {
     background-color: #EEEEEE;
     min-height: 100vh;
@@ -9,10 +11,16 @@ body {
     overflow-x: hidden;
     color: #222831;
     scroll-behavior: smooth ;
+    background: url('/media/rail.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
 }
 
 footer {
-    border-top: 2px solid #222831;
+    /* border-top: 2px solid #EEEEEE; */
+    background-color: #222;
+    color: #EEEEEE;
+    min-height: 50vh;
 }
 
 .uppercase {
@@ -24,7 +32,7 @@ footer {
 
 #topnav,
 #mobile-nav {
-    border-bottom: 2px solid #222831;
+    /* border-bottom: 2px solid #222831; */
 }
 
 a.nav-link {
@@ -56,6 +64,42 @@ a.nav-link {
     font-weight: 700;
 }
 
+#delivery-banner {
+    background-color: #222;
+    color: #EEEEEE;
+}
+
+
+.dropdown-menu.show {
+    display: block;
+}
+.border-0 {
+    border: 0!important;
+}
+.dropdown-search {
+    background-color: #eeeeee!important;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.dropdown-menu {
+    background-color: #eeeeee!important;
+}
+
+.navbar-brand h2 {
+    font-family: 'Pacifico', sans-serif;
+    color: #222!important;
+    text-decoration: underline #222;
+}
+
+.main-nav-logo {
+    font-size: 2rem;
+}
+
+
 /* ---------------------- CONTAINERS ---------------------- */
 
 .search-container {
@@ -64,13 +108,39 @@ a.nav-link {
 
 /* ---------------------- ADDITIONAL STYING ---------------------- */
 
+.shop-now-button {
+    background: #764c87;
+    color: #EEEEEE;
+    min-width: 260px;
+    font-weight: 700;
+}
+
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus {
+    background: #EEEEEE;
+    color: #222;
+}
+
+.dot {
+    color: #764c87!important;
+}
+
+
 /* ---------------------- HOVER ---------------------- */
 
 a.nav-link:hover {
     /* border: 2px solid black;
     border-radius: 25px; */
-    color: rgb(136, 15, 100)!important;
+    color: #764c87!important;
     transition: 4ms ease-in-out;
+}
+
+.navbar-brand h2:hover {
+    color: #764c87!important;
+    /* text-shadow: -2px -1px 0px #764c87; */
+    transition: 8ms ease-in-out;
 }
 
 /* a.nav-link::after {
@@ -139,7 +209,7 @@ a.nav-link:hover {
 /* ---------------------- INDEX.HTML ---------------------- */
 
 .hero-container {
-    min-height: 70vh;
+    min-height: 80vh;
     border-bottom: 2px solid #222831;
 }
 
@@ -154,6 +224,7 @@ a#shopnow {
 } */
 
 #shopnow {
+    background-color: #222;
     text-align: center;
     min-height: 15rem;
     padding-bottom: 12px;
@@ -164,12 +235,12 @@ a#shopnow {
 
 
 #shopnow-inner {
-    background-color: white;
-    border: 2px solid #222831;
+    background-color: #764c87;
     border-radius: 15px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    color:#EEEEEE;
 }
 
 #shopnow-inner h1 {
@@ -178,6 +249,7 @@ a#shopnow {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 12;
+    font-weight: 700;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -255,6 +327,19 @@ a#shopnow {
     #shopnow:nth-child(4),
     #shopnow:nth-child(5) {
         padding-top: 12px;
+    }
+
+    #shopnow {
+        min-height: 10rem;
+    }
+    #shopnow h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    #shopnow {
+        min-height: 15rem;
     }
 }
 
