@@ -98,6 +98,9 @@ a.nav-link {
 .main-nav-logo {
     font-size: 2rem;
 }
+li.nav-item {
+    line-height: 1rem;
+}   
 
 
 /* ---------------------- CONTAINERS ---------------------- */
@@ -107,21 +110,6 @@ a.nav-link {
 } 
 
 /* ---------------------- ADDITIONAL STYING ---------------------- */
-
-.shop-now-button {
-    background: #764c87;
-    color: #EEEEEE;
-    min-width: 260px;
-    font-weight: 700;
-}
-
-
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus {
-    background: #EEEEEE;
-    color: #222;
-}
 
 .dot {
     color: #764c87!important;
@@ -210,12 +198,19 @@ a.nav-link:hover {
 
 .hero-container {
     min-height: 80vh;
-    border-bottom: 2px solid #222831;
+}
+
+.hero-container h1 {
+    font-weight: 700;
 }
 
 a#shopnow {
     text-decoration: none;
     color: black;
+}
+
+#delivery-banner h4 {
+    font-weight: 700;
 }
 
 /* a#shopnow:hover {
@@ -348,3 +343,20 @@ a#shopnow {
     margin: 0 auto;
 }
 
+.shop-now-button {
+    background: #764c87;
+    color: #EEEEEE;
+    min-width: 260px;
+    font-weight: 700;
+}
+
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+#shopnow-inner:hover,
+#shopnow-inner:active,
+#shopnow-inner:focus {
+    background: #492857;
+    color: #EEEEEE;
+}
