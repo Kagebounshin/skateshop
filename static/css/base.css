@@ -362,7 +362,7 @@ a#shopnow {
 }
 
 
-/* Sign Out */
+/* ---------------------- LOGOUT.HTML ---------------------- */
 
 .row.signout-container {
     color: #EEEEEE;
@@ -377,3 +377,13 @@ a#shopnow {
     min-width: 200px;
     font-weight: 700;
 }
+
+.sign-out-button:hover,
+.sign-out-button:active,
+.sign-out-button:focus {
+    background: #492857;
+    color: #EEEEEE;
+}
+
+
+/* ---------------------- LOGIN.HTML ---------------------- */
