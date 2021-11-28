@@ -99,6 +99,7 @@ This is an E-commerce web application, the company is fictional, and this site i
             - [Bag](wireframes/tabletBag.png)
             - [Toast](wireframes/tabletToast.png)
             - [Dropdown](wireframes/tabletDrop.png)
+            - [Check](wireframes/tabletCheck.png)
         - Desktop
             - [Home](wireframes/wireframeHome.png)
             - [Products](wireframes/wireframeProducts.png)
@@ -107,6 +108,7 @@ This is an E-commerce web application, the company is fictional, and this site i
             - [Sign In](wireframes/wireframeSign.png)
             - [Bag](wireframes/wireframeBag.png)
             - [Toast](wireframes/wireframeToast.png)
+            - [Check](wireframes/wireframeCheck.png)
 
 ---
 
