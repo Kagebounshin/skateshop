@@ -42,12 +42,12 @@ This is an E-commerce web application, the company is fictional, and this site i
 -   ### User stories
 
     -   #### First Time Visitor Goals
-        1. As a first time visitor, at the first look, I want to understand what the site is all about.
+        1. As a first time visitor, at the first look, I want to understand what the site is all about. for example, wich products you can purchase.
         2.  As a first time visitor, I want the site to be easliy navigated, I would like to find what i'm searching for quick and easy.
         3.  As a first time visitor,  I want the site to be well structred the sites features should be where there expected to be.
         4.  As a first time visitor, I would like the site to look clean and modern. Good color matching, readble texts etc. 
         5.  As a first time visitor, I Would like to register to the page. 
-        6.  As a first time visitor, I want to be able to contact the site owner if I have a problem or just need some information
+        6.  As a first time visitor, I want to be able to contact the site owner if I have a problem or just need some information.
         7.  As a first time visitor, 
         8.  As a first time visitor, 
 
@@ -65,22 +65,20 @@ This is an E-commerce web application, the company is fictional, and this site i
         10. As a Frequent User, I want to easily enter my payment information, so that the checkout is quick and easy. 
         11. As a Frequent User, I want to feel that my payment and personal information is secured. 
         12. As a Frequent User, I would like to get better shipping prices as my bags total increases. 
-    
-    -   #### Returning Visitor Goals
-        1. As a returning visitor, 
-        2. As a returning visitor, 
-        3. As a returning visitor, 
-        4. As a returning visitor,  
 
-
-
+    - #### Product Manager Goals
 ---
 
 - ### Strategy
 
+    - This site will have it's focus on the already experienced skateboarder, to the more novice one. By having good product descirption and clear instructions on what you need to setup a skateboard, making it easy to assemble your own. Or just buy random gear to your setup in just a few clicks away. 
 ---
 
 - ### Structure
+
+- Navbar
+- Home
+- Products
 
 ---
 
