@@ -42,13 +42,12 @@ This is an E-commerce web application, the company is fictional, and this site i
 -   ### User stories
 
     -   #### First Time Visitor Goals
-        1. As a first time visitor, at the first look, I want to understand what the site is all about. for example, wich products you can purchase.
+        1. As a first time visitor, at the first look, I want to understand what the site is all about. for example, wich products you can purchase here.
         2.  As a first time visitor, I want the site to be easliy navigated, I would like to find what i'm searching for quick and easy.
         3.  As a first time visitor,  I want the site to be well structred the sites features should be where there expected to be.
         4.  As a first time visitor, I would like the site to look clean and modern. Good color matching, readble texts etc. 
         5.  As a first time visitor, I Would like to register to the page. 
         6.  As a first time visitor, I want to be able to contact the site owner if I have a problem or just need some information.
-        7.  As a first time visitor, 
 
     -   #### Frequent User Goals
         1. As a Frequent User, I Like the login process to be smooth.
@@ -65,16 +64,20 @@ This is an E-commerce web application, the company is fictional, and this site i
         11. As a Frequent User, I want to feel that my payment and personal information is secured. 
         12. As a Frequent User, I would like to get better shipping prices as my bags total increases. 
 
-    - #### Product Manager Goals
+    -   #### Product Manager Goals
+        1. As a Product Manager, I Would like to add, edit/update or delete products easily. 
+
 ---
 
 - ### Strategy
 
-    - This site will have it's focus on the already experienced skateboarder, to the more novice one. By having good product descirption and clear instructions on what you need to setup a skateboard, making it easy for the more novice user to assemble their own. Or the users can buy random gear to their setup in just a few clicks.
+    - This site will have it's focus on the already experienced skateboarder, to the more novice one. By having good product descirption and clear instructions on what you need to setup a skateboard, making it easy for the more novice user to assemble their own. Or the users will have the option to buy random gear to their setup in just a few clicks.
 ---
 
 - ### Structure
 
+- Framework
+    - I've choose to go with bootrap as framework for this project. Easy to work with it's responsive grid system, lots of prebuilt components, and great plugins. 
 - Navbar
     - The navbar will be fixed at the top of the page, so it's always accessible for the user. 
     - On Desktop view, the navbar will have the sites logo to the left, the produt links centered, an the search, account management and the bag links will be displayed to the right.
@@ -88,10 +91,18 @@ This is an E-commerce web application, the company is fictional, and this site i
 - Products
     - You will have the choice to display all the product at the same time, or by category. Also display on or more specific products based on your search criteria. The products will have an image, name and a pricing displayed. 
     - Click on a product to read more about that product. Such as a short discripion, sizes etc. Have the option to add it to the bag, with the quantity of your choice. 
-- Bag
+- Bag / Checkout
     - If the bag has no item, it will have a text, saying that the bag is empty. 
     - If you have added something to your bag, you will see the total price displayed next to the bag link at the navbar.
-    - By clicking the bag link, you will be able to increase or decrease the quantity of each item, remove a item from the bag, see the total amout, and be able to move on to the checkout page. 
+    - By clicking the bag link, See a quick preview of the bag and it's current products and total amount in a [toasts](). If the bag contains any products , they will have the option to checkout. 
+    - When choosing the option to go to the checkout you will be able to increase or decrease the quantity of each item, remove a item from the bag, see the total amout, enter your shipping credentials and payment.
+- Toast
+    - Bootsrap has a component called ["Toasts"](), wich is notifications designed to mimic the push notifications.
+    - The bag when clicked will show a quick preview of it's current products using the toast component. 
+    - The toast component will also display warning, info, success or error messages, giving the user quick feedback, for example, if something unexcpected happens. 
+- Register, Sign In/Out
+    - These pages will be clean looking, centered at the page & be easily accessible at all time. 
+ 
 ---
 
 - ### Skeleton
