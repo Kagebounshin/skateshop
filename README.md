@@ -49,7 +49,6 @@ This is an E-commerce web application, the company is fictional, and this site i
         5.  As a first time visitor, I Would like to register to the page. 
         6.  As a first time visitor, I want to be able to contact the site owner if I have a problem or just need some information.
         7.  As a first time visitor, 
-        8.  As a first time visitor, 
 
     -   #### Frequent User Goals
         1. As a Frequent User, I Like the login process to be smooth.
@@ -71,15 +70,28 @@ This is an E-commerce web application, the company is fictional, and this site i
 
 - ### Strategy
 
-    - This site will have it's focus on the already experienced skateboarder, to the more novice one. By having good product descirption and clear instructions on what you need to setup a skateboard, making it easy to assemble your own. Or just buy random gear to your setup in just a few clicks away. 
+    - This site will have it's focus on the already experienced skateboarder, to the more novice one. By having good product descirption and clear instructions on what you need to setup a skateboard, making it easy for the more novice user to assemble their own. Or the users can buy random gear to their setup in just a few clicks.
 ---
 
 - ### Structure
 
 - Navbar
-- Home
-- Products
+    - The navbar will be fixed at the top of the page, so it's always accessible for the user. 
+    - On Desktop view, the navbar will have the sites logo to the left, the produt links centered, an the search, account management and the bag links will be displayed to the right.
+    - On Mobile and Tablet, the product links and the logo are hidden in a collapsable menu, show them by clicking at the burger menu. The search, account management and the bag links will still be displayed to the right.
+    - The search bar will be in a dropdown menu both on deskttop, tablet & mobile view, always accesible and easy for the user to search for a product at any time. 
+    - The account management links will be in a dropdown menu, wich will have the choices to register, login, logout, and your own profile page, with order history and personal information.  
 
+- Home
+    - The homepage, will greet you with the sites brand, and a paragrapf, this should be enough to explain the sites purpose. 
+    - Below that, I want to make like a tutorial for how to setup a skateboard properly. explaining step buy step what you need to get started. At each step, have the option to go to that specific product. 
+- Products
+    - You will have the choice to display all the product at the same time, or by category. Also display on or more specific products based on your search criteria. The products will have an image, name and a pricing displayed. 
+    - Click on a product to read more about that product. Such as a short discripion, sizes etc. Have the option to add it to the bag, with the quantity of your choice. 
+- Bag
+    - If the bag has no item, it will have a text, saying that the bag is empty. 
+    - If you have added something to your bag, you will see the total price displayed next to the bag link at the navbar.
+    - By clicking the bag link, you will be able to increase or decrease the quantity of each item, remove a item from the bag, see the total amout, and be able to move on to the checkout page. 
 ---
 
 - ### Skeleton
