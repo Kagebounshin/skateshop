@@ -87,7 +87,7 @@ This is an E-commerce web application, the company is fictional, and this site i
 
 - Home
     - The homepage, will greet you with the sites brand, and a paragrapf, this should be enough to explain the sites purpose. 
-    - Below that, I want to make like a tutorial for how to setup a skateboard properly. explaining step buy step what you need to get started. At each step, have the option to go to that specific product. 
+    - Below that, I want to make like a tutorial for how to setup a skateboard properly. explaining step by step what you need to get started. At each step, have the option to go to that specific product. 
 - Products
     - You will have the choice to display all the product at the same time, or by category. Also display on or more specific products based on your search criteria. The products will have an image, name and a pricing displayed. 
     - Click on a product to read more about that product. Such as a short discripion, sizes etc. Have the option to add it to the bag, with the quantity of your choice. 
