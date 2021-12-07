@@ -1,0 +1,422 @@
+[
+    {
+        "pk":1,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5001340155",
+            "name":"Girl Skateboards",
+            "description":" Griffin Gass signaturmodel. 7-layer North American Maplewood. Griptape included",
+            "price":75.99,
+            "category":1,
+            "rating":4.6,
+            "image_url":"",
+            "image":"deck01.jpg"
+        }
+    },
+    {
+        "pk":2,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5001600425",
+            "name":"Girl Skateboards",
+            "description":"Girl Skateboards. Sean Malto signaturmodel. 7-layer North American Maplewood. Griptape included",
+            "price":75.99,
+            "category":1,
+            "rating":4.6,
+            "image_url":"",
+            "image":"deck02.jpg"
+        }
+    },
+    {
+        "pk":3,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5001730010",
+            "name":"Girl Skateboards",
+            "description":"Girl Skateboards. Tyler Pachecos signaturmodel. 7-layer North American Maplewood. Griptape included",
+            "price":75.99,
+            "category":1,
+            "rating":4.7,
+            "image_url":"",
+            "image":"deck03.jpg"
+        }
+    },
+    {
+        "pk":4,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5001890157",
+            "name":"SWEET SKTBS",
+            "description":"SWEET SKTBS Speed Logo Skateboard. 7-layer Canadian Maplewood. Griptape included",
+            "price":49.99,
+            "category":1,
+            "rating":3.0,
+            "image_url":"",
+            "image":"deck04.jpg"
+        }
+    },
+    {
+        "pk":5,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5002111605",
+            "name":"SWEET SKTBS",
+            "description":"SWEET SKTBS Speed Logo Skateboard. 7-layer North American Maplewood. Griptape included",
+            "price":49.99,
+            "category":1,
+            "rating":5.0,
+            "image_url":"",
+            "image":"deck05.jpg"
+        }
+    },
+    {
+        "pk":6,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5002260206",
+            "name":"Creature",
+            "description":"Creature Malt Sliquor Everslic. 7-layer Maplewood, Griptape included",
+            "price":79.99,
+            "category":1,
+            "rating":4.7,
+            "image_url":"",
+            "image":"deck06.jpg"
+        }
+    },
+    {
+        "pk":7,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5002440521",
+            "name":"Creature",
+            "description":"Creature Logo Stump skateboard. Team Board, 7-layer Maplewood, Gripetape included",
+            "price":79.99,
+            "category":1,
+            "rating":4.4,
+            "image_url":"",
+            "image":"deck07.jpg"
+        }
+    },
+    {
+        "pk":8,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5002601115",
+            "name":"Creature",
+            "description":"Creature Malt Sliquor SM Everslick. 7-layer Maplewood, Griptape included.",
+            "price":79.99,
+            "category":1,
+            "rating":4.5,
+            "image_url":"",
+            "image":"deck08.jpg"
+        }
+    },
+    {
+        "pk":9,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5002690715",
+            "name":"Real Skateboards",
+            "description":"Real Skateboards Team Classic skateboard. 7-layer Maplewood, Griptape included.",
+            "price":89.99,
+            "category":1,
+            "rating":4.7,
+            "image_url":"",
+            "image":"deck09.jpg"
+        }
+    },
+    {
+        "pk":10,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5002701115",
+            "name":"Real Skateboards",
+            "description":"Real Skateboards Orng Team Cl skateboard. 7-layer Maplewood, Griptape included.",
+            "price":89.99,
+            "category":1,
+            "rating":4.4,
+            "image_url":"",
+            "image":"deck10.jpg"
+        }
+    },
+    {
+        "pk":11,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5002761055",
+            "name":"Bones Wheels",
+            "description":"Bones The Grenwood Wheels. Set With 4 Wheels, Diameter - 52 mm",
+            "price":34.99,
+            "category":2,
+            "rating":3.0,
+            "image_url":"",
+            "image":"wheels01.jpg"
+        }
+    },
+    {
+        "pk":12,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5002820069",
+            "name":"OJ Wheels",
+            "description":"OJ Wheels Elite Mini Combo Wheels. Set With 4 Wheels, Diameter - 56 mm",
+            "price":24.99,
+            "category":2,
+            "rating":4.6,
+            "image_url":"",
+            "image":"wheels02.jpg"
+        }
+    },
+    {
+        "pk":13,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5002820147",
+            "name":"Spitfire",
+            "description":"Set With 4 Wheels From Spitfire, Diameter - 53 mm",
+            "price":59.99,
+            "category":2,
+            "rating":3.2,
+            "image_url":"",
+            "image":"wheels03.jpg"
+        }
+    },
+    {
+        "pk":14,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5002910572",
+            "name":"Spitfire",
+            "description":"Set With 4 Wheels From Spitfire, Diameter - 53 mm",
+            "price":26.99,
+            "category":2,
+            "rating":4.7,
+            "image_url":"",
+            "image":"wheels04.jpg"
+        }
+    },
+    {
+        "pk":15,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5002990740",
+            "name":"SML Wheels",
+            "description":"SML Wheels Mike Arnold 'Toonies' Wheels. Set With 4 Wheels, Diameter - 54 mm, Mike Arnolds signaturwheels",
+            "price":27.99,
+            "category":2,
+            "rating":4.8,
+            "image_url":"",
+            "image":"wheels05.jpg"
+        }
+    },
+    {
+        "pk":16,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5003050248",
+            "name":"Spitfire",
+            "description":"Spitfire Classic, Set With 4 Wheels From Spitfire, Diameter - 53 mm",
+            "price":49.99,
+            "category":2,
+            "rating":4.4,
+            "image_url":"",
+            "image":"wheels06.jpg"
+        }
+    },
+    {
+        "pk":17,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5003070787",
+            "name":"Krux",
+            "description":"Krux K5 Trucks, Size 8",
+            "price":33.99,
+            "category":3,
+            "rating":4.4,
+            "image_url":"",
+            "image":"trucks01.jpg"
+        }
+    },
+    {
+        "pk":18,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5003090182",
+            "name":"Independent",
+            "description":"Independent 139 Stage 11 Hollow Winkowski Baller trucks",
+            "price":59.99,
+            "category":3,
+            "rating":4.8,
+            "image_url":"",
+            "image":"trucks02.jpg"
+        }
+    },
+    {
+        "pk":19,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5003090186",
+            "name":"ACE Trucks",
+            "description":"Ace Trucks 44 Classic trucks",
+            "price":44.99,
+            "category":3,
+            "rating":5.0,
+            "image_url":"",
+            "image":"trucks03.jpg"
+        }
+    },
+    {
+        "pk":20,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5003161326",
+            "name":"Thunder",
+            "description":"Thunder Hollow Lights ll truckar.",
+            "price":109.99,
+            "category":3,
+            "rating":4.7,
+            "image_url":"",
+            "image":"trucks04.jpg"
+        }
+    },
+    {
+        "pk":21,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5003230723",
+            "name":"Independent",
+            "description":"Independent Stage 11 Hollow lizz trucks",
+            "price":69.99,
+            "category":3,
+            "rating":4.3,
+            "image_url":"",
+            "image":"trucks05.jpg"
+        }
+    },
+    {
+        "pk":22,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5003270936",
+            "name":"Independant",
+            "description":"Independent Stage 11 Bar Flat Trucks",
+            "price":79.99,
+            "category":3,
+            "rating":5.0,
+            "image_url":"",
+            "image":"trucks06.jpg"
+        }
+    },
+    {
+        "pk":23,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5003360384",
+            "name":"Independent",
+            "description":"Independent GPS Bearings, Abec 5",
+            "price":12.99,
+            "category":4,
+            "rating":4.8,
+            "image_url":"",
+            "image":"bearings01.jpg"
+        }
+    },
+    {
+        "pk":24,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5003440111",
+            "name":"Spitfire",
+            "description":"Spitfire Cheapshots Bearings,  Abec 3",
+            "price":14.99,
+            "category":4,
+            "rating":3.8,
+            "image_url":"",
+            "image":"bearings02.jpg"
+        }
+    },
+    {
+        "pk":25,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5003540313",
+            "name":"Film",
+            "description":"Film Bearings, Abec 5 Gold",
+            "price":13.99,
+            "category":4,
+            "rating":3.0,
+            "image_url":"",
+            "image":"bearings03.jpg"
+        }
+    },
+    {
+        "pk":26,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5003560513",
+            "name":"Bones Bearings",
+            "description":"Bones Bearings Super Reds, Abec 7",
+            "price":34.99,
+            "category":4,
+            "rating":4.4,
+            "image_url":"",
+            "image":"bearings04.jpg"
+        }
+    },
+    {
+        "pk":27,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5003560948",
+            "name":"Shorty's",
+            "description":"Shortys Phillip Screws",
+            "price":4.99,
+            "category":5,
+            "rating":5.0,
+            "image_url":"",
+            "image":"screw01.jpg"
+        }
+    },
+    {
+        "pk":28,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5003570628",
+            "name":"Shake Junt",
+            "description":"Shake Junt Tyson Peterson Pro Phillips Screws.",
+            "price":9.99,
+            "category":5,
+            "rating":4.3,
+            "image_url":"",
+            "image":"screw02.jpg"
+        }
+    },
+    {
+        "pk":29,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5003620308",
+            "name":"Mob Grip",
+            "description":"MOB Grip Nora Griptape.",
+            "price":12.99,
+            "category":6,
+            "rating":4.6,
+            "image_url":"",
+            "image":"grip01.jpg"
+        }
+    },
+    {
+        "pk":30,
+        "model":"products.product",
+        "fields":{
+            "sku":"pp5003690115",
+            "name":"Jessup",
+            "description":"Jessup 9 Inch Neon Griptape.",
+            "price":9.99,
+            "category":6,
+            "rating":5.0,
+            "image_url":"",
+            "image":"grip02.jpg"
+        }
+    }
+]
