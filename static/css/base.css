@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+
 body {
     background-color: #EEEEEE;
     min-height: 100vh;
@@ -20,7 +21,11 @@ footer {
     /* border-top: 2px solid #EEEEEE; */
     background-color: #222;
     color: #EEEEEE;
-    min-height: 50vh;
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+    
 }
 
 .uppercase {
@@ -30,10 +35,6 @@ footer {
 
 /* ---------------------- NAVBAR ---------------------- */
 
-#topnav,
-#mobile-nav {
-    /* border-bottom: 2px solid #222831; */
-}
 
 a.nav-link {
     font-size: .7rem;
@@ -266,6 +267,10 @@ a#shopnow {
     #shopnow:last-child {
         padding-top: 6px;
     }
+
+    .header-container {
+        padding-top: 5rem;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -283,6 +288,7 @@ a#shopnow {
     #shopnow:last-child {
         padding-top: 6px;
     }
+
 }
 
 
@@ -310,6 +316,13 @@ a#shopnow {
     }
 }
 
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .header-container {
+        padding-top: 5rem;
+    }
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     #shopnow:first-child,
@@ -330,6 +343,7 @@ a#shopnow {
     #shopnow h1 {
         font-size: 1.8rem;
     }
+
 }
 
 @media (min-width: 1400px) {
@@ -386,4 +400,33 @@ a#shopnow {
 }
 
 
-/* ---------------------- LOGIN.HTML ---------------------- */
+/* ---------------------- PRODUCTS.HTML ---------------------- */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+}
+
+.img-fluid {
+    border: #222 solid 1px;
+}
+
+.img-container {
+    padding: 1rem;
+}
+
+.img-card {
+    border: #222 solid 1px;
+}
+
+
+.card-footer {
+    background-color: #fff;
+}
+.card-footer p {
+    font-weight: 700;
+}

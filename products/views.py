@@ -3,6 +3,7 @@ from .models import Product
 
 # Create your views here.
 
+
 def all_products(request):
     """ A View to show all the products, including sorting and searching """
 
