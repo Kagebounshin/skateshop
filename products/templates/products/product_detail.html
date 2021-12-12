@@ -36,7 +36,6 @@
                 {% else %}
                     <small class="text-muted">No Rating</small>
                 {% endif %} -->
-                <small class="text-muted"> Product SKU: {{ product.sku }}</small>
                 <div class="accordion accordion-flush pt-2" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h1 class="accordion-header" id="flush-headingOne">
@@ -45,7 +44,10 @@
                             </button>
                         </h1>
                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">{{ product.description }}</div>
+                            <div class="accordion-body">
+                                {{ product.description }} <br>
+                                <small class="text-muted"> Product SKU: {{ product.sku }}</small>
+                            </div>
                         </div>
                     </div>
                 </div>
