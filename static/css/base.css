@@ -24,10 +24,9 @@ footer {
     /* border-top: 2px solid #EEEEEE; */
     background-color: #222;
     color: #EEEEEE;
-    clear: both;
-    position: relative;
+    
     height: 200px;
-    margin-top: -200px;
+
     
 }
 
