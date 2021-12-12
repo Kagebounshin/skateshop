@@ -1,12 +1,12 @@
 from django.shortcuts import render
-from .models import Products
+from .models import Product
 
 # Create your views here.
 
 def all_products(request):
     """ A View to show all the products, including sorting and searching """
 
-    products = Products.objects.all()
+    products = Product.objects.all()
 
     context = {
         'products': products,
