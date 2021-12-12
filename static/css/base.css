@@ -405,6 +405,12 @@ a#shopnow {
 
 /* ---------------------- PRODUCTS.HTML ---------------------- */
 
+
+.product-header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 .overlay {
     height: 100%;
     width: 100%;
@@ -439,6 +445,22 @@ a#shopnow {
     font-weight: 700;
 }
 
+.card-footer a {
+    color: #222831;
+    text-decoration: none;
+}
+
+.current-category {
+    text-decoration: none;
+    color: #222831;
+    font-weight: 700;
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+.current-category:hover {
+    color: #764c87!important;
+    transition: 4ms ease-in-out;
+}
 /* ---------------------- PRODUCT_DETAIL.HTML ---------------------- */
 
 .product-details-container h1 {
@@ -450,7 +472,8 @@ a#shopnow {
     font-size: 2rem;
 }
 
-.accordion-item {
-    border-top: #222 solid 1px;
+.product-details-container a {
+    color: #222831;
+    text-decoration: none;
 }
   

@@ -46,7 +46,12 @@
                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 {{ product.description }} <br>
-                                <small class="text-muted"> Product SKU: {{ product.sku }}</small>
+                                <small class="text-muted"> Product SKU: {{ product.sku }}</small> <br>
+                                {% if product.category %}
+                                    <a href="{% url 'products' %}?category={{ product.category.name }}">
+                                        {{ product.category.friendly_name }}
+                                    </a>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
