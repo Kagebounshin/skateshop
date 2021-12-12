@@ -423,6 +423,10 @@ a#shopnow {
     border: #222 solid 1px;
 }
 
+.card-body small {
+    text-transform: capitalize;
+}
+
 
 .card-footer {
     background-color: #fff;
