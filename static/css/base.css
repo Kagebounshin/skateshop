@@ -438,3 +438,19 @@ a#shopnow {
 .card-footer p {
     font-weight: 700;
 }
+
+/* ---------------------- PRODUCT_DETAIL.HTML ---------------------- */
+
+.product-details-container h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.product-details-container p:nth-child(2) {
+    font-size: 2rem;
+}
+
+.accordion-item {
+    border-top: #222 solid 1px;
+}
+  
