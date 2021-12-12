@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+html {
+    height: 100%;
+}
 
 body {
     background-color: #EEEEEE;
@@ -407,6 +410,7 @@ a#shopnow {
     width: 100%;
     top: 0;
     left: 0;
+    position: fixed;
     background: #fff;
     z-index: -1;
 }
