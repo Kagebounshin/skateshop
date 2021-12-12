@@ -433,10 +433,10 @@ a#shopnow {
     border: #222 solid 1px;
 }
 
-.card-body small {
-    text-transform: capitalize;
+.card-body p {
+    font-size: 2rem;
+    font-weight: 700;
 }
-
 
 .card-footer {
     background-color: #fff;
