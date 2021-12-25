@@ -477,4 +477,10 @@ a#shopnow {
     color: #222831;
     text-decoration: none;
 }
-  
+
+/* ---------------------- BAG.HTML ---------------------- */
+
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
