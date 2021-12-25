@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-color: #222;
+    background-color: #fff;
     min-height: 100vh;
     padding: 0;
     margin: 0;
@@ -33,7 +33,7 @@ footer {
 /* ---------------------- BACKGROUND COLORS ---------------------- */
 
 .bg-shopnow {
-    background-color: #EEEEEE;
+    background-color: #fff;
 }
 
 /* ---------------------- NAVBAR ---------------------- */
@@ -57,7 +57,7 @@ a.nav-link {
 }
 
 .bg-light {
-    background-color: #EEEEEE!important;
+    background-color: #fff!important;
 }
 
 .mobile-top-header li {
@@ -82,7 +82,7 @@ a.nav-link {
     border: 0!important;
 }
 .dropdown-search {
-    background-color: #eeeeee!important;
+    background-color: #fff!important;
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.15);
     border-radius: 0.25rem;
@@ -91,7 +91,7 @@ a.nav-link {
 }
 
 .dropdown-menu {
-    background-color: #eeeeee!important;
+    background-color: #fff!important;
 }
 
 .navbar-brand h2 {
@@ -449,6 +449,8 @@ a#shopnow {
 .custom-select {
     padding: .5rem;
 }
+
+
 /* ---------------------- PRODUCT_DETAIL.HTML ---------------------- */
 
 .product-details-container h1 {
