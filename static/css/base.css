@@ -32,6 +32,10 @@ footer {
 }
 /* ---------------------- BACKGROUND COLORS ---------------------- */
 
+.bg-shopnow {
+    background-color: #EEEEEE;
+}
+
 /* ---------------------- NAVBAR ---------------------- */
 
 
@@ -197,11 +201,12 @@ a.nav-link:hover {
 /* ---------------------- INDEX.HTML ---------------------- */
 
 .hero-container {
-    min-height: 80vh;
+    min-height: 90vh;
 }
 
 .hero-container h1 {
     font-weight: 700;
+    padding-top: 10rem;
 }
 
 a#shopnow {
@@ -213,13 +218,8 @@ a#shopnow {
     font-weight: 700;
 }
 
-/* a#shopnow:hover {
-    color: #fd7014!important;
-    transition: 4ms ease-in-out;
-} */
-
 #shopnow {
-    background-color: #222;
+    /* background-color: #222; */
     text-align: center;
     min-height: 15rem;
     padding-bottom: 12px;
@@ -251,20 +251,6 @@ a#shopnow {
 @media (max-width: 575.98px) {
     #shopnow {
         min-height: 8rem;
-    }
-
-    #shopnow:first-child,
-    #shopnow:nth-child(2),
-    #shopnow:nth-child(3),
-    #shopnow:nth-child(4) {
-        padding-bottom: 6px;
-    }
-
-    #shopnow:nth-child(3),
-    #shopnow:nth-child(4),
-    #shopnow:nth-child(5),
-    #shopnow:last-child {
-        padding-top: 6px;
     }
 
     .header-container {
