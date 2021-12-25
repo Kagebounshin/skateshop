@@ -80,7 +80,7 @@
                             aria-expanded="false">
                             SEARCH
                         </a>
-                        <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
+                        <div class="container-fluid dropdown-menu border-0 w-100 p-3 rounded-0 my-0 mx-0" aria-labelledby="mobile-search">
                             <form method="GET" action="{% url 'products' %}">
                                 <div class="input-group w-100">
                                     <input class="form-control border border-black rounded-0" type="text" name="q"
@@ -105,13 +105,13 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="" class="dropdown-item"><i class="fas fa-archive"></i> Product Management</a>
+                            <a href="" class="dropdown-item"><i class="far fa-clipboard"></i> Product Management</a>
                             {% endif %}
-                            <a href="" class="dropdown-item">Profile</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item">Sign Out</a>
+                            <a href="" class="dropdown-item"><i class="fas fa-portrait"></i> Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item"><i class="fas fa-user"></i> Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item"><i class="fas fa-unlock-alt"></i> Sign In</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item"><i class="fas fa-edit"></i></i> Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item"><i class="fas fa-sign-in-alt"></i></i> Sign In</a>
                             {% endif %}
                         </div>
                     </li>
