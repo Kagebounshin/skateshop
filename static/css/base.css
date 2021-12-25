@@ -23,7 +23,7 @@ body {
 footer {
     /* border-top: 2px solid #EEEEEE; */
     background-color: #222;
-    color: #EEEEEE;
+    color: #fff;
     height: 200px;
 }
 
@@ -71,7 +71,7 @@ a.nav-link {
 
 #delivery-banner {
     background-color: #222;
-    color: #EEEEEE;
+    color: #fff;
 }
 
 
@@ -236,7 +236,7 @@ a#shopnow {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    color:#EEEEEE;
+    color:#fff;
 }
 
 #shopnow-inner h1 {
@@ -345,7 +345,7 @@ a#shopnow {
 
 .shop-now-button {
     background: #764c87;
-    color: #EEEEEE;
+    color: #fff;
     min-width: 260px;
     font-weight: 700;
 }
@@ -358,14 +358,14 @@ a#shopnow {
 #shopnow-inner:active,
 #shopnow-inner:focus {
     background: #492857;
-    color: #EEEEEE;
+    color: #fff;
 }
 
 
 /* ---------------------- LOGOUT.HTML ---------------------- */
 
 .row.signout-container {
-    color: #EEEEEE;
+    color: #fff;
     min-height: 70vh;
     margin-top: 10rem;
     text-align: center;
@@ -373,7 +373,7 @@ a#shopnow {
 
 .sign-out-button {
     background: #764c87;
-    color: #EEEEEE;
+    color: #fff;
     min-width: 200px;
     font-weight: 700;
 }
@@ -382,7 +382,7 @@ a#shopnow {
 .sign-out-button:active,
 .sign-out-button:focus {
     background: #492857;
-    color: #EEEEEE;
+    color: #fff;
 }
 
 
