@@ -70,7 +70,7 @@ a.nav-link {
 }
 
 #delivery-banner {
-    background-color: #222;
+    background-color: #333;
     color: #fff;
 }
 
@@ -118,6 +118,10 @@ li.nav-item {
 
 .dot {
     color: #764c87!important;
+}
+
+.footer-top {
+    background-color: #333;
 }
 
 
