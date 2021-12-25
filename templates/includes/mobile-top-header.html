@@ -1,4 +1,4 @@
-<ul class="mobile-top-header uppercase">
+<ul class="mobile-top-header uppercase ">
     <li class="list-inline-item">
       <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div class="text-center">
@@ -34,10 +34,10 @@
                   <a href="{% url 'account_logout' %}" class="dropdown-item">Product Management</a>
               {% endif %}
               <a href="" class="dropdown-item">Profile</a>
-              <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+              <a href="{% url 'account_logout' %}" class="dropdown-item">Sign Out</a>
           {% else %}
-              <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-              <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+              <a href="{% url 'account_signup' %}" class="dropdown-item"><i class="fas fa-user"></i> Register</a>
+              <a href="{% url 'account_login' %}" class="dropdown-item"><i class="fas fa-unlock-alt"></i> Sign In</a>
           {% endif %}
       </div>
   </li>
