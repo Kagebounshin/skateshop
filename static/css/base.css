@@ -15,9 +15,9 @@ body {
     overflow-x: hidden;
     color: #222831;
     scroll-behavior: smooth ;
-    /* background: url('/media/rail.jpg') no-repeat center center fixed; */
-    background-size: cover; 
-    height: calc(100vh - 264px);
+    /* background: url('/media/rail.jpg') no-repeat center center fixed;
+    background-size: cover;  */
+    height: calc(100vh - 164px);
 }
 
 footer {
@@ -170,6 +170,10 @@ a.nav-link:hover {
         padding-left: .1rem;
         padding-right: .1rem;
     }
+
+    #delivery-banner h4 {
+        font-size: .8rem;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -230,6 +234,11 @@ a.nav-link:hover {
     padding-top: 15rem;
 }
 
+.carousel {
+    position: relative;
+    padding-top: 8.3rem;
+}
+
 a#shopnow {
     text-decoration: none;
     color: black;
@@ -267,6 +276,8 @@ a#shopnow {
     z-index: 12;
     font-weight: 700;
 }
+
+
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
