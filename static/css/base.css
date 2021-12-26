@@ -15,9 +15,9 @@ body {
     overflow-x: hidden;
     color: #222831;
     scroll-behavior: smooth ;
-    /* background: url('/media/rail.jpg') no-repeat center center fixed;
-    background-size: cover; */
-    height: calc(100vh - 164px);
+    /* background: url('/media/rail.jpg') no-repeat center center fixed; */
+    background-size: cover; 
+    height: calc(100vh - 264px);
 }
 
 footer {
@@ -38,6 +38,9 @@ footer {
 
 /* ---------------------- NAVBAR ---------------------- */
 
+#topnav {
+    height: 6rem;
+}
 
 a.nav-link {
     font-size: .7rem;
@@ -57,7 +60,7 @@ a.nav-link {
 }
 
 .bg-light {
-    background-color: #fff!important;
+    background-color: rgb(255, 255, 255)!important;
 }
 
 .mobile-top-header li {
@@ -70,7 +73,7 @@ a.nav-link {
 }
 
 #delivery-banner {
-    background-color: #333;
+    background-color: #764c87;
     color: #fff;
 }
 
@@ -100,13 +103,24 @@ a.nav-link {
     text-decoration: underline #222;
 }
 
+a.nav-link.main-logo-link.navbar-brand {
+    padding-top: 1.5rem;
+}
+
 .main-nav-logo {
     font-size: 2rem;
 }
+
 li.nav-item {
     line-height: 1rem;
 }   
 
+.hr-navbar {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 0!important;
+    margin-top: 0!important;
+}
 
 /* ---------------------- CONTAINERS ---------------------- */
 
@@ -115,7 +129,8 @@ li.nav-item {
 } 
 
 .shopping-bag-continer,
-.product-container  {
+.product-container,
+.details-container  {
     min-height: 80vh;
 }
 
@@ -144,12 +159,6 @@ a.nav-link:hover {
     /* text-shadow: -2px -1px 0px #764c87; */
     transition: 8ms ease-in-out;
 }
-
-/* a.nav-link::after {
-    border: 2px solid black;
-    border-radius: 25px;
-} */
-
 
 /* ---------------------- MEDIA QUERIES ---------------------- */
 
@@ -185,8 +194,8 @@ a.nav-link:hover {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     a.nav-link {
-        padding-left: .4rem;
-        padding-right: .4rem;
+        padding-left: .3rem;
+        padding-right: .3rem;
     }
 }
 
@@ -202,8 +211,8 @@ a.nav-link:hover {
 @media (min-width: 1400px) {
     a.nav-link {
         font-size: .9rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: .9rem;
+        padding-right: .9rem;
     }
 }
 
@@ -216,7 +225,7 @@ a.nav-link:hover {
 
 .hero-container h1 {
     font-weight: 700;
-    padding-top: 10rem;
+    padding-top: 15rem;
 }
 
 a#shopnow {
@@ -403,6 +412,10 @@ a#shopnow {
     font-weight: 700;
 }
 
+.product-header.col.text-center {
+    padding-top: 5rem;
+}
+
 .overlay {
     height: 100%;
     width: 100%;
@@ -475,6 +488,8 @@ a#shopnow {
     color: #222831;
     text-decoration: none;
 }
+
+
 
 /* ---------------------- BAG.HTML ---------------------- */
 
