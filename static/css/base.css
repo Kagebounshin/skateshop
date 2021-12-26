@@ -114,6 +114,11 @@ li.nav-item {
     text-align: end;
 } 
 
+.shopping-bag-continer,
+.product-container  {
+    min-height: 80vh;
+}
+
 /* ---------------------- ADDITIONAL STYING ---------------------- */
 
 .dot {
