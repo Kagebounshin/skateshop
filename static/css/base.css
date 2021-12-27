@@ -377,8 +377,23 @@ a#shopnow {
 .shop-now-button {
     background: #764c87;
     color: #fff;
-    min-width: 260px;
+    min-width: 180px;
     font-weight: 700;
+    border: 3px solid #764c87;
+}
+
+.add-button {
+    color: #764c87;
+    min-width: 180px;
+    font-weight: 700;
+    border: 3px solid #764c87;
+}
+
+.add-button:hover,
+.add-button:active,
+.add-button:focus {
+    background: #764c87;
+    color: #fff;
 }
 
 
@@ -390,6 +405,7 @@ a#shopnow {
 #shopnow-inner:focus {
     background: #492857;
     color: #fff;
+    border: 3px solid #492857;
 }
 
 /* ---------------------- PRODUCTS.HTML ---------------------- */
@@ -484,7 +500,7 @@ a#shopnow {
     color: #fff;
 }
 
-/* ---------------------- PRODUCT_DETAIL.HTML ---------------------- */
+/* ---------------------- PRODUCT_DETAILS.HTML ---------------------- */
 
 .product-details-container h1 {
     font-size: 4rem;
@@ -500,7 +516,45 @@ a#shopnow {
     text-decoration: none;
 }
 
+.increment-qty,
+.decrement-qty {
+    background: #222;
+    color: #fff;
+}
 
+.increment-qty:hover,
+.decrement-qty:hover {
+    background: #764c87;
+    color: #fff;
+}
+
+.accordion {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(27, 26, 26, 0);
+}
+
+.accordion-button:hover {
+    z-index: 2;
+}
+.accordion-button:not(.collapsed) {
+    color: #222;
+    background-color: #fff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23222'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+  }
 
 /* ---------------------- BAG.HTML ---------------------- */
 
