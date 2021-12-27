@@ -567,6 +567,10 @@ a#shopnow {
     padding-top: 7rem;
 }
 
+td.pb-3.align-middle.qty {
+    padding-top: 30px;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
