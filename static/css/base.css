@@ -461,8 +461,6 @@ a#shopnow {
     }
 }
 
-
-
 /* ---------------------- LOGOUT.HTML ---------------------- */
 
 .row.signout-container {
@@ -509,6 +507,10 @@ a#shopnow {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+.shopping-bag-continer {
+    padding-top: 7rem;
 }
 
 /* ------------------------------- bootstrap toasts */
