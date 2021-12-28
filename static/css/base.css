@@ -526,6 +526,21 @@ a#shopnow {
     border-color: #764c87;
 }
 
+.account-button {
+    color: #764c87;
+    min-width: 180px;
+    font-weight: 700;
+    border: 3px solid #764c87;
+}
+
+.account-button:hover,
+.account-button:active,
+.account-button:focus {
+    background: #764c87;
+    color: #fff;
+    transition: .4s ease-in-out;
+}
+
 /* ---------------------- PRODUCT_DETAILS.HTML ---------------------- */
 
 .product-details-container h1 {
