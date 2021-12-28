@@ -6,14 +6,31 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-
-<h1>{% trans "Sign In" %}</h1>
+<div class="account-header container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center">{% trans "Sign In" %}</h1>
+    </div>
+  </div>
+</div>
 
 {% get_providers as socialaccount_providers %}
-
-{% if socialaccount_providers %}
+<div class="row account-container">
+  <div class="col-10 offset-1 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+    <form class="login" method="POST" action="{% url 'account_login' %}">
+      {% csrf_token %}
+      {{ form|crispy }}
+      {% if redirect_field_value %}
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+      {% endif %}
+      <div class="text-center">
+        <button class="primaryAction add-button btn btn-md roundend-4" type="submit">{% trans "Sign In" %}</button>
+        <a class="button secondaryAction text-center mt-3" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+      </div>
+    </form>
+    {% if socialaccount_providers %}
 <p>{% blocktrans with site.name as site_name %}Please sign in with one
-of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
+of your existing third party accounts. Or, <a href="{{ signup_url }}">Sign Up</a>
 for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
 <div class="socialaccount_ballot">
@@ -30,17 +47,10 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
 {% else %}
 <p>{% blocktrans %}If you have not created an account yet, then please
-<a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+<a href="{{ signup_url }}">Sign Up</a> first.{% endblocktrans %}</p>
 {% endif %}
+  </div>
+</div>
 
-<form class="login" method="POST" action="{% url 'account_login' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-  <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
-</form>
 
 {% endblock %}

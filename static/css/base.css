@@ -394,6 +394,7 @@ a#shopnow {
 .add-button:focus {
     background: #764c87;
     color: #fff;
+    transition: .4s ease-in-out;
 }
 
 
@@ -485,7 +486,7 @@ a#shopnow {
 }
 
 .account-container {
-   min-height: 60vh;
+   min-height: 80vh;
 }
 
 .account-container .form-control {
@@ -500,15 +501,29 @@ a#shopnow {
     color: #222831;
 }
 
+.account-container a {
+    color: #222831;
+    font-weight: 700;
+}
+
 .account-container p a:hover,
 .account-container p a:active,
-.account-container p a:focus {
+.account-container p a:focus,
+.account-container a:hover,
+.account-container a:active,
+.account-container a:focus {
     color: #764c87!important;
+    transition: .4s ease-in-out;
 }
 
 .account-container button {
     margin-top: 1rem;
     width: 100%;
+}
+
+.form-check-input:checked {
+    background-color: #764c87;
+    border-color: #764c87;
 }
 
 /* ---------------------- PRODUCT_DETAILS.HTML ---------------------- */
