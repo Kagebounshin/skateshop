@@ -82,12 +82,12 @@
 
             <div class="col-12 col-lg-3 my-auto text-right search-container">
                 <ul class="list-inline list-unstyled my-0">
-                    <li class="list-inline-item">
-                        <a class="nav-link" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true"
+                    <li class="list-inline-item dd-click">
+                        <a class="nav-link dropdown-slide" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             SEARCH
                         </a>
-                        <div class="container-fluid dropdown-menu border-0 w-100 p-3 rounded-0 my-0 mx-0" aria-labelledby="mobile-search">
+                        <div class="dd-click-menu container-fluid dropdown-menu border-0 w-100 p-3 rounded-0 my-0 mx-0" aria-labelledby="mobile-search">
                             <form method="GET" action="{% url 'products' %}">
                                 <div class="input-group w-100">
                                     <input class="form-control border border-black rounded-0" type="text" name="q"
@@ -104,12 +104,12 @@
                             </form>
                         </div>
                     </li>
-                    <li class="list-inline-item dropdown">
-                        <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+                    <li class="list-inline-item dropdown dd-hover">
+                        <a class="nav-link " href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             ACCOUNT
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        <div class="dropdown-menu border-0 dd-menu" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="" class="dropdown-item"><i class="far fa-clipboard"></i> Product Management</a>
@@ -187,7 +187,18 @@
 
     {% block postloadjs %}
     <script type="text/javascript">
-        $('.toast').toast('show');
+        $(document).ready(function() {
+            $('.toast').toast('show');
+
+            $('.dd-hover').hover(
+                function(){
+                    $(this).children('.dd-menu').slideDown('fast');
+                },
+                function(){
+                    $(this).children('.dd-menu').slideUp('400');
+                    }
+                );
+        }); 
     </script>
     {% endblock %}
 
