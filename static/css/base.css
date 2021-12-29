@@ -321,12 +321,12 @@ a#shopnow {
 
 
     #shopnow-inner img {
-        width: 2rem;
-        height: 2rem;
+        width: 3rem;
+        height: 3rem;
     }
 
     .middle h1 {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     .header-container {
