@@ -90,9 +90,10 @@
                             SEARCH
                         </a>
                         <div class="container-fluid dropdown-menu border-0 w-100 p-3 rounded-0 my-0 mx-0" aria-labelledby="mobile-search">
+                            <p class="text-center"><small>What are you looking for?</small></p>
                             <form method="GET" action="{% url 'products' %}">
-                                <div class="input-group w-100">
-                                    <input class="form-control border border-black rounded-0" type="text" name="q"
+                                <div class="input-group w-50 mx-auto">
+                                    <input class="form-control rounded-0" type="text" name="q"
                                         placeholder="Search our site">
                                     <div class="input-group-append">
                                         <button class="form-control btn btn-black border border-black rounded-0"
@@ -146,6 +147,9 @@
                 aria-controls="main-nav" aria-expanded="false" aria-label="Toggle Navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <a href="{% url 'home' %}" class="nav-link main-logo-link navbar-brand mx-0 d-none d-sm-block">
+                <h2 class="logo-font text-black">SkateStore<span class="dot">.</span></h2>
+            </a>
             {% include 'includes/mobile-top-header.html' %}
             {% include 'includes/main-nav.html' %}
         </nav>
