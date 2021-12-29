@@ -96,6 +96,23 @@ a.nav-link {
     left: 0;
 }
 
+.dropdown-search .form-control {
+    border: 0!important;
+    font-weight: 700;
+    padding-left: 0;
+}
+
+.dropdown-search .input-group {
+    border-bottom: 2px solid rgba(34, 34, 34, 0.466)!important;
+}
+
+.dropdown-search .input-group:hover {
+
+}
+.dropdown-search p {
+    margin-bottom: .5rem;
+}
+
 .dropdown-menu {
     background-color: #fff!important;
 }
@@ -120,6 +137,22 @@ li.nav-item {
 
 #mobile-nav h2 {
     margin-left: 7rem;
+}
+
+.dropdown-menu button {
+    font-size: 1.5rem;
+    margin-left: .5rem;
+}
+
+.dropdown-menu button:hover {
+    color: #764c87;
+    transition: .5s ease-in-out;
+}
+
+.dropdown-search input[type="text"]:focus {
+    border-color: none!important;
+    box-shadow: none!important;
+    outline: 0 none;
 }
 
 /* ---------------------- CONTAINERS ---------------------- */
