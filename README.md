@@ -176,6 +176,8 @@ This is an E-commerce web application, the company is fictional, and this site i
 
 - [FontAwesome](https://fontawesome.com/) - Provides icons across the site
 
+- [icons8](https://icons8.com/) - Shopwnow button icons
+
 - [GoogleFonts](https://fonts.google.com/) - Main font.
 
 - [Git](https://git-scm.com/) - Git was used for version control.

@@ -60,34 +60,57 @@
 
 <div class="row container-fluid shopnow-container bg-shopnow pt-3 pb-3">
 
-<a href="{% url 'products' %}?category=decks" id="shopnow" class="col-12 col-sm-6 col-md-4 col-lg-2">
+<a href="{% url 'products' %}?category=decks" id="shopnow" class="col-6 col-sm-6 col-md-4 col-lg-2">
     <div id="shopnow-inner">
-        <h1>Decks</h1>
+        <h1><img src="https://img.icons8.com/ios/100/ffffff/skateboard-without-wheels.png"/></h1>
+    </div>
+    <div class="middle text-white">
+        <h1 class="shopnow-header">Decks</h1>
     </div>
 </a>
-<a href="{% url 'products' %}?category=trucks" id="shopnow" class="col-12 col-sm-6 col-md-4 col-lg-2">
+<a href="{% url 'products' %}?category=trucks" id="shopnow" class="col-6 col-sm-6 col-md-4 col-lg-2">
     <div id="shopnow-inner">
-        <h1>Trucks</h1>
+        <h1><img src="https://img.icons8.com/ios/100/ffffff/skateboard-truck.png"/></h1>
+    </div>
+    <div class="middle text-white">
+        <h1 class="shopnow-header">Trucks</h1>
     </div>
 </a>
-<a href="{% url 'products' %}?category=wheels" id="shopnow" class="col-12 col-sm-6 col-md-4 col-lg-2">
+<a href="{% url 'products' %}?category=wheels" id="shopnow" class="col-6 col-sm-6 col-md-4 col-lg-2">
     <div id="shopnow-inner">
-        <h1>Wheels</h1>
+        <h1><img src="https://img.icons8.com/ios/80/ffffff/skateboard-wheel.png"/></h1>
+    </div>
+    <div class="middle text-white">
+        <h1 class="shopnow-header">Wheels</h1>
     </div>
 </a>
-<a href="{% url 'products' %}?category=bearings" id="shopnow" class="col-12 col-sm-6 col-md-4 col-lg-2">
+<a href="{% url 'products' %}?category=bearings" id="shopnow" class="col-6 col-sm-6 col-md-4 col-lg-2">
     <div id="shopnow-inner">
-        <h1>Bearings</h1>
+        <h1><img src="https://img.icons8.com/dotty/80/ffffff/final-state.png"/></h1>
+    </div>
+    <div class="middle text-white">
+        <h1 class="shopnow-header">Bearings</h1>
     </div>
 </a>
-<a href="{% url 'products' %}?category=griptape" id="shopnow" class="col-12 col-sm-6 col-md-4 col-lg-2">
+<a href="{% url 'products' %}?category=griptape" id="shopnow" class="col-6 col-sm-6 col-md-4 col-lg-2">
     <div id="shopnow-inner">
-        <h1>Griptape</h1>
+        <h1><img src="https://img.icons8.com/ios-filled/100/ffffff/skateboard-grip-tape.png"/></h1>
+    </div>
+    <div class="middle text-white">
+        <h1 class="shopnow-header">Griptape</h1>
     </div>
 </a>
-<a href="{% url 'products' %}?category=misc" id="shopnow" class="col-12 col-sm-6 col-md-4 col-lg-2">
+<a href="{% url 'products' %}?category=misc" id="shopnow" class="col-6 col-sm-6 col-md-4 col-lg-2">
     <div id="shopnow-inner">
-        <h1>Misc</h1>
+        <h1><img src="https://img.icons8.com/ios/40/ffffff/screwdriver.png"/>
+            <img src="https://img.icons8.com/windows/40/ffffff/Production-order.png" class="d-none d-sm-inline"/>
+            <br>
+            <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/40/ffffff/external-screw-industry-kiranshastry-lineal-kiranshastry.png" class="d-none d-sm-inline"/>
+            <img src="https://img.icons8.com/ios/40/ffffff/open-end-wrench.png" class="d-none d-sm-inline"/>
+        </h1>
+    </div>
+    <div class="middle text-white">
+        <h1 class="shopnow-header">Hardware<br>& Tools</h1>
     </div>
 </a>
 </div>
@@ -100,3 +123,9 @@
     </p>
 </div>
 {% endblock %}
+
+{% block postloadjs %}
+    <script type="text/javascript">
+    
+    </script>
+    {% endblock %}
