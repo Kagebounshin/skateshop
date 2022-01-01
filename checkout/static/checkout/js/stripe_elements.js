@@ -62,7 +62,7 @@ form.addEventListener('submit', function(ev) {
         'save_info': saveInfo,
     };
     var url = '/checkout/cache_checkout_data/';
-
+    console.log(form)
     $.post(url, postData).done(function () {
         stripe.confirmCardPayment(clientSecret, {
             payment_method: {
@@ -116,3 +116,5 @@ form.addEventListener('submit', function(ev) {
         location.reload();
     })
 });
+
+// FORM dosent cache shipping and billing information
