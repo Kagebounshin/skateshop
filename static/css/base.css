@@ -40,6 +40,11 @@ footer {
 
 #topnav {
     height: 6rem;
+    box-shadow: 0px 7px 8px -6px rgba(0,0,0,0.79);
+}
+
+#mobile-nav {
+    box-shadow: 0px 7px 8px -6px rgba(0,0,0,0.79);
 }
 
 a.nav-link {
@@ -106,9 +111,6 @@ a.nav-link {
     border-bottom: 2px solid rgba(34, 34, 34, 0.466)!important;
 }
 
-.dropdown-search .input-group:hover {
-
-}
 .dropdown-search p {
     margin-bottom: .5rem;
 }
