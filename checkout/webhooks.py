@@ -5,13 +5,13 @@ from django.views.decorators.csrf import csrf_exempt
 
 import stripe
 
-from checkout.webhook_handler import StripeWH_handler
+from checkout.webhook_handler import StripeWH_Handler
 
 
 @require_POST
 @csrf_exempt
 def webhook(request):
-    """Listen For Webhooks From Stripe"""
+    """Listen for webhooks from Stripe"""
     # Setup
     wh_secret = settings.STRIPE_WH_SECRET
     stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -34,12 +34,11 @@ def webhook(request):
         return HttpResponse(content=e, status=400)
 
     # Set up a webhook handler
-    handler = StripeWH_handler(request)
+    handler = StripeWH_Handler(request)
 
     # Map webhook events to relevant handler functions
     event_map = {
         'payment_intent.succeeded': handler.handle_payment_intent_succeeded,
-        'payment_intent.payment_failed': handler.handle_payment_intent_payment_failed,
     }
 
     # Get the webhook type from Stripe
