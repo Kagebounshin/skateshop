@@ -517,6 +517,7 @@ a#shopnow {
     background: #492857;
     color: #fff;
     border: 3px solid #492857;
+    transition: .4s ease-in-out;
 }
 
 /* ---------------------- PRODUCTS.HTML ---------------------- */
@@ -649,6 +650,37 @@ a#shopnow {
 .account-button:focus {
     background: #764c87;
     color: #fff;
+    transition: .4s ease-in-out;
+}
+
+.remove-button{
+    color: #ff0505;
+    border: 3px solid #ff0505;
+    font-weight: 700;
+}
+
+.remove-button:hover,
+.remove-button:active,
+.remove-button:focus {
+    background: #cc0101;
+    color: #fff;
+    border: 3px solid #cc0101;
+    transition: .4s ease-in-out;
+}
+
+.account-secoundary-btn {
+    background: #764c87;
+    color: #fff;
+    font-weight: 700;
+    border: 3px solid #764c87;
+}
+
+.account-secoundary-btn:hover,
+.account-secoundary-btn:active,
+.account-secoundary-btn:focus {
+    background: #492857;
+    color: #fff;
+    border: 3px solid #492857;
     transition: .4s ease-in-out;
 }
 
