@@ -1,7 +1,9 @@
-/* ---------------------- PRODUCT_DETAILS.HTML ---------------------- */
+.details-container  {
+    min-height: 80vh;
+    margin-top: 10rem;
+}
 
 .product-details-container h1 {
-    font-size: 4rem;
     font-weight: 700;
 }
 
@@ -9,21 +11,68 @@
     font-size: 2rem;
 }
 
-.product-details-container a {
-    color: #222831;
-    text-decoration: none;
+.qty_input {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 43.5px;
+}
+
+.add-button {
+    width: calc(100% - 123.5px);
+    border: none;
+    background: #764c87;
+    color: #fff;
+    margin-right: 3px;
+}
+
+.input-group-prepend {
+    margin: 0;
+}
+
+.keep-shoping-button {
+    color: #764c87;
+    min-width: 180px;
+    font-weight: 700;
+    border: 3px solid #764c87;
+    width: 100%;
 }
 
 .increment-qty,
 .decrement-qty {
-    background: #fff;
-    color: #222;
+    background: #764c87;
+    color: #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.decrement-qty.btn:disabled {
+    opacity: 1!important;
+    color: #764c87;
 }
 
 .increment-qty:hover,
-.decrement-qty:hover {
-    background: #EEEEEE;
-    color: #222;
+.decrement-qty:hover,
+.add-button:hover {
+    background: #492857;
+    color: #fff;
+    transition: .4s ease-in-out;
+}
+
+.increment-qty:focus,
+.decrement-qty:focus,
+.add-button:focus,
+.qty_input:focus {
+    border-color: none!important;
+    box-shadow: none!important;
+    outline: 0 none!important;
+}
+
+.keep-shoping-button:hover,
+.keep-shoping-button:active,
+.keep-shoping-button:focus {
+    background: #764c87;
+    color: #fff;
+    transition: .4s ease-in-out;
 }
 
 .accordion {
@@ -31,6 +80,12 @@
     border-bottom: 1px solid #222;
     padding-top: .2rem;
     padding-bottom: .2rem;
+}
+
+.accordion a {
+    color: #222831;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .accordion-button:focus {
@@ -56,4 +111,55 @@
 
 input#id_qty_25 {
     border: 0;
+}
+
+/* ---------------------- MEDIA QUERIES ---------------------- */
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .details-container  {
+        min-height: 80vh;
+        margin-top: 6rem;
+    }
+
+    .product-details-container h1 {
+        font-size: 2rem;
+    }
+    .add-button {
+        min-width: 50%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .product-details-container h1 {
+        font-size: 3rem;
+    }
+
+    .shop-now-button {
+        margin-right: 1rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
 }

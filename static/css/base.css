@@ -21,15 +21,15 @@ body {
 }
 
 footer {
-    /* border-top: 2px solid #EEEEEE; */
     background-color: #222;
     color: #fff;
-    height: 200px;
+    height: 20rem;
 }
 
 .uppercase {
     text-transform: uppercase;
 }
+
 /* ---------------------- BACKGROUND COLORS ---------------------- */
 
 .bg-shopnow {
