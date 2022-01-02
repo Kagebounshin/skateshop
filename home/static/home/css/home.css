@@ -192,42 +192,6 @@ a#shopnow {
     }
 }
 
-/* ---------------------- BUTTONS ---------------------- */
-
-.shop-now-button {
-    background: #764c87;
-    color: #fff;
-    min-width: 180px;
-    font-weight: 700;
-    border: 3px solid #764c87;
-}
-
-.add-button {
-    color: #764c87;
-    min-width: 180px;
-    font-weight: 700;
-    border: 3px solid #764c87;
-}
-
-/* ---------------------- HOVER ---------------------- */
-
-.add-button:hover,
-.add-button:active,
-.add-button:focus {
-    background: #764c87;
-    color: #fff;
-    transition: .4s ease-in-out;
-}
-
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus{
-    background: #492857;
-    color: #fff;
-    border: 3px solid #492857;
-    transition: .4s ease-in-out;
-}
-
 .middle:hover {
     transition: .5s ease-in-out;
     opacity: 1;

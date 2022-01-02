@@ -1,4 +1,3 @@
-/* ---------------------- PRODUCTS.HTML ---------------------- */
 
 .product-container {
     min-height: 80vh;
@@ -7,20 +6,6 @@
 .product-header h1 {
     font-size: 4rem;
     font-weight: 700;
-}
-
-.product-header.col.text-center {
-    padding-top: 5rem;
-}
-
-.overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: #fff;
-    z-index: -1;
 }
 
 .img-fluid {
@@ -43,6 +28,7 @@
 .card-footer {
     background-color: #fff;
 }
+
 .card-footer p {
     font-size: small;
     font-weight: 700;
@@ -60,7 +46,8 @@
     font-size: 4rem;
     text-transform: capitalize;
 }
-.current-category:hover {
+.current-category:hover,
+.small a:hover {
     color: #764c87!important;
     transition: 4ms ease-in-out;
 }
@@ -69,3 +56,12 @@
     padding: .5rem;
 }
 
+.small a {
+    color: #222831;
+}
+
+@media (min-width: 992px) {
+    .product-header.col.text-center {
+        padding-top: 5rem;
+    }
+}
