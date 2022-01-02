@@ -190,6 +190,16 @@ li.nav-item {
     z-index: -1;
 }
 
+select,
+select option {
+    color: #222;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #6c757d!important;
+}
+
 
 /* ---------------------- HOVER ---------------------- */
 
