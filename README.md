@@ -192,6 +192,7 @@ This is an E-commerce web application, the company is fictional, and this site i
 
 - [hover.css](http://ianlunn.github.io/Hover/#effects) - hover effects on links and buttons
 
+- [CSS Gradient](https://cssgradient.io/) - Linear Gradient Helper
 ---
 
 ## Testing

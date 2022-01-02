@@ -78,7 +78,8 @@ a.nav-link {
 }
 
 #delivery-banner {
-    background-color: #222;
+    background: rgb(34,34,34);
+    background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(51,51,51,1) 49%, rgba(68,68,68,1) 100%);
     color: #fff;
 }
 
