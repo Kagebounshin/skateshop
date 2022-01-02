@@ -5,7 +5,7 @@
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
-{% block content %}
+{% block inner_content %}
 <div class="account-header container">
     <div class="row">
         <div class="col-12">
@@ -43,7 +43,7 @@
         {% include "socialaccount/snippets/login_extra.html" %} 
 
         {% else %}
-        <p>{% blocktrans %}If you have not created an account yet, then please
+        <p class="text-center">{% blocktrans %}If you have not created an account yet, <br>then please
         <a href="{{ signup_url }}">Sign Up</a> first.{% endblocktrans %}</p>
         {% endif %}
     </div>
