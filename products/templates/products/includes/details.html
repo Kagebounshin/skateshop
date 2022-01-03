@@ -6,9 +6,4 @@
 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
 {% else %}
 <small class="text-muted">No Rating</small>
-{% endif %}<br>
-{% if product.category %}
-    <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
-        {{ product.category.friendly_name }}
-    </a>
 {% endif %}

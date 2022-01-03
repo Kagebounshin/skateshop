@@ -33,8 +33,13 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
+                {% if product.category %}
+                    <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
+                        {{ product.category.friendly_name }}
+                    </a>
+                {% endif %}
                 <!-- PRODUCT NAME & PRICE -->
-                <h1 class="mb-0">{{ product.name }}</h1>
+                <h1 class="mb-0 uppercase">{{ product.name }}</h1>
                 <p class="mb-0 text-left price">${{ product.price }}</p>
                 <!-- SCROLL TO DETAILS ON LG AND UP -->
                 <a class="text-black" href="#details-section"><i class="fas fa-chevron-down"></i> Details</a>   
