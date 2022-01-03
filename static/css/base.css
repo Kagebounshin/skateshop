@@ -252,6 +252,13 @@ a.nav-link:hover {
         margin: 0;
     }
     
+    .toast {
+        max-width: 250px;
+    }
+
+    .arrow-up {
+        right: 12px!important;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -259,6 +266,14 @@ a.nav-link:hover {
     a.nav-link {
         padding-left: .1rem;
         padding-right: .1rem;
+    }
+
+    .message-container {
+        margin-top: .8rem;
+    }
+
+    .arrow-up {
+        right: 12px!important;
     }
 }
 
@@ -276,6 +291,14 @@ a.nav-link:hover {
         padding-left: .3rem;
         padding-right: .3rem;
     }
+
+    .arrow-up {
+        right: 26px!important;
+    }
+
+    .message-container {
+        margin-top: 0;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -283,6 +306,10 @@ a.nav-link:hover {
     a.nav-link {
         padding-left: .8rem;
         padding-right: .8rem;
+    }
+
+    .arrow-up {
+        right: 36px!important;
     }
 }
 
@@ -417,7 +444,7 @@ input#id_qty_2 {
 
 .message-container {
     position: fixed;
-    top: 72px;
+    top: 7rem;
     right: 15px;
     z-index: 99999999999;
 }
@@ -430,10 +457,23 @@ input#id_qty_2 {
     height: 2px;
 }
 
-.toast button {
-    background: #764c87;
-    float: right;
+.toast-header button {
+    border: none;
+    background-color: #fff;
+    margin-bottom: 0.2rem;
+    margin-left: auto;
 }
+
+.toast-header button span {
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.toast-body .add-button {
+    width: 100%;
+}
+
+
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
@@ -550,3 +590,4 @@ input#id_qty_2 {
     border-color: #dc3545;
     border-radius: 0;
 }
+

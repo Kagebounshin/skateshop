@@ -2,9 +2,9 @@
     <div class="arrow-up arrow-success"></div>
     <div class="w-100 toast-capper bg-success"></div>
     <div class="toast-header bg-white text-dark">
-        <strong class="mr-auto">Success!</strong>
-        <button type="button" class="ml-2 mb-1 close text-white btn btn-sm rounded-4 justify-content-end " data-dismiss="toast" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+        <strong class="mr-auto uppercase">Success!</strong>
+        <button type="button" class="ml-2 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
         </button>
     </div>
     <div class="toast-body bg-white">
@@ -27,7 +27,7 @@
                             {% endif %}
                         </div>
                         <div class="col-9">
-                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0 uppercase"><strong>{{ item.product.name }}</strong></p>
                             <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
@@ -35,7 +35,7 @@
                 {% endfor %}
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-12">
                     <strong><p class="mt-3 mb-1 text-black">
                         Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}: 
                         <span class="float-right">${{ total|floatformat:2 }}</span>
@@ -45,7 +45,7 @@
                             Spend <strong>${{ free_delivery_delta }}</strong> more to get free next day delivery!
                         </p>
                     {% endif %}
-                    <a href="{% url 'view_bag' %}" class="add-button btn btn-sm rounded-4">
+                    <a href="{% url 'view_bag' %}" class="add-button btn btn-sm rounded-4 mt-3">
                         <span class="text-uppercase">Go To Secure Checkout</span>
                         <span class="icon">
                             <i class="fas fa-lock"></i>
