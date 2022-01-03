@@ -421,7 +421,7 @@ a.nav-link:hover {
 
 .update-link,
 .remove-item {
-    cursor: pointer;
+    cursor: pointer!important;
 }
 
 .shopping-bag-continer {
@@ -436,8 +436,70 @@ td.pb-3.align-middle.qty {
     text-align: center;
 }
 
+/* ---------------------- QUANTITY SELECTOR ---------------------- */
+
 input#id_qty_2 {
     border: 0;
+}
+
+.qty_input {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #764c87;
+    border: 1px solid #764c87;
+    color: white;
+}
+
+.input-group-prepend {
+    margin: 0;
+}
+
+.increment-qty,
+.decrement-qty {
+    background: #764c87!important;
+    color: #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.decrement-qty.btn:disabled {
+    opacity: 1!important;
+    color: #764c87;
+}
+
+.increment-qty:hover,
+.decrement-qty:hover {
+    background: #492857;
+    color: #fff;
+    transition: .4s ease-in-out;
+}
+
+.increment-qty:focus,
+.decrement-qty:focus,
+.qty_input:focus {
+    border-color: none!important;
+    box-shadow: none!important;
+    outline: 0 none!important;
+}
+
+input#id_qty_25 {
+    border: 0;
+}
+
+/* CODE FROM https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
+
+/* Remove Arrows/Spinners */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 /* ---------------------- BOOTSRAP TOASTS ---------------------- */
