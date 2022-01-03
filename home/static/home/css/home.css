@@ -1,16 +1,41 @@
+/* ---------------------- BACKGROUND COLORS ---------------------- */
+
+.bg-shopnow {
+    background-color: #fff;
+}
+
 .hero-container {
-    min-height: 70vh;
+    /* min-height: 70vh; */
 }
 
 .hero-container h1 {
     font-weight: 700;
-    padding-top: 15rem;
+    
+}
+
+.hero-container p:first-child {
+    padding-top: 13rem;
+}
+
+.hero-logo {
+    font-family: 'Pacifico', sans-serif;
+    color: #222!important;
+}
+
+.carousel {
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .shopnow-container {
     margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
 }
 
+.setup-container {
+
+}
 
 a#shopnow {
     text-decoration: none;
@@ -31,7 +56,7 @@ a#shopnow {
 #shopnow-inner {
     position: relative;
     background-color: #222;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -55,7 +80,7 @@ a#shopnow {
     transform: translate(-50%, -50%);
     height: 85%;
     width: 90%;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     opacity: 0;
     background-color: rgba(34, 34, 34, 0.85);
 }
@@ -79,6 +104,10 @@ a#shopnow {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .hero-logo {
+        font-size: 3rem;
+    }
+
     .shopnow-container {
         padding-left: 3px;
         padding-right: 3px;
@@ -118,6 +147,10 @@ a#shopnow {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    .hero-logo {
+        font-size: 5rem;
+    }
+
     #shopnow:first-child,
     #shopnow:nth-child(2),
     #shopnow:nth-child(3),
@@ -136,6 +169,10 @@ a#shopnow {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .hero-logo {
+        font-size: 6srem;
+    }
+
     #shopnow:first-child,
     #shopnow:nth-child(2),
     #shopnow:nth-child(3) {
@@ -166,44 +203,19 @@ a#shopnow {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    #shopnow:first-child,
-    #shopnow:nth-child(2),
-    #shopnow:nth-child(3) {
-        padding-bottom: 12px;
-    }
-
-    #shopnow:last-child,
-    #shopnow:nth-child(4),
-    #shopnow:nth-child(5) {
-        padding-top: 12px;
-    }
-
     #shopnow {
-        min-height: 10rem;
-    }
-    #shopnow-inner h1 {
-        font-size: 1.8rem;
-    }
-
-    #shopnow-inner img {
-        width: 2rem;
-        height: 2rem;
-    }
-
-    .middle h1 {
-        font-size: 1.2rem;
+        min-height: 15rem;
     }
 }
 
 @media (min-width: 1400px) {
+    .hero-logo {
+        font-size: 10rem;
+    }
     #shopnow {
-        min-height: 15rem;
+        min-height: 20rem;
     }
 
-    #shopnow-inner img {
-        width: 3.1rem;
-        height: 3.1rem;
-    }
 
     .middle h1 {
         font-size: 2.5rem;

@@ -10,80 +10,22 @@
 <!-- HERO SECTION -->
 <div class="container hero-container">
     <div class="row">
-        <div class="col-12 col-md-8 offset-md-2 my-auto mx-auto text-center">
-            <h1 class="display-4 logo-font text-black uppercase">
-                update your equipment<span class="dot">.</span>
-            </h1>
+        <div class="col-12 col-md-8 offset-md-2 text-center">
+            <p class="logo-font text-black uppercase">Welcome To The</p>
+            <h1 class="hero-logo text-black">SkateStore<span class="dot">.</span></h1>
             <p>
-                Get the latest skateboarding gear to your setup here!
+                Get the latest skateboarding gear right!
             </p>
             <div class="my-5">
                 <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-4 text-uppercase py-3">Shop Now</a>
+                    <a href="{% url 'products' %}" class="shop-now-button btn btn-md rounded-0 text-uppercase py-1 mb-5">Shop Now</a>
                 </h4>
             </div>
         </div>
     </div>
 </div>
-
-<!-- SHOPNOW SECTION -->
-<div class="row container-fluid shopnow-container bg-shopnow pt-3 pb-3 uppercase">
-    <a href="{% url 'products' %}?category=decks" id="shopnow" class="col-6 col-sm-6 col-md-4 col-lg-2">
-        <div id="shopnow-inner">
-            <h1><img src="https://img.icons8.com/ios/100/ffffff/skateboard-without-wheels.png"/></h1>
-        </div>
-        <div class="middle text-white">
-            <h1 class="shopnow-header">Decks</h1>
-        </div>
-    </a>
-    <a href="{% url 'products' %}?category=trucks" id="shopnow" class="col-6 col-sm-6 col-md-4 col-lg-2">
-        <div id="shopnow-inner">
-            <h1><img src="https://img.icons8.com/ios/100/ffffff/skateboard-truck.png"/></h1>
-        </div>
-        <div class="middle text-white">
-            <h1 class="shopnow-header">Trucks</h1>
-        </div>
-    </a>
-    <a href="{% url 'products' %}?category=wheels" id="shopnow" class="col-6 col-sm-6 col-md-4 col-lg-2">
-        <div id="shopnow-inner">
-            <h1><img src="https://img.icons8.com/ios/80/ffffff/skateboard-wheel.png"/></h1>
-        </div>
-        <div class="middle text-white">
-            <h1 class="shopnow-header">Wheels</h1>
-        </div>
-    </a>
-    <a href="{% url 'products' %}?category=bearings" id="shopnow" class="col-6 col-sm-6 col-md-4 col-lg-2">
-        <div id="shopnow-inner">
-            <h1><img src="https://img.icons8.com/dotty/80/ffffff/final-state.png"/></h1>
-        </div>
-        <div class="middle text-white">
-            <h1 class="shopnow-header">Bearings</h1>
-        </div>
-    </a>
-    <a href="{% url 'products' %}?category=griptape" id="shopnow" class="col-6 col-sm-6 col-md-4 col-lg-2">
-        <div id="shopnow-inner">
-            <h1><img src="https://img.icons8.com/ios-filled/100/ffffff/skateboard-grip-tape.png"/></h1>
-        </div>
-        <div class="middle text-white">
-            <h1 class="shopnow-header">Griptape</h1>
-        </div>
-    </a>
-    <a href="{% url 'products' %}?category=misc" id="shopnow" class="col-6 col-sm-6 col-md-4 col-lg-2">
-        <div id="shopnow-inner">
-            <h1><img src="https://img.icons8.com/ios/40/ffffff/screwdriver.png"/>
-                <img src="https://img.icons8.com/windows/40/ffffff/Production-order.png" class="d-none d-sm-inline"/>
-                <br>
-                <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/40/ffffff/external-screw-industry-kiranshastry-lineal-kiranshastry.png" class="d-none d-sm-inline"/>
-                <img src="https://img.icons8.com/ios/40/ffffff/open-end-wrench.png" class="d-none d-sm-inline"/>
-            </h1>
-        </div>
-        <div class="middle text-white">
-            <h1 class="shopnow-header">Misc</h1>
-        </div>
-    </a>
-</div>
 <!-- CAROUSEL -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="container carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -113,11 +55,212 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
-
-<div class="container-fluid tutorial-container row">
-    <p class="">
-        Need help to assemble a board? Follow the steps below!
-    </p>
 </div>
+<!-- SETUP -->
+<div class="container-fluid setup-container pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center">
+                    Need help to assemble a board? Follow the steps below!
+                </h3>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-sm-5 col-md-4 col-lg-4 order-last order-sm-first">
+                <div class="row container shopnow-container bg-shopnow uppercase">
+                    <a href="{% url 'products' %}?category=decks" id="shopnow">
+                        <div id="shopnow-inner">
+                            <h1><img src="https://img.icons8.com/ios/100/ffffff/skateboard-without-wheels.png"/></h1>
+                        </div>
+                        <div class="middle text-white">
+                            <h1 class="shopnow-header">Decks</h1>
+                        </div>
+                    </a>
+                </div>         
+            </div>
+            <div class="col-12 col-sm-7 col-md-8 col-lg-4">
+                <h4 class="text-center">
+                    Step 1:
+                </h4>
+                <p class="text-center">Choose Your Board</p>
+                <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minima velit consectetur voluptate alias magni error nobis quos eius, sint odio quibusdam, sed itaque, quasi temporibus modi nihil dolorum iste! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-sm-7 col-md-8 col-lg-4 offset-lg-4">
+                <h4 class="text-center">
+                    Step 2:
+                </h4>
+                <p class="text-center">Time for Trucks</p>
+                <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minima velit consectetur voluptate alias magni error nobis quos eius, sint odio quibusdam, sed itaque, quasi temporibus modi nihil dolorum iste! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-12 col-sm-5 col-md-4 col-lg-4">
+                <div class="row container shopnow-container bg-shopnow uppercase">
+                    <a href="{% url 'products' %}?category=trucks" id="shopnow">
+                        <div id="shopnow-inner">
+                            <h1><img src="https://img.icons8.com/ios/100/ffffff/skateboard-truck.png"/></h1>
+                        </div>
+                        <div class="middle text-white">
+                            <h1 class="shopnow-header">Trucks</h1>
+                        </div>
+                    </a>
+                </div>         
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-sm-5 col-md-4 col-lg-4 order-last order-sm-first">
+                <div class="row container shopnow-container bg-shopnow uppercase">
+                    <a href="{% url 'products' %}?category=wheels" id="shopnow">
+                        <div id="shopnow-inner">
+                            <h1><img src="https://img.icons8.com/ios/80/ffffff/skateboard-wheel.png"/></h1>
+                        </div>
+                        <div class="middle text-white">
+                            <h1 class="shopnow-header">Wheels</h1>
+                        </div>
+                    </a>
+                </div>         
+            </div>
+            <div class="col-12 col-sm-7 col-md-8 col-lg-4">
+                <h4 class="text-center">
+                    Step 3:
+                </h4>
+                <p class="text-center">Get Rollin!</p>
+                <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minima velit consectetur voluptate alias magni error nobis quos eius, sint odio quibusdam, sed itaque, quasi temporibus modi nihil dolorum iste! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-sm-7 col-md-8 col-lg-4 offset-lg-4">
+                <h4 class="text-center">
+                    Step 4:
+                </h4>
+                <p class="text-center">Your Wheels Best Friend</p>
+                <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minima velit consectetur voluptate alias magni error nobis quos eius, sint odio quibusdam, sed itaque, quasi temporibus modi nihil dolorum iste! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-12 col-sm-5 col-md-4 col-lg-4">
+                <div class="row container shopnow-container bg-shopnow uppercase">
+                    <a href="{% url 'products' %}?category=bearings" id="shopnow">
+                        <div id="shopnow-inner">
+                            <h1><img src="https://img.icons8.com/dotty/80/ffffff/final-state.png"/></h1>
+                        </div>
+                        <div class="middle text-white">
+                            <h1 class="shopnow-header">Bearings</h1>
+                        </div>
+                    </a>
+                </div>         
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-sm-5 col-md-4 col-lg-4 order-last order-sm-first">
+                <div class="row container shopnow-container bg-shopnow uppercase">
+                    <a href="{% url 'products' %}?category=griptape" id="shopnow">
+                        <div id="shopnow-inner">
+                            <h1><img src="https://img.icons8.com/ios-filled/100/ffffff/skateboard-grip-tape.png"/></h1>
+                        </div>
+                        <div class="middle text-white">
+                            <h1 class="shopnow-header">Griptape</h1>
+                        </div>
+                    </a>
+                </div>         
+            </div>
+            <div class="col-12 col-sm-7 col-md-8 col-lg-4">
+                <h4 class="text-center">
+                    Step 5:
+                </h4>
+                <p class="text-center">Grip It Up!</p>
+                <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minima velit consectetur voluptate alias magni error nobis quos eius, sint odio quibusdam, sed itaque, quasi temporibus modi nihil dolorum iste! Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-sm-7 col-md-8 col-lg-4 offset-lg-4">
+                <h4 class="text-center">
+                    Step 6:
+                </h4>
+                <p class="text-center">Put It Together</p>
+                <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minima velit consectetur voluptate alias magni error nobis quos eius, sint odio quibusdam, sed itaque, quasi temporibus modi nihil dolorum iste! Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+            </div>
+            <div class="col-12 col-sm-5 col-md-4 col-lg-4">
+                <div class="row container shopnow-container bg-shopnow uppercase">
+                    <a href="{% url 'products' %}?category=misc" id="shopnow">
+                        <div id="shopnow-inner">
+                            <h1><img src="https://img.icons8.com/ios/40/ffffff/screwdriver.png"/>
+                                <img src="https://img.icons8.com/windows/40/ffffff/Production-order.png" class="d-none d-sm-inline"/>
+                                <br>
+                                <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/40/ffffff/external-screw-industry-kiranshastry-lineal-kiranshastry.png" class="d-none d-sm-inline"/>
+                                <img src="https://img.icons8.com/ios/40/ffffff/open-end-wrench.png" class="d-none d-sm-inline"/>
+                            </h1>
+                        </div>
+                        <div class="middle text-white">
+                            <h1 class="shopnow-header">Misc</h1>
+                        </div>
+                    </a>
+                </div>         
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SHOPNOW SECTION -->
+<!-- <div class="row container shopnow-container bg-shopnow pt-3 pb-3 uppercase">
+    <a href="{% url 'products' %}?category=decks" id="shopnow" class="col-6 col-sm-6 col-md-4">
+        <div id="shopnow-inner">
+            <h1><img src="https://img.icons8.com/ios/100/ffffff/skateboard-without-wheels.png"/></h1>
+        </div>
+        <div class="middle text-white">
+            <h1 class="shopnow-header">Decks</h1>
+        </div>
+    </a>
+    <a href="{% url 'products' %}?category=trucks" id="shopnow" class="col-6 col-sm-6 col-md-4">
+        <div id="shopnow-inner">
+            <h1><img src="https://img.icons8.com/ios/100/ffffff/skateboard-truck.png"/></h1>
+        </div>
+        <div class="middle text-white">
+            <h1 class="shopnow-header">Trucks</h1>
+        </div>
+    </a>
+    <a href="{% url 'products' %}?category=wheels" id="shopnow" class="col-6 col-sm-6 col-md-4">
+        <div id="shopnow-inner">
+            <h1><img src="https://img.icons8.com/ios/80/ffffff/skateboard-wheel.png"/></h1>
+        </div>
+        <div class="middle text-white">
+            <h1 class="shopnow-header">Wheels</h1>
+        </div>
+    </a>
+    <a href="{% url 'products' %}?category=bearings" id="shopnow" class="col-6 col-sm-6 col-md-4">
+        <div id="shopnow-inner">
+            <h1><img src="https://img.icons8.com/dotty/80/ffffff/final-state.png"/></h1>
+        </div>
+        <div class="middle text-white">
+            <h1 class="shopnow-header">Bearings</h1>
+        </div>
+    </a>
+    <a href="{% url 'products' %}?category=griptape" id="shopnow" class="col-6 col-sm-6 col-md-4">
+        <div id="shopnow-inner">
+            <h1><img src="https://img.icons8.com/ios-filled/100/ffffff/skateboard-grip-tape.png"/></h1>
+        </div>
+        <div class="middle text-white">
+            <h1 class="shopnow-header">Griptape</h1>
+        </div>
+    </a>
+    <a href="{% url 'products' %}?category=misc" id="shopnow" class="col-6 col-sm-6 col-md-4">
+        <div id="shopnow-inner">
+            <h1><img src="https://img.icons8.com/ios/40/ffffff/screwdriver.png"/>
+                <img src="https://img.icons8.com/windows/40/ffffff/Production-order.png" class="d-none d-sm-inline"/>
+                <br>
+                <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/40/ffffff/external-screw-industry-kiranshastry-lineal-kiranshastry.png" class="d-none d-sm-inline"/>
+                <img src="https://img.icons8.com/ios/40/ffffff/open-end-wrench.png" class="d-none d-sm-inline"/>
+            </h1>
+        </div>
+        <div class="middle text-white">
+            <h1 class="shopnow-header">Misc</h1>
+        </div>
+    </a>
+</div> -->
+
 {% endblock %}
