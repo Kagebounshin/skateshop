@@ -39,6 +39,16 @@
                 <!-- SCROLL TO DETAILS ON LG AND UP -->
                 <a class="text-black" href="#details-section"><i class="fas fa-chevron-down"></i> Details</a>   
                 <!-- DISPLAY IF ITEM WILL GIVE FREE DELIVERY -->
+                <div class="row">
+                    <div class="col">
+                        {% if request.user.is_superuser %}
+                        <small class="ml-3">
+                            <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                        </small>
+                        {% endif %}
+                    </div>
+                </div>
                 {% if product.price > 50 %}
                 <hr>
                 <p class="text-center text-lilac">This item qualifies for FREE DELIVERY!</p>
