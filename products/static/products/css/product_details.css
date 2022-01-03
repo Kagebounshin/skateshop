@@ -57,12 +57,12 @@ a {
 }
 
 .increment-qty:hover,
-.decrement-qty:hover,
-.add-button:hover {
+.decrement-qty:hover {
     background: #492857;
     color: #fff;
     transition: .4s ease-in-out;
 }
+
 
 .increment-qty:focus,
 .decrement-qty:focus,
@@ -79,6 +79,13 @@ a {
     background: #764c87;
     color: #fff;
     transition: .4s ease-in-out;
+}
+
+.add-button:hover {
+    background: #492857;
+    color: #fff;
+    transition: .4s ease-in-out;
+    border: none;
 }
 
 input#id_qty_25 {

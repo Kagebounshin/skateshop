@@ -332,8 +332,8 @@ a.nav-link:hover {
 }
 
 .account-button {
-    color: #764c87;
-    min-width: 180px;
+    background: #764c87;
+    color: #fff;
     font-weight: 700;
     border: 3px solid #764c87;
 }
@@ -341,6 +341,22 @@ a.nav-link:hover {
 .account-button:hover,
 .account-button:active,
 .account-button:focus {
+    background: #492857;
+    color: #fff;
+    border: 3px solid #492857;
+    transition: .4s ease-in-out;
+}
+
+.account-secoundary-btn {
+    color: #764c87;
+    min-width: 180px;
+    font-weight: 700;
+    border: 3px solid #764c87;
+}
+
+.account-secoundary-btn:hover,
+.account-secoundary-btn:active,
+.account-secoundary-btn:focus {
     background: #764c87;
     color: #fff;
     transition: .4s ease-in-out;
@@ -358,22 +374,6 @@ a.nav-link:hover {
     background: #cc0101;
     color: #fff;
     border: 3px solid #cc0101;
-    transition: .4s ease-in-out;
-}
-
-.account-secoundary-btn {
-    background: #764c87;
-    color: #fff;
-    font-weight: 700;
-    border: 3px solid #764c87;
-}
-
-.account-secoundary-btn:hover,
-.account-secoundary-btn:active,
-.account-secoundary-btn:focus {
-    background: #492857;
-    color: #fff;
-    border: 3px solid #492857;
     transition: .4s ease-in-out;
 }
 
@@ -477,15 +477,15 @@ input#id_qty_2 {
 /* ---------------------- BUTTONS ---------------------- */
 
 .shop-now-button {
-    background: #764c87;
-    color: #fff;
+    color: #764c87;
     min-width: 180px;
     font-weight: 700;
     border: 3px solid #764c87;
 }
 
 .add-button {
-    color: #764c87;
+    background: #764c87;
+    color: #fff;
     min-width: 180px;
     font-weight: 700;
     border: 3px solid #764c87;
@@ -496,17 +496,17 @@ input#id_qty_2 {
 .add-button:hover,
 .add-button:active,
 .add-button:focus {
-    background: #764c87;
+    background: #492857;
     color: #fff;
+    border: 3px solid #492857;
     transition: .4s ease-in-out;
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus{
-    background: #492857;
+    background: #764c87;
     color: #fff;
-    border: 3px solid #492857;
     transition: .4s ease-in-out;
 }
 

@@ -79,6 +79,11 @@ a#shopnow {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .shopnow-container {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
     .middle {  
         height: 80%;
     }
@@ -94,6 +99,20 @@ a#shopnow {
 
     .header-container {
         padding-top: 5rem;
+    }
+
+    #shopnow:first-child,
+    #shopnow:nth-child(2),
+    #shopnow:nth-child(3),
+    #shopnow:nth-child(4) {
+        padding-bottom: 6px;
+    }
+
+    #shopnow:nth-child(3),
+    #shopnow:nth-child(4),
+    #shopnow:nth-child(5),
+    #shopnow:last-child {
+        padding-top: 6px;
     }
 }
 
@@ -112,7 +131,6 @@ a#shopnow {
     #shopnow:last-child {
         padding-top: 6px;
     }
-
 }
 
 

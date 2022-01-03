@@ -46,6 +46,7 @@
     font-size: 4rem;
     text-transform: capitalize;
 }
+
 .current-category:hover,
 .small a:hover {
     color: #764c87!important;
@@ -60,8 +61,26 @@
     color: #222831;
 }
 
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .product-header.col.text-center {
+        margin-top: 4rem;
+    }
+
+    .card {
+        padding: 0!important;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .product-header.col.text-center {
+        margin-top: 4rem;
+    }
+}
+
 @media (min-width: 992px) {
     .product-header.col.text-center {
-        padding-top: 5rem;
+        margin-top: 5rem;
     }
 }
