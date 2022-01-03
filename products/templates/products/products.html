@@ -23,11 +23,11 @@
             {% if current_categories %}
                 {% for c in current_categories %}
                 <a class="current-category" href="{% url 'products' %}?category={{ c.name }}">
-                    <span class="uppercase">{{ c.friendly_name }}<span class="dot">.</span></span>
+                    <span class="uppercase">{{ c.friendly_name }}</span>
                 </a>
                 {% endfor %}
             {% else %}
-                <h1 class="uppercase">Products<span class="dot">.</span></h1>
+                <h1 class="uppercase">Products</h1>
             {% endif %}
         </div>
     </div>
