@@ -1,4 +1,21 @@
-.managment-container {
-    min-height: 80vh;
+.managment-header {
     margin-top: 10rem;
 }
+
+.add-edit-container {
+    min-height: 80vh;
+}
+
+.add-edit-container .form-control {
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.add-edit-container p {
+    margin-top: 1rem;
+}
+
+.add-edit-container p a {
+    color: #222831;
+}
+
