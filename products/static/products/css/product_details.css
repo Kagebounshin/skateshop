@@ -18,6 +18,9 @@ a {
     padding-left: 0;
     padding-right: 0;
     max-width: 43.5px;
+    background-color: #764c87;
+    border: 1px solid #764c87;
+    color: white;
 }
 
 .add-button {
