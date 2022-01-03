@@ -13,13 +13,12 @@
     </div>
 {% endblock %}
 
-
 {% block content %}
 <div class="overlay"></div>
 <div class="details-container container-fluid">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-            <!-- Product Image -->
+            <!-- PRODUCT IMAGE -->
             <div class="image-container my-5">
                 {% if product.image %}
                     <a href="{{ product.image.url }}" target="_blank">
@@ -34,16 +33,18 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
-                <!-- Producat name/price -->
+                <!-- PRODUCT NAME & PRICE -->
                 <h1 class="mb-0">{{ product.name }}</h1>
                 <p class="mb-0 text-left price">${{ product.price }}</p>
+                <!-- SCROLL TO DETAILS ON LG AND UP -->
                 <a class="text-black" href="#details-section"><i class="fas fa-chevron-down"></i> Details</a>   
+                <!-- DISPLAY IF ITEM WILL GIVE FREE DELIVERY -->
                 {% if product.price > 50 %}
                 <hr>
                 <p class="text-center text-lilac">This item qualifies for FREE DELIVERY!</p>
                 <hr>
                 {% endif %}
-                <!-- Quantity selctor / Size selector -->
+                <!-- QUANTITY & SIZE SELECTOR -->
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
@@ -64,7 +65,7 @@
                             <div class="form-group w-100">
                                 <div class="input-group">
                                     
-                            <!-- Add to bag button -->
+                            <!-- ADD TO BAG BUTTON -->
                             <input type="submit" class="add-button btn btn-sm rounded-0 rounded-left text-uppercase py-2" value="Add to Bag">
                                     <div class="input-group-prepend">
                                         <button class="decrement-qty btn  rounded-0" 
@@ -89,7 +90,7 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <!-- Keep shoping button -->
+                            <!-- KEEP SHOPPING BUTTON -->
                             <a href="{% url 'products' %}" class="keep-shoping-button rounded-0 btn btn-sm py-2 mt-3">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
@@ -101,6 +102,7 @@
                         {% endwith %}
                     </div>
                 </form>
+                <!-- DETAILS & SHIPPING INFORMATION DISPLAYED FROM MD AND DOWN -->
                 <div class="col-12 mt-5 d-block d-md-none">
                     {% include 'products/includes/details.html' %}
                 </div>
@@ -109,6 +111,7 @@
                 </div>
             </div>
         </div>
+        <!-- DETAILS & SHIPPING INFORMATION DISPLAYED FROM LG AND UP -->
         <div class="row">
             <div class="col-md-6 col-lg-4 offset-lg-2 d-none d-md-block" id="details-section">
                 {% include 'products/includes/details.html' %}
