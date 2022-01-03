@@ -22,8 +22,6 @@ a {
 .add-button {
     width: calc(100% - 123.5px);
     border: none;
-    background: #764c87;
-    color: #fff;
     margin-right: 3px;
 }
 
@@ -44,17 +42,7 @@ a {
 }
 
 .add-button:hover {
-    background: #492857;
-    color: #fff;
-    transition: .4s ease-in-out;
     border: none;
-}
-
-.increment-qty:hover,
-.decrement-qty:hover {
-    background: #492857;
-    color: #fff;
-    transition: .4s ease-in-out;
 }
 
 
@@ -70,6 +58,7 @@ a {
     .product-details-container h1 {
         font-size: 2rem;
     }
+
     .add-button {
         min-width: 50%;
     }
@@ -84,27 +73,4 @@ a {
     .shop-now-button {
         margin-right: 1rem;
     }
-}
-
-/* Small devices (landscape phones, less than 768px) */
-
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { 
-
 }
