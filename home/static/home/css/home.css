@@ -23,8 +23,8 @@
 }
 
 .carousel {
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .shopnow-container {
@@ -163,6 +163,11 @@ a#shopnow {
     #shopnow:nth-child(5),
     #shopnow:last-child {
         padding-top: 6px;
+    }
+
+    .carousel {
+        padding-right: 1rem!important;
+        padding-left: 1rem!important;
     }
 }
 
