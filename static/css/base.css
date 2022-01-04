@@ -14,9 +14,7 @@ body {
     font-family: 'Oswald', sans-serif;
     overflow-x: hidden;
     color: #222831;
-    scroll-behavior: smooth ;
-    /* background: url('/media/rail.jpg') no-repeat center center fixed;
-    background-size: cover;  */
+    scroll-behavior: smooth;
     height: calc(100vh - 164px);
 }
 
