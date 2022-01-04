@@ -183,8 +183,20 @@
 
     <footer>
         <div class="row container-fluid footer-top mt-4 mx-0">
-            <div class="col-12">
-                <h4 class="text-left pt-2">Footer Content</h4>
+            <div class="col-12 col-lg-6 col-xl-5">
+                <h4 class="text-left uppercase">Subscribe for product news & discounts </h4>
+            </div>
+            <div class="col-12 col-lg-5 col-xl-5">
+                <form action="" method="">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <div class="form-group subscribe py-2 w-100">
+                        <input type="email" class="form-control rounded-0" id="email" name="email" placeholder="Enter your e-mail">
+                        <button class="btn subscribe-button rounded-0" type="submit">
+                            <p class="d-none d-sm-block uppercase">Subscribe</p> <i class="far fa-envelope d-sm-none"></i>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
 

@@ -182,6 +182,38 @@ li.nav-item {
     min-height: 80vh;
 }
 
+/* ---------------------- FOOTER ---------------------- */
+
+.form-group.subscribe {
+    position: relative;
+    display: inline-flex;
+}
+
+.subscribe-button {
+    background: #764c87;
+    color: #fff;
+    min-width: 160px;
+    font-weight: 700;
+    border: 3px solid #764c87;
+}
+
+.subscribe-button p {
+    margin: 0px;
+}
+
+.subscribe-button:hover,
+.subscribe-button:active,
+.subscribe-button:focus {
+    background: #492857;
+    color: #fff;
+    border: 3px solid #492857;
+    transition: .4s ease-in-out;
+}
+
+.footer-top h4 {
+    padding-top: .9rem;
+}
+
 /* ---------------------- ADDITIONAL STYING ---------------------- */
 
 .dot {
@@ -254,6 +286,9 @@ a.nav-link:hover {
     .arrow-up {
         right: 12px!important;
     }
+    .subscribe-button {
+        min-width: unset;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -264,7 +299,7 @@ a.nav-link:hover {
     }
 
     .message-container {
-        margin-top: .8rem;
+        margin-top: .9rem;
     }
 
     .arrow-up {
@@ -272,11 +307,20 @@ a.nav-link:hover {
     }
 }
 
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+}
+
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
     #main-nav a.nav-link {
         font-size: 1.5rem;
         padding-top: 1.4rem;
+    }
+
+    .footer-top {
+        padding-bottom: .8rem;
     }
 }
 
