@@ -189,7 +189,6 @@
             <div class="col-12 col-lg-5 col-xl-5">
                 <form action="" method="">
                     {% csrf_token %}
-                    {{ form|crispy }}
                     <div class="form-group subscribe py-2 w-100">
                         <input type="email" class="form-control rounded-0" id="email" name="email" placeholder="Enter your e-mail">
                         <button class="btn subscribe-button rounded-0" type="submit">
