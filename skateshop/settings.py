@@ -10,8 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
-import dj_database_url
 from pathlib import Path
+import dj_database_url
+
 if os.path.exists("env.py"):
     import env
 
@@ -26,13 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-if os.environ.get("DEVELOPMENT"):
-    development = True
-else:
-    development = False
-DEBUG = development
+DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['kagebounshin-skateshop.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['kagebounshin-skateshop.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -120,6 +117,7 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'skateshop.wsgi.application'
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-turquoise-fish-a9gcw8ki.ws-eu25.gitpod.io',]
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
