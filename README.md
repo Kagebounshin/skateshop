@@ -166,6 +166,8 @@ This is an E-commerce web application, the company is fictional, and this site i
 
 - [jQuery](https://jquery.com/) 
 
+- [Bootstrap](https://getbootstrap.com/) - Front-end toolkit
+
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) - The project uses Flask, which is a Python microframework. 
 
 - [PyMongo](https://pypi.org/project/pymongo/) - The project uses PyMongo as the Python API for MongoDB. To link the backend data to frontend application. 
@@ -176,9 +178,9 @@ This is an E-commerce web application, the company is fictional, and this site i
 
 - [FontAwesome](https://fontawesome.com/) - Provides icons across the site
 
-- [icons8](https://icons8.com/) - Shopwnow button icons
+- [icons8](https://icons8.com/) - Setup section.
 
-- [GoogleFonts](https://fonts.google.com/) - Main font.
+- [GoogleFonts](https://fonts.google.com/) - Used for the sites typography
 
 - [Git](https://git-scm.com/) - Git was used for version control.
 
@@ -189,8 +191,6 @@ This is an E-commerce web application, the company is fictional, and this site i
 - [Am I Responsive](http://ami.responsivedesign.is/#) - Tested responsivness & the images at the top of the readMe.
 
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse) - Lighthouse was used to test the performanceof the website.
-
-- [hover.css](http://ianlunn.github.io/Hover/#effects) - hover effects on links and buttons
 
 - [CSS Gradient](https://cssgradient.io/) - Linear Gradient Helper
 ---
