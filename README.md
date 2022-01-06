@@ -1,8 +1,8 @@
 <h1 align="center">Skate Shop</h1>
 
-[View the live project here.]()
+[View the live project here.](https://kagebounshin-skateshop.herokuapp.com/)
 
-<h2 align="center"><img src=""></h2>
+<h2 align="center"><img src="img-readme/amIResponsive.png"></h2>
 
 The SkateShop is a place where you can assemble a skateboard of you choice, or just buy single items for you setup. 
 
