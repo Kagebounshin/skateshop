@@ -102,6 +102,8 @@ This is an E-commerce web application, the company is fictional, and this site i
     - The toast component will also display warning, info, success or error messages, giving the user quick feedback, for example, if something unexcpected happens. 
 - Register, Sign In/Out
     - These pages will be clean looking, centered at the page & be easily accessible at all time. 
+- Contact 
+    - At the contact page, you will be able to send mails to the sites admin. The admin can access these emails from the admin terminal. 
  
 ---
 
@@ -139,7 +141,9 @@ This is an E-commerce web application, the company is fictional, and this site i
     -   #### Colour Scheme
 
     -   #### Typography
-
+        - The fonts I've used for this project are from [Google Fonts](https://fonts.google.com/). The fonts are ["Oswald"](img-readme/mainfont.png) & ["Pacifico"](img-readme/logofont.png).
+            - [Oswald](https://fonts.google.com/?query=Oswald&preview.text=Oswald&preview.text_type=custom) has been used as the main font of this project. Looks really good in all the different weights, it's readble. Simpley a fine peace of sans serif typeface. 
+            - [Pacifico](https://fonts.google.com/specimen/Pacifico?preview.text=Pacifico&preview.text_type=custom&category=Sans+Serif,Display,Handwriting,Monospace&query=Pacifico) is used for the sites [logo](img-readme/logo.png). The font is  inspired by the 1950s American surf culture. Works perfect for this site, becouse skateboarding was a sport created by surfers. 
     -   #### Imagery
 
     -   #### Icons
