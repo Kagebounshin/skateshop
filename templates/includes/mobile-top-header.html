@@ -35,6 +35,7 @@
                   <a href="{% url 'add_product' %}" class="dropdown-item"><i class="far fa-clipboard"></i> Product Management</a>
               {% endif %}
               <a href="{% url 'profile' %}" class="dropdown-item"><i class="fas fa-portrait"></i> Profile</a>
+              <a href="{% url 'view_wishlist' %}" class="dropdown-item"><i class="far fa-heart"></i> Wishlist</a>
               <a href="{% url 'account_logout' %}" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
           {% else %}
               <a href="{% url 'account_signup' %}" class="dropdown-item"><i class="fas fa-edit"></i> Register</a>
