@@ -7,13 +7,13 @@ html {
 }
 
 body {
-    background-color: #fff;
+    background-color: green;
     min-height: 100vh;
     padding: 0;
     margin: 0;
     font-family: 'Oswald', sans-serif;
     overflow-x: hidden;
-    color: #222831;
+    color: #222;
     scroll-behavior: smooth;
     height: calc(100vh - 164px);
 }
@@ -70,7 +70,7 @@ a.nav-link {
 }
 
 .bg-light {
-    background-color: rgb(255, 255, 255)!important;
+    background-color: #fff!important;
 }
 
 .mobile-top-header li {
@@ -380,11 +380,11 @@ a.nav-link:hover {
 }
 
 .account-container p a {
-    color: #222831;
+    color: #222;
 }
 
 .account-container a {
-    color: #222831;
+    color: #222;
     font-weight: 700;
 }
 
@@ -632,12 +632,12 @@ input[type=number] {
 
 .custom-checkbox .custom-control-label::before {
     border-radius: 0;
-    border-color: #dc3545;
+    border-color: #FF0505;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #dc3545;
-    border-color: #dc3545;
+    background-color: #FF0505;
+    border-color: #FF0505;
     border-radius: 0;
 }
 
@@ -653,7 +653,7 @@ input#id_qty_2 {
     padding-right: 0;
     background-color: #764c87;
     border: 1px solid #764c87;
-    color: white;
+    color: #fff;
 }
 
 .input-group-prepend {

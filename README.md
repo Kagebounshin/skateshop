@@ -166,6 +166,8 @@ This is an E-commerce web application, the company is fictional, and this site i
 
 - [jQuery](https://jquery.com/) 
 
+- [PostgreSQL](https://www.postgresql.org/) - Used to create relational databases
+
 - [Bootstrap](https://getbootstrap.com/) - Front-end toolkit
 
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) - The project uses Flask, which is a Python microframework. 
@@ -193,6 +195,8 @@ This is an E-commerce web application, the company is fictional, and this site i
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse) - Lighthouse was used to test the performanceof the website.
 
 - [CSS Gradient](https://cssgradient.io/) - Linear Gradient Helper
+
+- [favicon](https://favicon.io/) - Sites favicon
 ---
 
 ## Testing

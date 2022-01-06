@@ -85,9 +85,9 @@
                                     <div class="col">
                                         <p class="lead mb-0 text-left">${{ product.price }}</p>
                                         {% if product.category %}
-                                        <a href="{% url 'products' %}?category={{ product.category.name }}">
-                                            {{ product.category.friendly_name }}
-                                        </a>
+                                            <a href="{% url 'products' %}?category={{ product.category.name }}">
+                                                {{ product.category.friendly_name }}
+                                            </a>
                                         {% endif %}
                                     </div>
                                 </div>
