@@ -7,7 +7,7 @@ class Contact(models.Model):
     full_name = models.CharField(max_length=50, blank=False)
     email_address = models.EmailField(max_length=254, blank=False)
     subject = models.CharField(max_length=50, blank=False)
-    message = models.CharField(max_length=1500, blank=False)
+    message = models.TextField()
 
     def __str__(self):
         return self.full_name

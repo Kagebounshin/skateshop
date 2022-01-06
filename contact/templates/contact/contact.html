@@ -16,24 +16,49 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container account-container contact-container">
-    <div class="row">
-        <div class="col-12">
-            <h1 class="text-center uppercase">Contact</h1>
+    <div class="row mb-2">
+        <div class="col-10 offset-1 col-md-6 offset-md-3">
+            <h1 class="text-center uppercase">Contact Us</h1>
+            <p class="text-center">Get in touch by dropping us a message using the form below. We will reply to you as soon as we can. Or You can call using the phone number below.</p>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-10 offset-1 col-md-6 offset-md-3">
+        <div class="col-10 offset-1 col-md-8 offset-md-2">
             <!-- CONTACT FORM -->
-            <form method="POST" action="{% url 'contact' %}" class="form mb-2" enctype="multipart/form-data">
+            <form method="POST" action="{% url 'contact' %}" class="form" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
                     {{ field | as_crispy_field }}
                 {% endfor %}
                 <div class="text-center">
-                    <button class="add-button btn btn-md rounded-0 Uppercase" type="submit">Submit</button>
+                    <button class="add-button btn btn-md rounded-0 Uppercase " type="submit">Submit</button>
                 </div>
             </form>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 col-md-4 offset-md-2">
+            <h1 class="text-center"><i class="fas fa-phone"></i></h1>
+            <h1 class="text-center uppercase">Speak To Us</h1>
+            <p class="text-center">Dont have time to wait? Call us on: (+48) 01234 567890</p>
+        </div>
+        <div class="col-12 col-md-4">
+            <h1 class="text-center"><i class="far fa-clock"></i></h1>
+            <h1 class="text-center uppercase">Opening Hours</h1>
+            <p class="text-center">Monday to Friday: 9.30am - 3.00pm</p>
+        </div>
+    </div>
+    <div class="row mt-5 ">
+        <div class="col-10 offset-1 col-md-6 offset-md-3">
+            <h1 class="text-center uppercase">We are looking forward to hearing from you!</h1>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row mt-5 mb-5">
+        <div class="col-12">
+            <img class="w-100 img-fluid" src="{{ MEDIA_URL }}contactskate.jpg" alt="Skateboarders">
         </div>
     </div>
 </div>

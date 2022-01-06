@@ -1,5 +1,3 @@
-/* ---------------------- BACKGROUND COLORS ---------------------- */
-
 .bg-shopnow {
     background-color: #fff;
 }
@@ -23,6 +21,18 @@
     padding-right: 0px;
 }
 
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0%!important;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
 .shopnow-container {
     margin: 0 auto;
     padding-left: 0;
@@ -43,7 +53,6 @@ a#shopnow {
     padding-left: 6px;
     padding-right: 6px;
 }
-
 
 #shopnow-inner {
     position: relative;
@@ -83,6 +92,11 @@ a#shopnow {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
+}
+
+.middle:hover {
+    transition: .5s ease-in-out;
+    opacity: 1;
 }
 
 /* ---------------------- MEDIA QUERIES ---------------------- */
@@ -158,8 +172,8 @@ a#shopnow {
     }
 
     .carousel {
-        padding-right: 1rem!important;
-        padding-left: 1rem!important;
+        padding-right: .5rem!important;
+        padding-left: .5rem!important;
     }
 }
 
@@ -167,7 +181,7 @@ a#shopnow {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .hero-logo {
-        font-size: 6srem;
+        font-size: 6rem;
     }
 
     #shopnow:first-child,
@@ -205,9 +219,17 @@ a#shopnow {
     }
 }
 
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 60%!important;
+    }
+}
+
 @media (min-width: 1400px) {
     .hero-logo {
-        font-size: 10rem;
+        font-size: 8rem;
     }
     #shopnow {
         min-height: 20rem;
@@ -217,9 +239,4 @@ a#shopnow {
     .middle h1 {
         font-size: 2.5rem;
     }
-}
-
-.middle:hover {
-    transition: .5s ease-in-out;
-    opacity: 1;
 }

@@ -21,7 +21,7 @@ body {
 footer {
     background-color: #222;
     color: #fff;
-    height: 20rem;
+    min-height: 20rem;
 }
 
 .uppercase {
@@ -186,6 +186,11 @@ li.nav-item {
 
 /* ---------------------- FOOTER ---------------------- */
 
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .form-group.subscribe {
     position: relative;
     display: inline-flex;
@@ -252,7 +257,8 @@ select option[value=""] {
 
 /* ---------------------- HOVER ---------------------- */
 
-a.nav-link:hover {
+a.nav-link:hover,
+.footer-bottom a:hover {
     color: #764c87!important;
     transition: .4s ease-in-out;
     text-decoration: underline;
@@ -714,4 +720,9 @@ input#id_qty_25 {
 .contact-container {
     margin-top: 10rem;
     min-height: 70vh;
+}
+
+i.fas.fa-phone,
+i.far.fa-clock  {
+    color: #764c87;
 }

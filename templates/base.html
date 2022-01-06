@@ -54,7 +54,7 @@
         <div id="delivery-banner" class="row text-center">
             <div class="col">
               
-                <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}! <i class="fas fa-shipping-fast"></i></h4>
+                <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
             </div>
         </div>
         <!-- NAVBAR -->
@@ -127,8 +127,8 @@
                             <a href="{% url 'view_wishlist' %}" class="dropdown-item"><i class="far fa-heart"></i> Wishlist</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item"><i class="fas fa-edit"></i></i> Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item"><i class="fas fa-sign-in-alt"></i></i> Sign In</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item"><i class="fas fa-edit"></i> Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item"><i class="fas fa-sign-in-alt"></i> Sign In</a>
                             {% endif %}
                         </div>
                     </li>
@@ -204,15 +204,23 @@
             </div>
         </div>
 
-        <div class="row container-fluid footer-bottom mt-4 mx-0">
+        <div class="row container-fluid footer-bottom mt-4 mb-5 mx-0">
             <div class="col-12 col-md-4">
                 <h4 class="text-left uppercase">Customer Support</h4>
-                <a href="{% url 'contact' %}">Contact</a>
-
+                <a href="{% url 'contact' %}">Contact Us</a> <br>
+                <a href="">About</a><br>
+                {% if request.user.is_authenticated %}
+                <a href="{% url 'profile' %}">My Account</a> <br>
+                <a href="{% url 'view_wishlist' %}">My Wishlist</a>
+                {% endif %}
+                
             </div>
-            <div class="col-12 col-md-4">Company
+            <div class="col-12 col-md-4">
+                <h4 class="text-left uppercase">Contact Us</h4>
+                <p class="text-left">ADDRESS:<br><small>Something Street, Stockholm, Sweden</small></p>
+                <p class="text-left">PHONE:<br><small>(+48) 01234 567890</small></p>
+                <p class="text-left">HOURS:<br><small>Mon-Fri : 9.30am - 3.00pm</small></p>
             </div>
-            <div class="col-12 col-md-4">Contact Us</div>
         </div>
     </footer>
 
