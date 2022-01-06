@@ -139,6 +139,12 @@ This is an E-commerce web application, the company is fictional, and this site i
 
 -   ### Design
     -   #### Colour Scheme
+        - The body of this site and the navigationbar is set to have the background color of white (#ffffff). 
+        - The footer has two section, the top section has the background color of "Jet" (#333333), the lower part of the footer has the background color of "Eerie Black" (#222222).
+        - The site has four different types of CTA ("Call To Action") buttons. 
+            - The first [Button](img-readme/ctabutton1.png) has the background color of "Razzmic Berry" (#764C87), and when ["Hovered"](img-readme/ctabutton2.png) the background color eases in to "Russian Violet" (#492857).
+    <h2 class="text-center"><img src="img-readme/skateShopPalette.png"></h2>
+    
 
     -   #### Typography
         - The fonts I've used for this project are from [Google Fonts](https://fonts.google.com/). The fonts are ["Oswald"](img-readme/mainfont.png) & ["Pacifico"](img-readme/logofont.png).
