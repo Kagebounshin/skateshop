@@ -705,3 +705,13 @@ input#id_qty_25 {
     color: #fff!important;
     transition: .4s ease-in-out!important;
 }
+
+
+/* ---------------------- CONTACT.HTML ---------------------- */
+
+
+
+.contact-container {
+    margin-top: 10rem;
+    min-height: 70vh;
+}

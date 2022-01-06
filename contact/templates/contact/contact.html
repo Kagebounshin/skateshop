@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'contact/css/contact.css' %}">
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -10,5 +14,27 @@
 {% endblock %}
 
 {% block content %}
+<div class="overlay"></div>
+<div class="container account-container contact-container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center uppercase">Contact</h1>
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="col-10 offset-1 col-md-6 offset-md-3">
+            <!-- CONTACT FORM -->
+            <form method="POST" action="{% url 'contact' %}" class="form mb-2" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                    {{ field | as_crispy_field }}
+                {% endfor %}
+                <div class="text-center">
+                    <button class="add-button btn btn-md rounded-0 Uppercase" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}
