@@ -4,7 +4,10 @@ from .forms import UserContactForm
 
 
 def contact(request):
-    """ View for Contact page """
+    """ 
+    * View for Contact page
+    * For users to send a message to admin 
+    """
     if request.method == 'POST':
         form = UserContactForm(request.POST)
         if form.is_valid():
@@ -13,7 +16,8 @@ def contact(request):
             return redirect(reverse('contact'))
         else:
             messages.error(request,
-                           'Something went wrong, Please make sure that the form is valid!')
+                           'Something went wrong,\
+                            Please make sure that the form is valid!')
     else:
         form = UserContactForm()
 

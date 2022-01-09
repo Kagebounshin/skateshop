@@ -41,16 +41,6 @@
                                 {{ product.category.friendly_name }}
                             </a>
                         {% endif %}
-                        <!-- WISHLIST -->
-                        {% if user.is_authenticated %}
-                        <form class="form" method="POST" action="">
-                            {% csrf_token %}
-                            <button class="border-0 add-wishlist" id="add-wishlist-btn" type="submit" name="action">
-                                <i class="far fa-heart"></i>
-                            </button>
-                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                        </form>
-                        {% endif %}
                     </div>
                 </div>
                 <!-- PRODUCT NAME & PRICE -->

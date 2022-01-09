@@ -1,14 +1,18 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.core.exceptions import PermissionDenied
+from checkout.models import Order
 from .models import UserProfile
 from .forms import UserProfileForm
-from checkout.models import Order
 
 
 @login_required
 def profile(request):
-    """ Display Users Profile """
+    """
+    * A view to display the users profile page, form, and order.
+    * Only available & visible to logged in users.
+    """
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
@@ -17,7 +21,8 @@ def profile(request):
             form.save()
             messages.success(request, 'Profile Information Updated!')
         else:
-            messages.error(request, 'Update failed. Please ensure the form is valid.')
+            messages.error(request, 'Update failed.\
+                                     Please ensure the form is valid.')
     else:
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
@@ -32,7 +37,16 @@ def profile(request):
 
 
 def order_history(request, order_number):
+    """
+    * A view to display specific order history.
+    * Only available & visible to logged in users.
+    """
     order = get_object_or_404(Order, order_number=order_number)
+
+    if str(request.user.username) != str(order.user_profile):
+        messages.error(request, "We are ont to you! You are not permitted\
+            to do that.")
+        raise PermissionDenied()
 
     messages.info(request, (
         f'This is a past confirmation for order number {order_number}. '

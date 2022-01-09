@@ -182,7 +182,8 @@ a.nav-link:hover,
     text-transform: capitalize;
 } 
 
-.wishlist-container {
+.wishlist-container,
+.error-container {
     min-height: 70vh;
     margin-top: 10rem;
 }

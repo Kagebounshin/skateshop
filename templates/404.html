@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid error-container">
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="text-center uppercase">404 Error!</h1>
+            <h2 class="text-center mt-5 mb-5">Sorry, the page you are looking for cannot be found, Please try again! </h2>
+            <a href="{% url 'home' %}" class="shop-now-button btn btn-md uppercase"> Back To Site</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
