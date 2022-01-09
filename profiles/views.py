@@ -44,7 +44,7 @@ def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
 
     if str(request.user.username) != str(order.user_profile):
-        messages.error(request, "We are ont to you! You are not permitted\
+        messages.error(request, "We are on to you! You are not permitted\
             to do that.")
         raise PermissionDenied()
 

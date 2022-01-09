@@ -140,6 +140,47 @@
                 {% include 'products/includes/shipping.html' %}
             </div>
         </div>
+        <div class="row mt-5">
+            <div class="col-12 col-md-8 offset-md-2">
+                <h2 class="uppercase text-center mb-3">Reviews</h2>
+                <div class="reviews-container text-center">
+                    <!-- Review card -->
+                    {% for review in reviews.all %}
+                    <div class="card mt-5">
+                        <div class="card-body">
+                            <p>By {{ review.user }} on {{ review.date|date:"d-m-y" }}</p>
+                            <p class="uppercase">{{ review.review_title }}
+                            {{ review.review_rating }}/5    
+                            </p>
+                            <p class="card-text">{{ review.review }}</p>
+                        </div>
+                    </div>
+                    {% empty %}
+                    <div class="text-center my-4">
+                        <p>Nobody has yet reviewed this product from <strong class="uppercase">"{{ product.name }}"</strong> yet!</p>
+                        {% if not request.user.is_authenticated %}
+                        <p><a href="{% url 'account_signup' %}" class="">Sign Up</a>
+                        or
+                        <a href="{% url 'account_login' %}" class="">Sign In</a> to be able to review this product!</p>
+                        {% endif %}   
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-12 col-md-8 offset-md-2">
+                {% if request.user.is_authenticated %}
+                <form method="POST" action="{% url 'add_review' product.id %}">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <div class="text-center mt-3">
+                        <button class="add-button btn btn-sm rounded-0 text-uppercase" type="submit">Add Review</button>
+                    </div>
+                </form>
+                {% endif %}
+            </div>
+        </div>
     </div>
 </div>
    

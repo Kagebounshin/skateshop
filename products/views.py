@@ -3,9 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
-from .forms import ProductForm
-# Create your views here.
+from .models import Product, Category, ProductReview
+from .forms import ProductForm, ReviewForm
 
 
 def all_products(request):
@@ -35,7 +34,8 @@ def all_products(request):
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+            categories = Category.objects.filter(
+                name__in=categories)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -43,7 +43,8 @@ def all_products(request):
                 messages.error(request, "Enter a search criteria!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(
+                name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -62,12 +63,46 @@ def product_detail(request, product_id):
     """ A View to show one specific product """
 
     product = get_object_or_404(Product, pk=product_id)
-
+    form = ReviewForm()
+    reviews = ProductReview.objects.filter(product=product)
     context = {
         'product': product,
+        'form': form,
+        'reviews': reviews,
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+@login_required
+def add_review(request, product_id):
+    """ View to review a specific product """
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.product = product
+            review.user = request.user
+            review.save()
+            messages.success(request,
+                             'Your review was submitted successfully!')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to submit your review\
+                                     Please ensure your form is valid')
+    else:
+        form = ReviewForm()
+
+    template = 'products/product_detail.html'
+
+    context = {
+        'form': form,
+        'product': product,
+    }
+
+    return render(request, template, context)
 
 
 @login_required
@@ -84,7 +119,8 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add product. \
+                                     Please ensure the form is valid.')
     else:
         form = ProductForm()
 
@@ -111,7 +147,9 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to update product. \
+                            Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
