@@ -3,5 +3,11 @@
 }
 
 .contact-container {
-    min-height: 80vh;
+    margin-top: 10rem;
+    min-height: 70vh;
+}
+
+i.fas.fa-phone,
+i.far.fa-clock  {
+    color: #764c87;
 }

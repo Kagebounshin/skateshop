@@ -4,9 +4,7 @@
 
 <h2 align="center"><img src="img-readme/amIResponsive.png"></h2>
 
-The SkateShop is a place where you can assemble a skateboard of you choice, or just buy single items for you setup. 
-
-This is an E-commerce web application, the company is fictional, and this site is a assignment from Code Institute. 
+The SkateShop is a place where you can assemble a skateboard of you choice, or just buy single items for you setup. For the already experienced Skater to the more novice once. The company for this E-commerce web application is fictional, and this site is a assignment from [Code Institute](https://codeinstitute.net/). 
 
 ## Table Of Content
 1.[**UX**](#user-experience) 
@@ -70,7 +68,6 @@ This is an E-commerce web application, the company is fictional, and this site i
 ---
 
 - ### Strategy
-
     - This site will have it's focus on the already experienced skateboarder, to the more novice one. By having good product descirption and clear instructions on what you need to setup a skateboard, making it easy for the more novice user to assemble their own. Or the users will have the option to buy random gear to their setup in just a few clicks.
 ---
 
@@ -103,7 +100,8 @@ This is an E-commerce web application, the company is fictional, and this site i
 - Register, Sign In/Out
     - These pages will be clean looking, centered at the page & be easily accessible at all time. 
 - Contact 
-    - At the contact page, you will be able to send mails to the sites admin. The admin can access these emails from the admin terminal. 
+    - At the contact page, you will be able to send mails to the sites admin. See other ways to contact the sites admins, and wich time of the day they reachable. 
+    - The admin can access these emails from the admin terminal. 
  
 ---
 
@@ -156,6 +154,12 @@ This is an E-commerce web application, the company is fictional, and this site i
 
 ---
 
+## Database Setup
+
+### Schema
+---
+A relational database was used to structure this project. A relational database is a collection of data items with pre-defined relationships between them.
+
 ## Features
 
 
@@ -207,6 +211,11 @@ This is an E-commerce web application, the company is fictional, and this site i
 - [CSS Gradient](https://cssgradient.io/) - Linear Gradient Helper
 
 - [favicon](https://favicon.io/) - Sites favicon
+
+- [Coolors](https://coolors.co/) - For creating the colorpalette at the Design section of this README
+
+- [Unsplash](https://unsplash.com/s/photos/skateboarders) - Images for the homepage
+
 ---
 
 ## Testing
@@ -234,7 +243,7 @@ This is an E-commerce web application, the company is fictional, and this site i
 
 ---
 
-## Database Setup
+
 
 
 ## Deployment

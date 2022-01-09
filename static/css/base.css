@@ -1,3 +1,4 @@
+/* ---------------------- FONTS FROM GOOGLEFONTS ---------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
@@ -22,10 +23,6 @@ footer {
     background-color: #222;
     color: #fff;
     min-height: 20rem;
-}
-
-.uppercase {
-    text-transform: uppercase;
 }
 
 /* ---------------------- NAVBAR ---------------------- */
@@ -94,9 +91,6 @@ a.nav-link {
 .dropdown-menu.show {
     display: block;
 }
-.border-0 {
-    border: 0!important;
-}
 
 .dropdown-search {
     background-color: #fff!important;
@@ -156,15 +150,29 @@ li.nav-item {
     margin-left: .5rem;
 }
 
-.dropdown-menu button:hover {
-    color: #764c87;
-    transition: .5s ease-in-out;
-}
-
 .dropdown-search input[type="text"]:focus {
     border-color: none!important;
     box-shadow: none!important;
     outline: 0 none;
+}
+
+/* NAVBAR HOVER  */
+
+a.nav-link:hover,
+.footer-bottom a:hover {
+    color: #764c87!important;
+    transition: .4s ease-in-out;
+    text-decoration: underline;
+}
+
+.navbar-brand h2:hover {
+    color: #764c87!important;
+    transition: 8ms ease-in-out;
+}
+
+.dropdown-menu button:hover {
+    color: #764c87;
+    transition: .5s ease-in-out;
 }
 
 /* ---------------------- CONTAINERS ---------------------- */
@@ -179,12 +187,10 @@ li.nav-item {
     margin-top: 10rem;
 }
 
-.shopping-bag-continer,
-.details-container  {
-    min-height: 80vh;
-}
-
 /* ---------------------- FOOTER ---------------------- */
+.footer-top h4 {
+    padding-top: .9rem;
+}
 
 .footer-bottom a {
     color: #fff;
@@ -217,58 +223,6 @@ li.nav-item {
     transition: .4s ease-in-out;
 }
 
-.footer-top h4 {
-    padding-top: .9rem;
-}
-
-/* ---------------------- ADDITIONAL STYING ---------------------- */
-
-.dot {
-    color: #764c87!important;
-}
-
-.footer-top {
-    background-color: #333;
-}
-
-.overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: #fff;
-    z-index: -1;
-}
-
-select,
-select option {
-    color: #222;
-}
-
-select:invalid,
-select option[value=""] {
-    color: #6c757d!important;
-}
-
-.text-lilac {
-    color: #764c87;
-}
-
-/* ---------------------- HOVER ---------------------- */
-
-a.nav-link:hover,
-.footer-bottom a:hover {
-    color: #764c87!important;
-    transition: .4s ease-in-out;
-    text-decoration: underline;
-}
-
-.navbar-brand h2:hover {
-    color: #764c87!important;
-    /* text-shadow: -2px -1px 0px #764c87; */
-    transition: 8ms ease-in-out;
-}
 
 /* ---------------------- MEDIA QUERIES ---------------------- */
 
@@ -313,11 +267,6 @@ a.nav-link:hover,
     .arrow-up {
         right: 12px!important;
     }
-}
-
-/* Small devices (landscape phones, less than 768px) */
-
-@media (max-width: 767.98px) {
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -370,7 +319,7 @@ a.nav-link:hover,
 }
 
 /* ---------------------- ACCOUNTS ---------------------- */
-
+/* ------------- For django allauth templates ----------- */
 
 .account-header {
     margin-top: 10rem;
@@ -464,26 +413,6 @@ a.nav-link:hover,
     transition: .4s ease-in-out;
 }
 
-/* ---------------------- BAG.HTML ---------------------- */
-
-.update-link,
-.remove-item {
-    cursor: pointer!important;
-}
-
-.shopping-bag-continer {
-    padding-top: 7rem;
-}
-
-td.pb-3.align-middle.qty {
-    padding-top: 30px;
-}
-
-.shopping-bag-continer .form-control {
-    text-align: center;
-}
-
-
 /* CODE FROM https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
 
 /* Remove Arrows/Spinners */
@@ -532,8 +461,6 @@ input[type=number] {
 .toast-body .add-button {
     width: 100%;
 }
-
-
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
@@ -613,7 +540,7 @@ input[type=number] {
     text-align: right;
 }
 
-/* ---------------------- HOVER ---------------------- */
+/* BUTTON HOVER */
 
 .add-button:hover,
 .add-button:active,
@@ -632,36 +559,8 @@ input[type=number] {
     transition: .4s ease-in-out;
 }
 
-/* Product Form */
-
-.btn-file {
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-file input[type="file"] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.custom-checkbox .custom-control-label::before {
-    border-radius: 0;
-    border-color: #FF0505;
-}
-
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #FF0505;
-    border-color: #FF0505;
-    border-radius: 0;
-}
-
-
-/* ---------------------- QUANTITY SELECTOR ---------------------- */
+/* ---------------------- QUANTITY SELECTOR  ---------------------- */
+/* --------------For bag.html & product_detail.html --------------- */
 
 input#id_qty_2 {
     border: 0;
@@ -708,21 +607,47 @@ input#id_qty_25 {
 .increment-qty:hover,
 .decrement-qty:hover {
     background: #492857!important;
-    color: #fff!important;
+    color: #fff!important;                
     transition: .4s ease-in-out!important;
 }
 
-
-/* ---------------------- CONTACT.HTML ---------------------- */
-
-
-
-.contact-container {
-    margin-top: 10rem;
-    min-height: 70vh;
+/* ---------------------- ADDITIONAL STYING ---------------------- */
+.uppercase {
+    text-transform: uppercase;
 }
 
-i.fas.fa-phone,
-i.far.fa-clock  {
+.dot {
+    color: #764c87!important;
+}
+
+.footer-top {
+    background-color: #333;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #fff;
+    z-index: -1;
+}
+
+select,
+select option {
+    color: #222;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #6c757d!important;
+}
+
+.text-lilac {
     color: #764c87;
+}
+
+.border-0 {
+    border: 0!important;
 }
