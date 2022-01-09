@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Subcribe
+from .models import Subscribe
 
 
 class SubAdmin(admin.ModelAdmin):
@@ -8,4 +8,4 @@ class SubAdmin(admin.ModelAdmin):
     search_fields = ('email_address',)
 
 
-admin.site.register(Subcribe, SubAdmin)
+admin.site.register(Subscribe, SubAdmin)

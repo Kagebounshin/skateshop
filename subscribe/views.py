@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from django.conf import settings
 
-from .models import Subcribe
+from .models import Subscribe
 from .forms import SubForm
 
 

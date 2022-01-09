@@ -1,9 +1,9 @@
 from django import forms
-from .models import Subcribe
+from .models import Subscribe
 
 
 class SubForm(forms.ModelForm):
     """ For for the user to Subscribe for a Newsletter """
     class Meta:
-        model = Subcribe
+        model = Subscribe
         fields = ("email_address",)

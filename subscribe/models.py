@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Subcribe(models.Model):
+class Subscribe(models.Model):
     """ A model to save users email """
 
     email_address = models.EmailField(max_length=254, unique=True, blank=False)
