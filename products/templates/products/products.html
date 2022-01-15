@@ -13,7 +13,6 @@
     </div>
 {% endblock %}
 
-
 {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid mt-5 pt-5">
@@ -65,6 +64,7 @@
                     <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card img-card h-100">
                             {% if product.image %}
+                            <!-- IMAGES -->
                             <div class="img-container">
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="text-center card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -77,6 +77,7 @@
                                 </a>
                             </div>
                             {% endif %}
+                            <!-- NAME, PRICE CATEGORY -->
                             <div class="card-body pb-0">
                                 <p class="mb-0">{{ product.name }}</p>
                             </div>
@@ -91,6 +92,7 @@
                                         {% endif %}
                                     </div>
                                 </div>
+                                <!-- EDIT AND DELETE BUTTON FOR SUPERUSER -->
                                 <div class="row">
                                     <div class="col">
                                         {% if request.user.is_superuser %}
@@ -104,6 +106,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- LAYOUT FOR PRODUCTS -->
                     {% if forloop.counter|divisibleby:2 %}
                         <div class="col-12 d-sm-none mb-4">
                          
@@ -127,12 +130,10 @@
                 {% endfor %}
             </div>
         </div>
-
     </div>
 </div>
-
-   
 {% endblock %}
+<!-- SCRIPT FOR SORTSELECTOR -->
 {% block postloadjs %}
     {{ block.super }}
     <script src="{% static 'products/js/sort_selector.js' %}"></script>
