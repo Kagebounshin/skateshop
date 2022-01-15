@@ -45,6 +45,26 @@ a {
     border: none;
 }
 
+.review-container {
+
+}
+
+.review-button {
+    background: #764c87;
+    color: #fff;
+    min-width: 180px;
+    font-weight: 700;
+    border: 3px solid #764c87;
+}
+
+.review-button:hover,
+.review-button:active,
+.review-button:focus {
+    background: #492857;
+    color: #fff;
+    border: 3px solid #492857;
+    transition: .4s ease-in-out;
+}
 
 /* ---------------------- MEDIA QUERIES ---------------------- */
 
