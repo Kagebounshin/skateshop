@@ -19,6 +19,14 @@ a {
     max-width: 43.5px;
 }
 
+.review-form-container a {
+    text-decoration: underline;
+    color: #222;
+    font-weight: 700;
+}
+
+/* ---------------------- BUTTONS ---------------------- */
+
 .add-button {
     width: calc(100% - 123.5px);
     border: none;
@@ -33,6 +41,16 @@ a {
     width: 100%;
 }
 
+.review-button {
+    background: #764c87;
+    color: #fff;
+    min-width: 180px;
+    font-weight: 700;
+    border: 3px solid #764c87;
+}
+
+/* ---------------------- HOVER ---------------------- */
+
 .keep-shoping-button:hover,
 .keep-shoping-button:active,
 .keep-shoping-button:focus {
@@ -45,14 +63,6 @@ a {
     border: none;
 }
 
-.review-button {
-    background: #764c87;
-    color: #fff;
-    min-width: 180px;
-    font-weight: 700;
-    border: 3px solid #764c87;
-}
-
 .review-button:hover,
 .review-button:active,
 .review-button:focus {
@@ -61,6 +71,14 @@ a {
     border: 3px solid #492857;
     transition: .4s ease-in-out;
 }
+
+.review-form-container a:hover,
+.review-form-container a:active,
+.review-form-container a:focus {
+    color: #764c87;
+    transition: .4s ease-in-out;
+}
+
 
 /* ---------------------- MEDIA QUERIES ---------------------- */
 
@@ -88,5 +106,24 @@ a {
 
     .shop-now-button {
         margin-right: 1rem;
+    }
+}
+
+/* MEDIA QUERIES LANDSCAPED PHONES */
+
+@media only screen and (min-width: 279px) and (max-width: 736px) and (orientation: landscape) {
+    .details-container {
+        width: 70%;
+        margin-top: 7rem;
+    }
+    .image-container {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 823px) and (orientation: landscape) {
+    .details-container {
+        width: 70%;
+        margin-top: 7rem;
     }
 }

@@ -3,15 +3,36 @@
     padding-top: 7rem;
 }
 
-.update-link,
+.update,
 .remove-item {
     cursor: pointer!important;
 }
 
-td.pb-3.align-middle.qty {
+.pb-3.align-middle.qty {
     padding-top: 30px;
 }
 
 .shopping-bag-continer .form-control {
     text-align: center;
+}
+
+.bag-item-container {
+    display: flex;
+    position: relative;
+}
+
+.item-info {
+    padding-left: 1rem;
+}
+.update {
+    width: 100%;
+    background-color: #000;
+}
+.update-link {
+    text-decoration: none;
+}
+a.remove-item {
+    position: absolute;
+    right: 6px;
+    top: 1px;
 }

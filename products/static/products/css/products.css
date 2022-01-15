@@ -70,6 +70,11 @@
     .card {
         padding: 0!important;
     }
+
+    .product-header a,
+    .product-header h1 {
+        font-size: 2rem;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -82,5 +87,20 @@
 @media (min-width: 992px) {
     .product-header.col.text-center {
         margin-top: 5rem;
+    }
+}
+
+
+@media only screen and (min-width: 279px) and (max-width: 736px) and (orientation: landscape) {
+    .product-header a,
+    .product-header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 823px) and (orientation: landscape) {
+    .product-header a,
+    .product-header h1 {
+        font-size: 2rem;
     }
 }

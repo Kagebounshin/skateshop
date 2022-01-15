@@ -62,7 +62,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -119,7 +119,7 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'skateshop.wsgi.application'
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-turquoise-fish-a9gcw8ki.ws-eu25.gitpod.io', ]
+CSRF_TRUSTED_ORIGINS = ['https://8000-turquoise-fish-a9gcw8ki.ws-eu27.gitpod.io/', ]
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases

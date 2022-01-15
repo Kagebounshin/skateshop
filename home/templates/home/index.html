@@ -61,70 +61,75 @@
 <div class="row container shopnow-container bg-shopnow pt-3 pb-3 uppercase">
     <a href="{% url 'products' %}?category=decks" id="shopnow" class="col-6 col-sm-6 col-md-4">
         <div id="shopnow-inner">
-            <h1><img src="https://img.icons8.com/ios/100/ffffff/skateboard-without-wheels.png"/></h1>
+            <h3><img src="https://img.icons8.com/ios/100/ffffff/skateboard-without-wheels.png"/></h3>
         </div>
         <div class="middle text-white">
-            <h1 class="shopnow-header">Decks</h1>
+            <h3 class="shopnow-header">Decks</h3>
         </div>
     </a>
     <a href="{% url 'products' %}?category=trucks" id="shopnow" class="col-6 col-sm-6 col-md-4">
         <div id="shopnow-inner">
-            <h1><img src="https://img.icons8.com/ios/100/ffffff/skateboard-truck.png"/></h1>
+            <h3><img src="https://img.icons8.com/ios/100/ffffff/skateboard-truck.png"/></h3>
         </div>
         <div class="middle text-white">
-            <h1 class="shopnow-header">Trucks</h1>
+            <h3 class="shopnow-header">Trucks</h3>
         </div>
     </a>
     <a href="{% url 'products' %}?category=wheels" id="shopnow" class="col-6 col-sm-6 col-md-4">
         <div id="shopnow-inner">
-            <h1><img src="https://img.icons8.com/ios/80/ffffff/skateboard-wheel.png"/></h1>
+            <h3><img src="https://img.icons8.com/ios/80/ffffff/skateboard-wheel.png"/></h3>
         </div>
         <div class="middle text-white">
-            <h1 class="shopnow-header">Wheels</h1>
+            <h3 class="shopnow-header">Wheels</h3>
         </div>
     </a>
     <a href="{% url 'products' %}?category=bearings" id="shopnow" class="col-6 col-sm-6 col-md-4">
         <div id="shopnow-inner">
-            <h1><img src="https://img.icons8.com/dotty/80/ffffff/final-state.png"/></h1>
+            <h3><img src="https://img.icons8.com/dotty/80/ffffff/final-state.png"/></h3>
         </div>
         <div class="middle text-white">
-            <h1 class="shopnow-header">Bearings</h1>
+            <h3 class="shopnow-header">Bearings</h3>
         </div>
     </a>
     <a href="{% url 'products' %}?category=griptape" id="shopnow" class="col-6 col-sm-6 col-md-4">
         <div id="shopnow-inner">
-            <h1><img src="https://img.icons8.com/ios-filled/100/ffffff/skateboard-grip-tape.png"/></h1>
+            <h3><img src="https://img.icons8.com/ios-filled/100/ffffff/skateboard-grip-tape.png"/></h3>
         </div>
         <div class="middle text-white">
-            <h1 class="shopnow-header">Griptape</h1>
+            <h3 class="shopnow-header">Griptape</h3>
         </div>
     </a>
     <a href="{% url 'products' %}?category=misc" id="shopnow" class="col-6 col-sm-6 col-md-4">
         <div id="shopnow-inner">
-            <h1><img src="https://img.icons8.com/ios/40/ffffff/screwdriver.png"/>
+            <h3><img src="https://img.icons8.com/ios/40/ffffff/screwdriver.png"/>
                 <img src="https://img.icons8.com/windows/40/ffffff/Production-order.png" class="d-none d-sm-inline"/>
                 <br>
                 <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/40/ffffff/external-screw-industry-kiranshastry-lineal-kiranshastry.png" class="d-none d-sm-inline"/>
                 <img src="https://img.icons8.com/ios/40/ffffff/open-end-wrench.png" class="d-none d-sm-inline"/>
-            </h1>
+            </h3>
         </div>
         <div class="middle text-white">
-            <h1 class="shopnow-header">Misc</h1>
+            <h3 class="shopnow-header">Misc</h3>
         </div>
     </a>
 </div>
-<div class="container mt-3 mb-4">
-    <div class="row">
-        <div class="col">
-            <h1 class="uppercase">HELLO, New to Skateboarding?</h1>
-            <p>Dont worry we got you covered!  </p>
-        </div>
+  <!-- TEXT ONLY ON SM DEVICES -->
+<div class="row mt-5 d-sm-none">
+    <div class="col-12 col-md-6 offset-md-3 text-center">
+        <h1 class="uppercase">HELLO, New to Skateboarding?</h1>
+                <p>Dont worry we got you covered!</p>
     </div>
 </div>
-<div class="container">
+<!-- IMAGE -->
+<div class="container info-container">
     <div class="row">
         <div class="col px-1">
-            <img class="d-block w-100" src="{{ MEDIA_URL }}unsplash05.jpg" alt="Second slide">
+            <img class="d-block w-100" src="{{ MEDIA_URL }}unsplash05.jpg" alt="Kid on skateboard">
+            <!-- TEXT CENTERED AT IMAGE, SHOWN FROM LANDSCAPED PHONE AND UP -->
+            <div class="img-text p-3 d-none d-sm-block">
+                <h1 class="uppercase">HELLO, New to Skateboarding?</h1>
+                <p>Dont worry we got you covered!</p>
+            </div>
         </div>
     </div>
 </div>

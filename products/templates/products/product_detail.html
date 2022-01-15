@@ -162,7 +162,7 @@
             {% endfor %}
         </div>
         <!-- REVIEW FORM -->
-        <div class="row mt-5 mb-5">
+        <div class="row mt-5 mb-5 review-form-container">
             <div class="col-12 col-md-6 offset-md-3">
                 {% if request.user.is_authenticated %}
                 <form method="POST" action="{% url 'add_review' product.id %}">

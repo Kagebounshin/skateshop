@@ -49,16 +49,22 @@
             <p class="text-center">Monday to Friday: 9.30am - 3.00pm</p>
         </div>
     </div>
-    <div class="row mt-5 ">
+    <!-- TEXT ONLY ON SM DEVICES -->
+    <div class="row mt-5 d-sm-none">
         <div class="col-10 offset-1 col-md-6 offset-md-3">
-            <h1 class="text-center uppercase">We are looking forward to hearing from you!</h1>
+            <h1 class="text-center uppercase">We are looking forward hearing from you!</h1>
         </div>
     </div>
 </div>
-<div class="container-fluid">
-    <div class="row mt-5 mb-5">
+<!-- IMAGE -->
+<div class="container-fluid info-container">
+    <div class="row mt-5 mx-0">
         <div class="col-12">
             <img class="w-100 img-fluid" src="{{ MEDIA_URL }}contactskate.jpg" alt="Skateboarders">
+            <!-- TEXT CENTERED AT IMAGE, SHOWN FROM LANDSCAPED PHONE AND UP -->
+            <div class="img-text d-none d-sm-block p-3">
+                <h1 class="text-center uppercase">We are looking forward hearing from you!</h1>
+            </div>
         </div>
     </div>
 </div>

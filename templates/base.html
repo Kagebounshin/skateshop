@@ -126,7 +126,7 @@
                             <a href="{% url 'profile' %}" class="dropdown-item"><i class="fas fa-portrait"></i> Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item"><i class="fas fa-edit"></i> Register</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item"><i class="fas fa-edit"></i> Sign Up</a>
                             <a href="{% url 'account_login' %}" class="dropdown-item"><i class="fas fa-sign-in-alt"></i> Sign In</a>
                             {% endif %}
                         </div>
@@ -185,12 +185,18 @@
     {% block content %}
     {% endblock %}
 
+    <!-- BACK TO TOP BUTTON -->
+	<button onclick="topFunction()" id="myBtn" title="Back To Top">
+		<i class="fas fa-chevron-up"></i>
+	</button>
+    <!-- FOOTER -->
     <footer>
         <div class="row container-fluid footer-top mt-4 mx-0">
             <div class="col-12 col-lg-6 col-xl-5">
                 <h4 class="text-left uppercase">Subscribe for product news & discounts </h4>
             </div>
             <div class="col-12 col-lg-5 col-xl-5">
+                <!-- SUBSCRIBE FORM -->
                 <form action="{% url 'sub_form' %}" method="POST">
                     {% csrf_token %}
                     <div class="form-group subscribe py-2 w-100">
@@ -202,10 +208,10 @@
                 </form>
             </div>
         </div>
-
-        <div class="row container-fluid footer-bottom mt-4 mb-5 mx-0">
+        <!-- SUPPORT / CONTACT -->
+        <div class="row container-fluid footer-bottom mt-4 mx-0">
             <div class="col-12 col-md-4">
-                <h4 class="text-left uppercase">Customer Support</h4>
+                <h5 class="text-left uppercase">Customer Support</h5>
                 <a href="{% url 'contact' %}">Contact Us</a> <br>
                 <a href="">About</a><br>
                 {% if request.user.is_authenticated %}
@@ -214,21 +220,55 @@
                 
             </div>
             <div class="col-12 col-md-4">
-                <h4 class="text-left uppercase">Contact Us</h4>
+                <h5 class="text-left uppercase">Contact Us</h5>
                 <p class="text-left">ADDRESS:<br><small>Something Street, Stockholm, Sweden</small></p>
                 <p class="text-left">PHONE:<br><small>(+48) 01234 567890</small></p>
                 <p class="text-left">HOURS:<br><small>Mon-Fri : 9.30am - 3.00pm</small></p>
             </div>
-        </div>
+            <div class="col-12 col-md-4">
+                <h5 class="text-left uppercase">Visit us here</h5>
+                <ul>
+                    <li><a href="https://github.com/Kagebounshin/Kagebounshin" target="_blank" rel="noopener"
+                            aria-label="Link To GitHub">
+                            <i class="fab fa-github"></i>
+                        </a></li>
+                    <li><a href="https://se.linkedin.com/in/kristoffer-heiskanen-390739204" target="_blank"
+                            rel="noopener" aria-label="Link To LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a></li>
+                    <li><a href="https://www.instagram.com/kagebounshin/" target="_blank" rel="noopener"
+                            aria-label="Link To Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener"
+                        aria-label="Link To Pinterest">
+                        <i class="fab fa-pinterest"></i>
+                    </a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="Link To Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="row mb-3">
+                <div class="col">
+                 <small class="text-muted">© <span class="copyright"></span> Kagebounshin. All Rights Reserved. </small>
+                </div>
+            </div>
+        </div>        
     </footer>
 
     {% block postloadjs %}
+    <script src="{% static 'js/back_to_top.js' %}"></script>
     <script type="text/javascript">
-        // toast
+        // TOAST
         $('.toast').toast('show');
+        // FOR COPYRIGHT YEAR
+        $('.copyright').text(new Date().getFullYear());
 
         $(document).ready(function() {
-            // Dropdown Hover Effect
+            // DROPDOWN HOVER FOR ACCOUNT LINK IN NAVBAR
             $('.dd-hover').hover(
                 function(){
                     $(this).children('.dd-menu').slideDown('fast');
