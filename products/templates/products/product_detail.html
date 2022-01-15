@@ -84,7 +84,6 @@
                         <div class="col-12 mt-5">
                             <div class="form-group w-100">
                                 <div class="input-group">
-                                    
                             <!-- ADD TO BAG BUTTON -->
                             <input type="submit" class="add-button btn btn-sm rounded-0 text-uppercase py-2" value="Add to Bag">
                                     <div class="input-group-prepend">
@@ -140,50 +139,49 @@
                 {% include 'products/includes/shipping.html' %}
             </div>
         </div>
+        <!-- REVIEWS  -->
         <div class="row mt-5">
             <div class="col-12 col-md-8 offset-md-2">
-                <h2 class="uppercase text-center mb-3">Reviews</h2>
-                <div class="reviews-container text-center">
-                    <!-- Review card -->
-                    {% for review in reviews.all %}
-                    <div class="card mt-5">
-                        <div class="card-body">
-                            <p>By {{ review.user }} on {{ review.date|date:"d-m-y" }}</p>
-                            <p class="uppercase">{{ review.review_title }}
-                            {{ review.review_rating }}/5    
-                            </p>
-                            <p class="card-text">{{ review.review }}</p>
-                        </div>
-                    </div>
-                    {% empty %}
-                    <div class="text-center my-4">
-                        <p>Nobody has yet reviewed this product from <strong class="uppercase">"{{ product.name }}"</strong> yet!</p>
-                        {% if not request.user.is_authenticated %}
-                        <p><a href="{% url 'account_signup' %}" class="">Sign Up</a>
-                        or
-                        <a href="{% url 'account_login' %}" class="">Sign In</a> to be able to review this product!</p>
-                        {% endif %}   
-                    </div>
-                    {% endfor %}
-                </div>
+                <h5 class="uppercase text-center">User reviews</h5>
             </div>
-        </div>
-        <div class="row mt-5 mb-5">
+            {% for review in reviews.all %}
             <div class="col-12 col-md-8 offset-md-2">
+                <hr>
+            </div>
+            <div class="col-12 col-md-2 offset-md-2">
+                {{ review.review_rating }}/5
+                <p><strong>{{ review.review_title }}</strong></p> 
+                <small>By: <strong>{{ review.user }}</strong></small> <br>
+                <small>Review date: {{ review.date|date:"d-m-y" }}</small>
+            </div> 
+            <div class="col-12 col-md-6">    
+                <p class="pt-4">{{ review.review }}</p>
+            </div> 
+            {% empty %}
+            <p class="text-center">Nobody has yet reviewed this product from <strong class="uppercase">"{{ product.name }}"</strong> yet!</p>   
+            {% endfor %}
+        </div>
+        <!-- REVIEW FORM -->
+        <div class="row mt-5 mb-5">
+            <div class="col-12 col-md-6 offset-md-3">
                 {% if request.user.is_authenticated %}
                 <form method="POST" action="{% url 'add_review' product.id %}">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div class="text-center mt-3">
-                        <button class="add-button btn btn-sm rounded-0 text-uppercase" type="submit">Add Review</button>
+                        <button class="review-button btn btn-sm rounded-0 text-uppercase py-2" type="submit">Add Review</button>
                     </div>
                 </form>
+                {% endif %}
+                {% if not request.user.is_authenticated %}
+                    <p class="text-center"><a href="{% url 'account_signup' %}" class="">Sign Up</a>
+                    or
+                    <a href="{% url 'account_login' %}" class="">Sign In</a> to review the product!</p>
                 {% endif %}
             </div>
         </div>
     </div>
 </div>
-   
 {% endblock %}
 
 {% block postloadjs %}
