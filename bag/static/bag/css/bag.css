@@ -3,15 +3,6 @@
     padding-top: 7rem;
 }
 
-.update,
-.remove-item {
-    cursor: pointer!important;
-}
-
-.pb-3.align-middle.qty {
-    padding-top: 30px;
-}
-
 .shopping-bag-continer .form-control {
     text-align: center;
 }
@@ -21,16 +12,28 @@
     position: relative;
 }
 
+.pb-3.align-middle.qty {
+    padding-top: 30px;
+}
+
+.update,
+.remove-item {
+    cursor: pointer!important;
+}
+
 .item-info {
     padding-left: 1rem;
 }
+
 .update {
     width: 100%;
     background-color: #000;
 }
+
 .update-link {
     text-decoration: none;
 }
+
 a.remove-item {
     position: absolute;
     right: 6px;

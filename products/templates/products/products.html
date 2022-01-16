@@ -2,15 +2,15 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+<link rel="stylesheet" href="{% static 'products/css/products.css' %}">
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -20,13 +20,13 @@
         <!-- DISPLAY CURRENT CATEGORY -->
         <div class="product-header col text-center">
             {% if current_categories %}
-                {% for c in current_categories %}
-                <a class="current-category" href="{% url 'products' %}?category={{ c.name }}">
-                    <span class="uppercase">{{ c.friendly_name }}</span>
-                </a>
-                {% endfor %}
+            {% for c in current_categories %}
+            <a class="current-category" href="{% url 'products' %}?category={{ c.name }}">
+                <span class="uppercase">{{ c.friendly_name }}</span>
+            </a>
+            {% endfor %}
             {% else %}
-                <h1 class="uppercase">Products</h1>
+            <h1 class="uppercase">Products</h1>
             {% endif %}
         </div>
     </div>
@@ -36,97 +36,110 @@
             <div class="row mt-1 mb-2">
                 <div class="col-12 my-auto mx-auto d-flex justify-content-center">
                     <div class="sort-select-wrapper">
-                        <select id="sort-selector" class="text-center custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
-                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
-                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
-                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
-                            <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
-                            <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
-                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
-                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
-                            <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
-                            <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                        <select id="sort-selector"
+                            class="text-center custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
+                            </option>
+                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
+                                (low to high)</option>
+                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price
+                                (high to low)</option>
+                            <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>
+                                Rating (low to high)</option>
+                            <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>
+                                Rating (high to low)</option>
+                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name
+                                (A-Z)</option>
+                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name
+                                (Z-A)</option>
+                            <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>
+                                Category (A-Z)</option>
+                            <option value="category_desc"
+                                {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
                         </select>
                     </div>
                 </div>
                 <div class="col-12">
                     <p class="text-muted mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
-                            <span class="small"><a href="{% url 'products' %}">All Produts</a> | </span>
+                        <span class="small"><a href="{% url 'products' %}">All Produts</a> | </span>
                         {% endif %}
-                        {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                        {{ products|length }} Products{% if search_term %} found for
+                        <strong>"{{ search_term }}"</strong>{% endif %}
                     </p>
                 </div>
             </div>
             <!-- PRODUCTS -->
             <div class="row">
                 {% for product in products %}
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                        <div class="card img-card h-100">
-                            {% if product.image %}
-                            <!-- IMAGES -->
-                            <div class="img-container">
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="text-center card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                </a>
-                            </div>  
-                            {% else %}
-                            <div class="img-container">
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                                </a>
-                            </div>
-                            {% endif %}
-                            <!-- NAME, PRICE CATEGORY -->
-                            <div class="card-body pb-0">
-                                <p class="mb-0">{{ product.name }}</p>
-                            </div>
-                            <div class="card-footer pt-0 border-0 text-left">
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="lead mb-0 text-left">${{ product.price }}</p>
-                                        {% if product.category %}
-                                            <a href="{% url 'products' %}?category={{ product.category.name }}">
-                                                {{ product.category.friendly_name }}
-                                            </a>
-                                        {% endif %}
-                                    </div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card img-card h-100">
+                        {% if product.image %}
+                        <!-- IMAGES -->
+                        <div class="img-container">
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="text-center card-img-top img-fluid" src="{{ product.image.url }}"
+                                    alt="{{ product.name }}">
+                            </a>
+                        </div>
+                        {% else %}
+                        <div class="img-container">
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                    alt="{{ product.name }}">
+                            </a>
+                        </div>
+                        {% endif %}
+                        <!-- NAME, PRICE CATEGORY -->
+                        <div class="card-body pb-0">
+                            <p class="mb-0">{{ product.name }}</p>
+                        </div>
+                        <div class="card-footer pt-0 border-0 text-left">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="lead mb-0 text-left">${{ product.price }}</p>
+                                    {% if product.category %}
+                                    <a href="{% url 'products' %}?category={{ product.category.name }}">
+                                        {{ product.category.friendly_name }}
+                                    </a>
+                                    {% endif %}
                                 </div>
-                                <!-- EDIT AND DELETE BUTTON FOR SUPERUSER -->
-                                <div class="row">
-                                    <div class="col">
-                                        {% if request.user.is_superuser %}
-                                        <small class="ml-3">
-                                            <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                                        </small>
-                                        {% endif %}
-                                    </div>
+                            </div>
+                            <!-- EDIT AND DELETE BUTTON FOR SUPERUSER -->
+                            <div class="row">
+                                <div class="col">
+                                    {% if request.user.is_superuser %}
+                                    <small class="ml-3">
+                                        <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                    </small>
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- LAYOUT FOR PRODUCTS -->
-                    {% if forloop.counter|divisibleby:2 %}
-                        <div class="col-12 d-sm-none mb-4">
-                         
-                        </div>
-                    {% endif %}                        
-                    {% if forloop.counter|divisibleby:2 %}
-                        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-4">
-                         
-                        </div>
-                    {% endif %}
-                    {% if forloop.counter|divisibleby:3 %}
-                        <div class="col-12 d-none d-lg-block d-xl-none mb-4">
-                         
-                        </div>
-                    {% endif %}
-                    {% if forloop.counter|divisibleby:4 %}
-                        <div class="col-12 d-none d-xl-block mb-4">
-                            
-                        </div>
-                    {% endif %}
+                </div>
+                <!-- LAYOUT FOR PRODUCTS -->
+                {% if forloop.counter|divisibleby:2 %}
+                <div class="col-12 d-sm-none mb-4">
+
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:2 %}
+                <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-4">
+
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:3 %}
+                <div class="col-12 d-none d-lg-block d-xl-none mb-4">
+
+                </div>
+                {% endif %}
+                {% if forloop.counter|divisibleby:4 %}
+                <div class="col-12 d-none d-xl-block mb-4">
+
+                </div>
+                {% endif %}
                 {% endfor %}
             </div>
         </div>
@@ -135,6 +148,6 @@
 {% endblock %}
 <!-- SCRIPT FOR SORTSELECTOR -->
 {% block postloadjs %}
-    {{ block.super }}
-    <script src="{% static 'products/js/sort_selector.js' %}"></script>
+{{ block.super }}
+<script src="{% static 'products/js/sort_selector.js' %}"></script>
 {% endblock %}

@@ -2,8 +2,6 @@ from django.shortcuts import render, redirect, reverse, HttpResponse
 from django.contrib import messages
 from products.models import Product, Category
 
-# Create your views here.
-
 
 def view_bag(request):
     """ View for rendering the bag content """
@@ -45,7 +43,7 @@ def add_to_bag(request, item_id):
 
 
 def adjust_bag(request, item_id):
-    """Adjust the quantity of the specified product to the specified amount"""
+    """ Adjust the quantity of an item """
 
     product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -76,7 +74,7 @@ def adjust_bag(request, item_id):
 
 
 def remove_from_bag(request, item_id):
-    """Remove the item from the shopping bag"""
+    """ Remove the item from the shopping bag """
 
     try:
         product = Product.objects.get(pk=item_id)

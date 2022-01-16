@@ -1,3 +1,4 @@
+// LOGIC FOR THE SORT SELECTOR
 $('#sort-selector').change(function() {
     var selector = $(this);
     var currentUrl = new URL(window.location);

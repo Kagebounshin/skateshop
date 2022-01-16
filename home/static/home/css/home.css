@@ -1,5 +1,3 @@
-
-
 /* ---------------------- HERO SECTION ---------------------- */
 
 .hero-container h1 {
@@ -182,7 +180,6 @@ a#shopnow {
     }
 }
 
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .hero-logo {
@@ -223,7 +220,6 @@ a#shopnow {
         min-height: 15rem;
     }
 }
-
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {

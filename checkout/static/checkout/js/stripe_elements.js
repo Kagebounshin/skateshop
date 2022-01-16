@@ -27,7 +27,7 @@ var style = {
 var card = elements.create('card', {style: style});
 card.mount('#card-element');
 
-// Handle realtime validation errors on the card element
+// HANDLE REALTIME VALIDATION ERRORS ON THE CARD ELEMENT
 card.addEventListener('change', function (event) {
     var errorDiv = document.getElementById('card-errors');
     if (event.error) {
@@ -43,7 +43,7 @@ card.addEventListener('change', function (event) {
     }
 });
 
-// Handle form submit
+// HANDLE FORM SUBMIT
 var form = document.getElementById('payment-form');
 
 form.addEventListener('submit', function(ev) {

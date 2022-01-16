@@ -3,7 +3,9 @@ from django.contrib.auth.models import User
 
 
 class Category(models.Model):
-
+    """
+    Each Category for this shop is saved with these details.
+    """
     class Meta:
         verbose_name_plural = 'Categories'
 
@@ -18,6 +20,9 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    """
+    Each product for sale in the shop is saved with these details.
+    """
     category = models.ForeignKey(
         'Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)

@@ -2,11 +2,13 @@
 {% load static %}
 
 {% block content %}
+<!-- 404 ERROR PAGE -->
 <div class="container-fluid error-container">
     <div class="row">
         <div class="col text-center">
             <h1 class="text-center uppercase">404 Error!</h1>
             <h2 class="text-center mt-5 mb-5">Sorry, the page you are looking for cannot be found, Please try again! </h2>
+            <!-- BACK TO SITE BUTTON -->
             <a href="{% url 'home' %}" class="shop-now-button btn btn-md uppercase">Back To Site</a>
         </div>
     </div>

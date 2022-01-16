@@ -2,15 +2,15 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'products/css/product_detail.css' %}">
+<link rel="stylesheet" href="{% static 'products/css/product_detail.css' %}">
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -21,13 +21,13 @@
             <!-- PRODUCT IMAGE -->
             <div class="image-container my-5">
                 {% if product.image %}
-                    <a href="{{ product.image.url }}" target="_blank">
-                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                    </a>
-                    {% else %}
-                    <a href="">
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                    </a>
+                <a href="{{ product.image.url }}" target="_blank">
+                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                </a>
                 {% endif %}
             </div>
         </div>
@@ -37,9 +37,9 @@
                     <div class="col-12 d-flex justify-content-between">
                         <!-- CURRENT CATEGORY -->
                         {% if product.category %}
-                            <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
-                                {{ product.category.friendly_name }}
-                            </a>
+                        <a class="text-black" href="{% url 'products' %}?category={{ product.category.name }}">
+                            {{ product.category.friendly_name }}
+                        </a>
                         {% endif %}
                     </div>
                 </div>
@@ -47,13 +47,13 @@
                 <h1 class="mb-0 uppercase">{{ product.name }}</h1>
                 <p class="mb-0 text-left price">${{ product.price }}</p>
                 <!-- SCROLL TO DETAILS ON LG AND UP -->
-                <a class="text-black" href="#details-section"><i class="fas fa-chevron-down"></i> Details</a>   
+                <a class="text-black" href="#details-section"><i class="fas fa-chevron-down"></i> Details</a>
                 <!-- DISPLAY IF ITEM WILL GIVE FREE DELIVERY -->
                 <div class="row">
                     <div class="col">
                         {% if request.user.is_superuser %}
                         <small class="ml-3">
-                            <a class="text-black" href="{% url 'edit_product' product.id %}">Edit</a> | 
+                            <a class="text-black" href="{% url 'edit_product' product.id %}">Edit</a> |
                             <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                         </small>
                         {% endif %}
@@ -69,37 +69,38 @@
                     {% csrf_token %}
                     <div class="form-row">
                         {% with product.has_sizes as s %}
-                            {% if s %}
-                                <div class="col-12">
-                                    <p><strong>Size:</strong></p>
-                                    <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
-                                        <option value="xs">XS</option>
-                                        <option value="s">S</option>
-                                        <option value="m" selected>M</option>
-                                        <option value="l">L</option>
-                                        <option value="xl">XL</option>
-                                    </select>
-                                </div>
-                            {% endif %}
+                        {% if s %}
+                        <div class="col-12">
+                            <p><strong>Size:</strong></p>
+                            <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m" selected>M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                        </div>
+                        {% endif %}
                         <div class="col-12 mt-5">
                             <div class="form-group w-100">
                                 <div class="input-group">
-                            <!-- ADD TO BAG BUTTON -->
-                            <input type="submit" class="add-button btn btn-sm rounded-0 text-uppercase py-2" value="Add to Bag">
+                                    <!-- ADD TO BAG BUTTON -->
+                                    <input type="submit" class="add-button btn btn-sm rounded-0 text-uppercase py-2"
+                                        value="Add to Bag">
                                     <div class="input-group-prepend">
-                                        <button class="decrement-qty btn rounded-0" 
-                                            data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                        <button class="decrement-qty btn rounded-0" data-item_id="{{ product.id }}"
+                                            id="decrement-qty_{{ product.id }}">
                                             <span class="icon">
                                                 <i class="fas fa-minus"></i>
                                             </span>
                                         </button>
                                     </div>
-                                        <input class="form-control qty_input text-center" type="number" 
-                                            name="quantity" value="1" min="1" max="99" 
-                                            data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                    <input class="form-control qty_input text-center" type="number" name="quantity"
+                                        value="1" min="1" max="99" data-item_id="{{ product.id }}"
+                                        id="id_qty_{{ product.id }}">
                                     <div class="input-group-append">
-                                        <button class="increment-qty btn rounded-0"
-                                            data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                        <button class="increment-qty btn rounded-0" data-item_id="{{ product.id }}"
+                                            id="increment-qty_{{ product.id }}">
                                             <span class="icon">
                                                 <i class="fas fa-plus"></i>
                                             </span>
@@ -150,15 +151,16 @@
             </div>
             <div class="col-12 col-md-2 offset-md-2">
                 {{ review.review_rating }}/5
-                <p><strong>{{ review.review_title }}</strong></p> 
+                <p><strong>{{ review.review_title }}</strong></p>
                 <small>By: <strong>{{ review.user }}</strong></small> <br>
                 <small>Review date: {{ review.date|date:"d-m-y" }}</small>
-            </div> 
-            <div class="col-12 col-md-6">    
+            </div>
+            <div class="col-12 col-md-6">
                 <p class="pt-4">{{ review.review }}</p>
-            </div> 
+            </div>
             {% empty %}
-            <p class="text-center">Nobody has yet reviewed this product from <strong class="uppercase">"{{ product.name }}"</strong> yet!</p>   
+            <p class="text-center">Nobody has yet reviewed this product from <strong
+                    class="uppercase">"{{ product.name }}"</strong> yet!</p>
             {% endfor %}
         </div>
         <!-- REVIEW FORM -->
@@ -169,12 +171,13 @@
                     {% csrf_token %}
                     {{ form|crispy }}
                     <div class="text-center mt-3">
-                        <button class="review-button btn btn-sm rounded-0 text-uppercase py-2" type="submit">Add Review</button>
+                        <button class="review-button btn btn-sm rounded-0 text-uppercase py-2" type="submit">Add
+                            Review</button>
                     </div>
                 </form>
                 {% endif %}
                 {% if not request.user.is_authenticated %}
-                    <p class="text-center"><a href="{% url 'account_signup' %}" class="">Sign Up</a>
+                <p class="text-center"><a href="{% url 'account_signup' %}" class="">Sign Up</a>
                     or
                     <a href="{% url 'account_login' %}" class="">Sign In</a> to review the product!</p>
                 {% endif %}

@@ -2,11 +2,13 @@
 {% load static %}
 
 {% block content %}
+<!-- 500 ERROR PAGE -->
 <div class="container-fluid error-container">
     <div class="row">
         <div class="col text-center">
             <h1 class="text-center uppercase">500 Error!</h1>
             <h2 class="text-center mt-5 mb-5">Sorry, but there was an internal server error. This was our fault! </h2>
+            <!-- BACK TO SITE BUTTON -->
             <a href="{% url 'home' %}" class="shop-now-button btn btn-md uppercase">Back To Site</a>
         </div>
     </div>

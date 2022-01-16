@@ -9,6 +9,9 @@ from profiles.models import UserProfile
 
 
 class Order(models.Model):
+    """
+    For saving order details form user purchases.
+    """
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                      null=True, blank=True,
@@ -47,7 +50,8 @@ class Order(models.Model):
         self.order_total = self.lineitems.aggregate(Sum(
             'lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
-            self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PRECENTAGE / 100
+            self.delivery_cost = (
+                self.order_total * settings.STANDARD_DELIVERY_PRECENTAGE / 100)
         else:
             self.delivery_cost = 0
         self.grand_total = self.order_total + self.delivery_cost
@@ -67,6 +71,10 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
+    """
+    # Each unique product ordered in the "Order"
+    # model above is saved to the database as an Order Line Item.
+    """
     order = models.ForeignKey(
         Order, null=False, blank=False,
         on_delete=models.CASCADE, related_name='lineitems')

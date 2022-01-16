@@ -4,9 +4,9 @@ from .forms import UserContactForm
 
 
 def contact(request):
-    """ 
+    """
     * View for Contact page
-    * For users to send a message to admin 
+    * For users to send a message to admin
     """
     if request.method == 'POST':
         form = UserContactForm(request.POST)
