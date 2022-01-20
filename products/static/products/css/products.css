@@ -15,6 +15,11 @@
     padding: 1rem;
 }
 
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
 .img-card {
     border: #222 solid 1px;
 }

@@ -1,10 +1,10 @@
 <!-- PRODUCT DETAILS -->
-<h4 class="uppercase">Details</h4>
+<h2 class="uppercase">Details</h2>
 <hr>
 {{ product.description }} <br>
 <small class="text-muted"> Product SKU: {{ product.sku }}</small> <br>
 {% if product.rating %}
-<small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+<small class="text-muted"><i class="fas fa-star mr-1"></i> {{ product.rating }} / 5</small>
 {% else %}
 <small class="text-muted">No Rating</small>
 {% endif %}

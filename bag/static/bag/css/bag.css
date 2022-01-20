@@ -39,3 +39,8 @@ a.remove-item {
     right: 6px;
     top: 1px;
 }
+
+
+.grand-total {
+    font-size: 1.5rem;
+}

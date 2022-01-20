@@ -89,18 +89,18 @@
                                         value="Add to Bag">
                                     <div class="input-group-prepend">
                                         <button class="decrement-qty btn rounded-0" data-item_id="{{ product.id }}"
-                                            id="decrement-qty_{{ product.id }}">
+                                            id="decrement-qty_{{ product.id }}" aria-label="decrement quantity button">
                                             <span class="icon">
                                                 <i class="fas fa-minus"></i>
                                             </span>
                                         </button>
                                     </div>
                                     <input class="form-control qty_input text-center" type="number" name="quantity"
-                                        value="1" min="1" max="99" data-item_id="{{ product.id }}"
-                                        id="id_qty_{{ product.id }}">
+                                        value="1" min="1" max="99" data-item_id="{{ product.id }} "
+                                        id="id_qty_{{ product.id }}" aria-label="quantity input">
                                     <div class="input-group-append">
                                         <button class="increment-qty btn rounded-0" data-item_id="{{ product.id }}"
-                                            id="increment-qty_{{ product.id }}">
+                                            id="increment-qty_{{ product.id }}" aria-label="increment quantity button">
                                             <span class="icon">
                                                 <i class="fas fa-plus"></i>
                                             </span>
@@ -143,7 +143,7 @@
         <!-- REVIEWS  -->
         <div class="row mt-5">
             <div class="col-12 col-md-8 offset-md-2">
-                <h5 class="uppercase text-center">User reviews</h5>
+                <h3 class="uppercase text-center">User reviews</h3>
             </div>
             {% for review in reviews.all %}
             <div class="col-12 col-md-8 offset-md-2">
@@ -155,7 +155,7 @@
                 <small>By: <strong>{{ review.user }}</strong></small> <br>
                 <small>Review date: {{ review.date|date:"d-m-y" }}</small>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 review-container">
                 <p class="pt-4">{{ review.review }}</p>
             </div>
             {% empty %}

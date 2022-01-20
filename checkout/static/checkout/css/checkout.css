@@ -1,3 +1,7 @@
+.checkout-container {
+    min-height: 70vh;
+}
+
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
@@ -62,4 +66,15 @@
     justify-content: center;
     margin: 0;
     height: 100%;
+}
+
+.text-info {
+    color: #222!important;
+}
+
+.text-info:hover,
+.text-info:active,
+.text-info:focus {
+    color: #764c87!important;
+    transition: .4s ease-in-out;
 }

@@ -182,7 +182,6 @@ a.nav-link:hover,
     text-transform: capitalize;
 } 
 
-.wishlist-container,
 .error-container {
     min-height: 70vh;
     margin-top: 10rem;
@@ -191,6 +190,15 @@ a.nav-link:hover,
 .info-container {
     position: relative;
     text-align: center;
+}
+
+.info-container img {
+    width: 100%;
+    height: auto;
+}
+
+.info-container p {
+    font-size: 1.5rem;
 }
 
 .info-container .img-text {
@@ -203,12 +211,17 @@ a.nav-link:hover,
 
 /* ---------------------- FOOTER ---------------------- */
 
-.footer-top h4 {
-    padding-top: .9rem;
+.sub-header {
+    padding-top: .6rem;
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+    font-weight: 500;
 }
 
-.footer-bottom h5 {
+.support-header {
+    font-weight: 500;
     text-decoration: underline;
+    font-size: 1.2rem;
 }
 
 .footer-bottom a {
@@ -302,7 +315,7 @@ a.nav-link:hover,
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { 
-    .footer-bottom h5 {
+    .support-header {
         padding-top: 1rem;
     }
 
@@ -312,6 +325,11 @@ a.nav-link:hover,
 
     .footer-bottom p:last-child {
         margin-bottom: 0rem!important;
+    }
+
+    .footer-bottom i {
+        font-size: 2rem;
+        padding-right: 1rem;
     }
 }
 
@@ -602,15 +620,6 @@ input[type=number] {
     border: 3px solid #764c87;
 }
 
-.add-wishlist {
-    background-color: inherit;
-}
-
-.add-wishlist i {
-    font-size: 1.5rem;
-    text-align: right;
-}
-
 /* BUTTON HOVER */
 
 .add-button:hover,
@@ -767,6 +776,8 @@ select option[value=""] {
     animation: fadeIn 1s ease-in-out;
     animation-iteration-count: 1;
 }
+
 #myBtn i {
     padding-bottom: .5rem;
 }
+
