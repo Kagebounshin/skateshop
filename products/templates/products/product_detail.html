@@ -48,7 +48,6 @@
                 <p class="mb-0 text-left price">${{ product.price }}</p>
                 <!-- SCROLL TO DETAILS ON LG AND UP -->
                 <a class="text-black" href="#details-section"><i class="fas fa-chevron-down"></i> Details</a>
-                <!-- DISPLAY IF ITEM WILL GIVE FREE DELIVERY -->
                 <div class="row">
                     <div class="col">
                         {% if request.user.is_superuser %}
@@ -59,6 +58,7 @@
                         {% endif %}
                     </div>
                 </div>
+                <!-- DISPLAY IF ITEM WILL GIVE FREE DELIVERY -->
                 {% if product.price > 50 %}
                 <hr>
                 <p class="text-center text-lilac">This item qualifies for FREE DELIVERY!</p>

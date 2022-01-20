@@ -214,8 +214,8 @@ a.nav-link:hover,
 .sub-header {
     padding-top: .6rem;
     font-size: 1.5rem;
-    margin-bottom: 0rem;
     font-weight: 500;
+    margin-bottom: 0rem;
 }
 
 .support-header {
@@ -292,8 +292,14 @@ a.nav-link:hover,
     .arrow-up {
         right: 12px!important;
     }
+
     .subscribe-button {
         min-width: unset;
+    }
+
+    .footer-bottom i {
+        font-size: 1.5rem;
+        margin-right: .4rem;
     }
 }
 

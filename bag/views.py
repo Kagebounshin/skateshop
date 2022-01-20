@@ -5,7 +5,13 @@ from products.models import Product, Category
 
 def view_bag(request):
     """ View for rendering the bag content """
-    return render(request, 'bag/bag.html')
+    template = 'bag/bag.html'
+
+    context = {
+        'on_bag_page': True
+    }
+
+    return render(request, template, context)
 
 
 def add_to_bag(request, item_id):

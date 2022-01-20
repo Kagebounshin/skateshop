@@ -28,7 +28,8 @@ def sub_form(request):
     template = 'home/index.html'
 
     context = {
-        'form': form
+        'form': form,
+        'on_sub_page': True,
     }
 
     return render(request, template, context)

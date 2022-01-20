@@ -24,7 +24,8 @@ def contact(request):
     template = 'contact/contact.html'
 
     context = {
-        'form': form
+        'form': form,
+        'on_contact_page': True,
     }
 
     return render(request, template, context)

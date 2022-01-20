@@ -29,16 +29,16 @@
             <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
-                {% if field.name != 'image' %}
-                {{ field | as_crispy_field }}
-                {% else %}
-                {{ field }}
-                {% endif %}
+                    {% if field.name != 'image' %}
+                        {{ field | as_crispy_field }}
+                    {% else %}
+                        {{ field }}
+                    {% endif %}
                 {% endfor %}
                 <div class="text-right">
                     <!-- ADD BUTTON -->
-                    <a class="btn btn-md rounded-0" href="{% url 'products' %}">Cancel</a>
-                    <button class="btn btn-md rounded-0" type="submit">Add Product</button>
+                    <button class="btn btn-md rounded-0 account-secoundary-btn" type="submit">Add Product</button>
+                    <a class="btn btn-md rounded-0 remove-button" href="{% url 'products' %}">Cancel</a> 
                 </div>
             </form>
         </div>
