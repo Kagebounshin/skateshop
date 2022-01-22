@@ -1,3 +1,4 @@
+// FOR DOTS ON FIRST SLIDE OF THE CAROUSEL!
 $(document).ready(function () {
     // DOT HOVER FUNCTION
     $('.dot1').hover(
