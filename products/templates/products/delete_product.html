@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'products/css/add_edit_product.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container managment-header">
+    <div class="row">
+        <div class="col-12 col-md-6 offset-md-3">
+            <h1 class="logo-font mb-4 uppercase">Delete Product</h1>
+            <p class="text-black">Are you certain you want to delete the product <strong class="uppercase">"{{product.name}}"</strong>? This action is irreversible.
+            </p>
+        </div>
+    </div>
+    <!-- ADD PRODUCT -->
+    <div class="row add-edit-container">
+        <div class="col-12 col-md-6 offset-md-3 mt-5">
+            <form method="POST" class="text-align-center" action="{% url 'delete_product' product.id %}">
+                {% csrf_token %}
+                <a class="btn btn-md rounded-0 account-secoundary-btn" href="{% url 'products' %}">No, Cancel</a>
+                <button type="submit" class="btn btn-md rounded-0 remove-button">Yes, Delete it!</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

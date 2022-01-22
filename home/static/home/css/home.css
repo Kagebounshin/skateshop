@@ -79,9 +79,7 @@
 }
 
 .dot-text a:hover, 
-.dot-text2 a:hover,
-.dot1:hover,
-.dot2:hover {
+.dot-text2 a:hover{
     color: #764c87;
     transition: .5s ease-in-out;
 }

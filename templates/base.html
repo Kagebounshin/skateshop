@@ -8,10 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-		content="The SkateShop, Get the latest skateboarding gear right here!">
-	<meta name="keywords" content="skate, skateboard, sk8, truck, skater">
-	<meta name="author" content="Kristoffer Heiskanen">
+    <meta name="description" content="The SkateShop, Get the latest skateboarding gear right here!">
+    <meta name="keywords" content="skate, skateboard, sk8, truck, skater">
+    <meta name="author" content="Kristoffer Heiskanen">
     {% endblock %}
 
     {% block extra_meta %}
@@ -94,10 +93,10 @@
             </div>
             <div class="col-12 col-lg-3 my-auto text-right search-container">
                 <ul class="list-inline list-unstyled my-0">
-                     <!-- DROPDOWN ACCOUNT  -->
-                     <li class="list-inline-item dropdown dd-hover">
-                        <a class="nav-link" href="#" id="desktop-user-options" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
+                    <!-- DROPDOWN ACCOUNT  -->
+                    <li class="list-inline-item dropdown dd-hover">
+                        <a class="nav-link" href="#" id="desktop-user-options" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
                             ACCOUNT
                         </a>
                         <div class="dropdown-menu border-0 dd-menu" aria-labelledby="desktop-user-options">
@@ -175,17 +174,17 @@
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
-            {% with message.level as level %}
-                {% if level == 40 %}
-                    {% include 'includes/toasts/toast_error.html' %}
-                {% elif level == 30 %}
-                    {% include 'includes/toasts/toast_warning.html' %}
-                {% elif level == 25 %}
-                    {% include 'includes/toasts/toast_success.html' %}
-                {% else %}
-                    {% include 'includes/toasts/toast_info.html' %}
-                {% endif %}
-            {% endwith %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
         {% endfor %}
     </div>
     {% endif %}
@@ -279,7 +278,6 @@
         $('.toast').toast('show');
         // FOR COPYRIGHT YEAR
         $('.copyright').text(new Date().getFullYear());
-
         $(document).ready(function () {
             // DROPDOWN HOVER FOR ACCOUNT LINK IN NAVBAR
             $('.dd-hover').hover(
