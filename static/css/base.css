@@ -13,7 +13,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Oswald', sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden!important;
     color: #222;
     scroll-behavior: smooth;
     height: calc(100vh - 164px);
@@ -36,16 +36,12 @@ footer {
     box-shadow: 0px 7px 8px -6px rgba(0,0,0,0.79);
 }
 
-#mobile-nav hr {
-    margin-bottom: 0px;
-}
-
-#mobile-nav hr:last-child {
-    margin-bottom: 16px;
-}
-
 #mobile-nav .nav-item:not(.nav-item:first-child) {
     text-transform: uppercase;
+}
+
+#mobile-nav .nav-item:last-child {
+    padding-bottom: 1rem;
 }
 
 a.nav-link {
@@ -130,7 +126,7 @@ a.nav-link {
 }
 
 a.nav-link.main-logo-link.navbar-brand {
-    padding-top: 1.5rem;
+    padding-top: 1.6rem;
 }
 
 .main-nav-logo {
@@ -298,8 +294,16 @@ a.nav-link:hover,
     }
 
     .footer-bottom i {
-        font-size: 1.5rem;
-        margin-right: .4rem;
+        font-size: 1.4rem;
+        margin-right: .2rem;
+    }
+
+    #main-nav a.nav-link {
+        text-align: center;
+    }
+
+    .mobile-top-header {
+        margin-right: 1rem;
     }
 }
 
@@ -343,11 +347,15 @@ a.nav-link:hover,
 @media (max-width: 991.98px) {
     #main-nav a.nav-link {
         font-size: 1.5rem;
-        padding-top: 1.4rem;
+        padding-top: 1rem;
     }
 
     .footer-top {
         padding-bottom: .8rem;
+    }
+
+    a.nav-link.main-logo-link.navbar-brand {
+        padding-top: 1rem;
     }
 }
 
@@ -758,7 +766,6 @@ select option[value=""] {
     }
 }
 
-
 /* ---------------------- BORROWED CODE ---------------------- */
 
 /* Code borrowed from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top */
@@ -786,4 +793,3 @@ select option[value=""] {
 #myBtn i {
     padding-bottom: .5rem;
 }
-

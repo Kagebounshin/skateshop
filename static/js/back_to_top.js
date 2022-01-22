@@ -1,4 +1,4 @@
-    // Code borrowed from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top with some modifications
+// Code borrowed from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top with some modifications
 
 //Get the button
 var mybutton = document.getElementById("myBtn");

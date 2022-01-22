@@ -35,6 +35,54 @@
     padding-bottom: 1.25rem;
     color: #fff;
     text-align: center;
+    width: 100%;
+}
+
+.dot1,
+.dot2 {
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.dot1 {
+    position: relative;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot2 {
+    position: relative;
+    top: 75%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.dot-text,
+.dot-text2 {
+    position: absolute;
+    padding: 1rem;
+    width: 10rem;
+    text-align: left!important;
+    background-color: rgba(255, 255, 255, 0.897);
+    color: #222;
+    border-radius: 2%;
+    display: none;
+}
+
+.dot-text a,
+.dot-text2 a {
+    color: #222;
+    font-weight: 700;
+}
+
+
+.dot-text a:hover, 
+.dot-text2 a:hover {
+    color: #764c87;
+    transition: .5s ease-in-out;
 }
 
 /* ---------------------- SHOPNOW SECTION ---------------------- */
@@ -112,7 +160,6 @@ a.shopnow {
 }
 
 
-
 /* ---------------------- HIGHLY RATED PRODUCTS ---------------------- */
 
 .rated-container {
@@ -167,12 +214,35 @@ a.shopnow {
     box-shadow: none!important;
 }
 
+.rated-products .card-body p:first-child, 
+.rated-products .card-body p:last-child {
+    font-size: .7rem;
+}
+
+.rated-products i {
+    color: #764c87;
+}
+
 /* ---------------------- MEDIA QUERIES ---------------------- */
 
 /* Extra small devices (portrait phones, less than 427px) */
 @media (max-width: 426.98px) {
     .shopnow {
         min-height: 9rem;
+    }
+
+    #shopnow-inner img,
+    .shopnow:last-child #shopnow-inner img:first-child {
+        width: 3rem!important;
+        height: 3rem!important;
+    } 
+
+    .shopnow-container {
+        width: 100%;
+    }
+
+    .middle h3 {
+        font-size: 1.5rem!important;
     }
 }
 
@@ -182,26 +252,24 @@ a.shopnow {
         font-size: 3rem;
     }
 
+    .hero-container p:first-child {
+        padding-top: 10rem;
+    }
+
     .carousel {
         box-shadow: 8px 5px 18px -3px rgba(0,0,0,0.70);
     }
 
     .shopnow-container {
-        padding-left: 3px;
-        padding-right: 3px;
+       width: 90%;
     }
 
     .middle {  
         height: 80%;
     }
 
-    #shopnow-inner img {
-        width: 3rem;
-        height: 3rem;
-    }
-
     .middle h3 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .header-container {
@@ -229,6 +297,16 @@ a.shopnow {
     .rated-products {
         padding: 6px;
         margin-bottom:0px;
+    }
+
+    .rated-container .logo-font,
+    .shopnow-container .logo-font {
+        font-size: 1.5rem;
+    }
+
+    .shopnow:last-child #shopnow-inner img:first-child {
+        width: 5rem;
+        height: 5rem;
     }
 }
 
