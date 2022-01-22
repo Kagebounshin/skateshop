@@ -7,35 +7,51 @@
 The SkateShop is a place where you can assemble a skateboard of you choice, or just buy single items for you setup. For the already experienced Skater to the more novice once. The company for this E-commerce web application is fictional, and this site is a assignment from [Code Institute](https://codeinstitute.net/). 
 
 ## Table Of Content
-1.[**UX**](#user-experience) 
+1.[ **UX**](#user-experience) 
 - [**User Stories**](#user-stories)
+    - [*First Time Visitor Goals*](#first-time-visitor-goals)
+    - [*Frequent User Goals*](#frequent-user-goals)
+    - [*Product Manager Goals*](#product-manager-goals)
 - [**Strategy**](#strategy)
-- [**Scope**](#scope)
 - [**Structure**](#structure)
+    - [*Framework*](#framework)
+    - [*Navbar*](#navbar)
+    - [*Home*](#home)
+    - [*Products*](#products)
+    - [*Bag*](#bag)
+    - [*Checkout*](#checkout)
+    - [*Toast*](#toast)
+    - [*Allauth*](#allauth)
+    - [*Contact*](#contact)
 - [**Skeleton**](#skeleton)
-    - [**Wireframes**](#wireframes)
+    - [*Wireframes*](#wireframes)
 - [**Surface**](#surface)
-    - [**Design**](#design)
+    - [*Colour Scheme*](#colour-scheme)
+    - [*Colour Palette*](#colour-palette)
+    - [*Typography*](#typography)
+    - [*Imagery*](#imagery)
+    - [*Icons*](#icons)
 
-2.[**Features**](#features)
+
+2.[ **Features**](#features)
 - [**Features For The Future**](#features-for-the-future)
 
-3.[**Technologies**](#technologies-used)
+3.[ **Technologies**](#technologies-used)
 
-4.[**Testing**](#testing)
+4.[ **Testing**](#testing)
 
-5.[**Database Setup**](#database-setup)
+5.[ **Database Setup**](#database-setup)
 
-6.[**Deployment**](#deployment)
+6.[ **Deployment**](#deployment)
 
-7.[**Credits**](#credits)
+7.[ **Credits**](#credits)
 - [**Code**](#code)
 - [**Media**](#media)
 - [**Acknowledgements**](#acknowledgements)
 
 ---
 
-## User Experience (UX)
+## User Experience
 
 -   ### User stories
 
@@ -63,94 +79,93 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
         12. As a Frequent User, I would like to get better shipping prices as my bags total increases. 
 
     -   #### Product Manager Goals
-        1. As a Product Manager, I Would like to add, edit/update or delete products easily. 
+        1. As a Product Manager, I Would like to add products easily.
+        2. As a Product Manager, I Would like to edit/update products easily.
+        3. As a Product Manager, I Would like to delete products easily.
 
 ---
 
-- ### Strategy
+-   ### Strategy
     - This site will have it's focus on the already experienced skateboarder, to the more novice one. By having good product descirption and clear instructions on what you need to setup a skateboard, making it easy for the more novice user to assemble their own. Or the users will have the option to buy random gear to their setup in just a few clicks.
 ---
-
-- ### Structure
-
-- Framework
+-   ### Structure
+    #### Framework
     - I've choose to go with bootrap as framework for this project. Easy to work with it's responsive grid system, lots of prebuilt components, and great plugins. 
-- Navbar
+    #### Navbar
     - The navbar will be fixed at the top of the page, so it's always accessible for the user. 
     - On Desktop view, the navbar will have the sites logo to the left, the produt links centered, an the search, account management and the bag links will be displayed to the right.
     - On Mobile and Tablet, the product links and the logo are hidden in a collapsable menu, show them by clicking at the burger menu. The search, account management and the bag links will still be displayed to the right.
     - The search bar will be in a dropdown menu both on deskttop, tablet & mobile view, always accesible and easy for the user to search for a product at any time. 
     - The account management links will be in a dropdown menu, wich will have the choices to register, login, logout, and your own profile page, with order history and personal information.  
-
-- Home
+    #### Home
     - The homepage, will greet you with the sites brand, and a paragrapf, this should be enough to explain the sites purpose. 
     - Below that, I want to make like a tutorial for how to setup a skateboard properly. explaining step by step what you need to get started. At each step, have the option to go to that specific product. 
-- Products
+    #### Products
     - You will have the choice to display all the product at the same time, or by category. Also display on or more specific products based on your search criteria. The products will have an image, name and a pricing displayed. 
     - Click on a product to read more about that product. Such as a short discripion, sizes etc. Have the option to add it to the bag, with the quantity of your choice. 
-- Bag / Checkout
-    - If the bag has no item, it will have a text, saying that the bag is empty. 
-    - If you have added something to your bag, you will see the total price displayed next to the bag link at the navbar.
-    - By clicking the bag link, See a quick preview of the bag and it's current products and total amount in a [toasts](). If the bag contains any products , they will have the option to checkout. 
-    - When choosing the option to go to the checkout you will be able to increase or decrease the quantity of each item, remove a item from the bag, see the total amout, enter your shipping credentials and payment.
-- Toast
+    #### Bag
+    - If the bag has no item, it will have a text, saying that the bag is empty. And a button directing you back to the shopping page.
+    - If you have added something to your bag, you will see the total price displayed next to the bag link at the navbar or below the bag icon on mobile/tablet view.
+    - By adding a product, See a quick preview of the bag and it's current products and total amount in a [toasts](). 
+    - When choosing the option to go to the bag you will be able to increase or decrease the quantity of each item, remove a item from the bag, see the total amount. If your happy with your bag items you can proceed to the checkout page.
+    #### Checkout
+    - Enter your shipping credentials and card credentials to complete your order.
+    #### Toast
     - Bootsrap has a component called ["Toasts"](), wich is notifications designed to mimic the push notifications.
     - The bag when clicked will show a quick preview of it's current products using the toast component. 
     - The toast component will also display warning, info, success or error messages, giving the user quick feedback, for example, if something unexcpected happens. 
-- Register, Sign In/Out
+    #### Allauth 
     - These pages will be clean looking, centered at the page & be easily accessible at all time. 
-- Contact 
+    #### Contact 
     - At the contact page, you will be able to send mails to the sites admin. See other ways to contact the sites admins, and wich time of the day they reachable. 
-    - The admin can access these emails from the admin terminal. 
+    - The admin can access these emails from the django admin terminal. 
  
 ---
 
 - ### Skeleton
-    - ### Wireframes
-        - Mobile
-            - [First](wireframes/wireframesMobile1.png)
-            - [Second](wireframes/wireframesMobile2.png)
-            - [Third](wireframes/wireframesMobile3.png)
-        - Tablet
-            - [Home](wireframes/tabletHome.png)
-            - [Products](wireframes/tabletProduct.png)
-            - [Info](wireframes/tabletInfo.png)
-            - [Register](wireframes/tabletReg.png)
-            - [Sign In](wireframes/tabletSign.png)
-            - [Bag](wireframes/tabletBag.png)
-            - [Toast](wireframes/tabletToast.png)
-            - [Dropdown](wireframes/tabletDrop.png)
-            - [Check](wireframes/tabletCheck.png)
-        - Desktop
-            - [Home](wireframes/wireframeHome.png)
-            - [Products](wireframes/wireframeProducts.png)
-            - [Info](wireframes/wireframeInfo.png)
-            - [Register](wireframes/wireframeReg.png)
-            - [Sign In](wireframes/wireframeSign.png)
-            - [Bag](wireframes/wireframeBag.png)
-            - [Toast](wireframes/wireframeToast.png)
-            - [Check](wireframes/wireframeCheck.png)
+    #### Wireframes
+    - Mobile
+        - [First](wireframes/wireframesMobile1.png)
+        - [Second](wireframes/wireframesMobile2.png)
+        - [Third](wireframes/wireframesMobile3.png)
+    - Tablet
+        - [Home](wireframes/tabletHome.png)
+        - [Products](wireframes/tabletProduct.png)
+        - [Info](wireframes/tabletInfo.png)
+        - [Register](wireframes/tabletReg.png)
+        - [Sign In](wireframes/tabletSign.png)
+        - [Bag](wireframes/tabletBag.png)
+        - [Toast](wireframes/tabletToast.png)
+        - [Dropdown](wireframes/tabletDrop.png)
+        - [Check](wireframes/tabletCheck.png)
+    - Desktop
+        - [Home](wireframes/wireframeHome.png)
+        - [Products](wireframes/wireframeProducts.png)
+        - [Info](wireframes/wireframeInfo.png)
+        - [Register](wireframes/wireframeReg.png)
+        - [Sign In](wireframes/wireframeSign.png)
+        - [Bag](wireframes/wireframeBag.png)
+        - [Toast](wireframes/wireframeToast.png)
+        - [Check](wireframes/wireframeCheck.png)
 
 ---
 
 - ### Surface
 
--   ### Design
-    -   #### Colour Scheme
-        - The body of this site and the navigationbar is set to have the background color of white (#ffffff). 
-        - The footer has two section, the top section has the background color of "Jet" (#333333), the lower part of the footer has the background color of "Eerie Black" (#222222).
-        - The site has four different types of CTA ("Call To Action") buttons. 
-            - The first [Button](img-readme/ctabutton1.png) has the background color of "Razzmic Berry" (#764C87), and when ["Hovered"](img-readme/ctabutton2.png) the background color eases in to "Russian Violet" (#492857).
-    <h2 class="text-center"><img src="img-readme/skateShopPalette.png"></h2>
-    
+    #### Colour Scheme
+    - The body of this site and the navigationbar is set to have the background color of white (#ffffff). 
+    - The footer has two section, the top section has the background color of "Jet" (#333333), the lower part of the footer has the background color of "Eerie Black" (#222222).
+    - The site has four different types of CTA ("Call To Action") buttons. 
+        - The first [Button](img-readme/ctabutton1.png) has the background color of "Razzmic Berry" (#764C87), and when ["Hovered"](img-readme/ctabutton2.png) the background color eases in to "Russian Violet" (#492857).
+    #### Colour Palette
+    - [Colour Palette](img-readme/skateShopPalette.png)
+    #### Typography
+    - The fonts I've used for this project are from [Google Fonts](https://fonts.google.com/). The fonts are ["Oswald"](img-readme/mainfont.png) & ["Pacifico"](img-readme/logofont.png).
+        - [Oswald](https://fonts.google.com/?query=Oswald&preview.text=Oswald&preview.text_type=custom) has been used as the main font of this project. Looks really good in all the different weights, it's readble. Simpley a fine peace of sans serif typeface. 
+        - [Pacifico](https://fonts.google.com/specimen/Pacifico?preview.text=Pacifico&preview.text_type=custom&category=Sans+Serif,Display,Handwriting,Monospace&query=Pacifico) is used for the sites [logo](img-readme/logo.png). The font is inspired by the 1950s American surf culture. Works perfect for this site, becouse the skateboarding sport was created by surfers in San Fransico, CA.
+    #### Imagery
 
-    -   #### Typography
-        - The fonts I've used for this project are from [Google Fonts](https://fonts.google.com/). The fonts are ["Oswald"](img-readme/mainfont.png) & ["Pacifico"](img-readme/logofont.png).
-            - [Oswald](https://fonts.google.com/?query=Oswald&preview.text=Oswald&preview.text_type=custom) has been used as the main font of this project. Looks really good in all the different weights, it's readble. Simpley a fine peace of sans serif typeface. 
-            - [Pacifico](https://fonts.google.com/specimen/Pacifico?preview.text=Pacifico&preview.text_type=custom&category=Sans+Serif,Display,Handwriting,Monospace&query=Pacifico) is used for the sites [logo](img-readme/logo.png). The font is  inspired by the 1950s American surf culture. Works perfect for this site, becouse skateboarding was a sport created by surfers. 
-    -   #### Imagery
-
-    -   #### Icons
+    #### Icons
 
 ---
 
@@ -216,58 +231,15 @@ A relational database was used to structure this project. A relational database 
 
 - [Unsplash](https://unsplash.com/s/photos/skateboarders) - Images for the homepage
 
+- [Tinyjpg](https://tinyjpg.com/) - Resizing images
+
 ---
 
 ## Testing
 
-
-### Lighthouse Testing
-
---- 
-
-- Home 
-    - [Desktop](pdf/home_desktop.pdf)
-    - [Mobile](pdf/home_mobile.pdf)
-- Bag 
-    - [Desktop](pdf/bag_desktop.pdf)
-    - [Mobile](pdf/bag_mobile.pdf)
-- Checkout
-    - [Desktop](pdf/checkout_desktop.pdf)
-    - [Mobile](pdf/checkout_mobile.pdf)
-- Contact 
-    - [Desktop](pdf/contact_desktop.pdf)
-    - [Mobile](pdf/contact_mobile.pdf)
-- Product 
-    - [Desktop](pdf/product_desktop.pdf)
-    - [Mobile](pdf/product_mobile.pdf)
-- Product Detail 
-    - [Desktop](pdf/product_detail_desktop.pdf)
-    - [Mobile](pdf/product_detail_mobile.pdf)
-- Profile 
-    - [Desktop](pdf/profile_desktop.pdf)
-    - [Mobile](pdf/profile_mobile.pdf)
-
-
-### Testing User Stories from User Experience (UX) Section
+Find all the testing documentations [**here!**](TESTING.md)
 
 ---
-
--   #### First Time Visitor Goals
-  
--   #### Frequent User Goals
-
-
-### Further Testing
-
-### Known Bugs 
-
-
-### Resolved Bugs
-
----
-
-
-
 
 ## Deployment
 
