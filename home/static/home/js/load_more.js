@@ -1,4 +1,4 @@
-// Got some help from this site. https://www.markuptag.com/javascript-load-more-content-on-click-button/
+// Got some help from this site. https://www.markuptag.com/javascript-load-more-content-on-click-button/ with some modifications!
 
 // Get Buttons
 const btn_loadmore = document.querySelector('#btn_loadmore');
@@ -22,6 +22,7 @@ btn_loadmore.addEventListener('click', (e) => {
     for (let i = currentImages; i < currentImages + 4; i++) {
         if (images[i]) {
             images[i].style.display = 'block';
+            images[i].style.animation = "fadeIn 1.5s";
         }
     }
     currentImages += 4;
