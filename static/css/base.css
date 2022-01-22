@@ -293,6 +293,22 @@ a.nav-link:hover,
         min-width: unset;
     }
 
+    .sub-header {
+        font-size: 1rem;
+    }
+
+    .support-header {
+        font-size: 1.5rem;
+    }
+
+    .footer-bottom a {
+        font-size: 1.2rem;
+    }
+
+    .footer-bottom p {
+        font-size: 1.2rem;
+    }
+
     .footer-bottom i {
         font-size: 1.4rem;
         margin-right: .2rem;

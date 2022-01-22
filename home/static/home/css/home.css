@@ -178,6 +178,11 @@ a.shopnow {
     border: none;
 }
 
+.rated-container img {
+    width: 100%;
+    height: auto;
+}
+
 .rated-container .card {
     box-shadow: 0px 7px 8px -6px rgba(0, 0, 0, 0.356);
 }

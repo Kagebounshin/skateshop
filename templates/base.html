@@ -278,17 +278,6 @@
         $('.toast').toast('show');
         // FOR COPYRIGHT YEAR
         $('.copyright').text(new Date().getFullYear());
-        $(document).ready(function () {
-            // DROPDOWN HOVER FOR ACCOUNT LINK IN NAVBAR
-            $('.dd-hover').hover(
-                function () {
-                    $(this).children('.dd-menu').slideDown('fast');
-                },
-                function () {
-                    $(this).children('.dd-menu').slideUp('400');
-                }
-            );
-        });
     </script>
     {% endblock %}
 </body>
