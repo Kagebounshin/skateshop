@@ -223,6 +223,29 @@ A relational database was used to structure this project. A relational database 
 
 ### Lighthouse Testing
 
+--- 
+
+- Home 
+    - [Desktop](pdf/home_desktop.pdf)
+    - [Mobile](pdf/home_mobile.pdf)
+- Bag 
+    - [Desktop](pdf/bag_desktop.pdf)
+    - [Mobile](pdf/bag_mobile.pdf)
+- Checkout
+    - [Desktop](pdf/checkout_desktop.pdf)
+    - [Mobile](pdf/checkout_mobile.pdf)
+- Contact 
+    - [Desktop](pdf/contact_desktop.pdf)
+    - [Mobile](pdf/contact_mobile.pdf)
+- Product 
+    - [Desktop](pdf/product_desktop.pdf)
+    - [Mobile](pdf/product_mobile.pdf)
+- Product Detail 
+    - [Desktop](pdf/product_detail_desktop.pdf)
+    - [Mobile](pdf/product_detail_mobile.pdf)
+- Profile 
+    - [Desktop](pdf/profile_desktop.pdf)
+    - [Mobile](pdf/profile_mobile.pdf)
 
 
 ### Testing User Stories from User Experience (UX) Section

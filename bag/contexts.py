@@ -5,11 +5,11 @@ from products.models import Product
 
 
 def bag_contents(request):
-    """ 
+    """
     # This function makes the shopping bag contents available universally.
     # Returns:
     # Context including bag items, product count, total, grand total,
-    # delivery cost. 
+    # delivery cost.
     """
 
     bag_items = []

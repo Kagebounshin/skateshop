@@ -177,7 +177,7 @@ def delete_product(request, product_id):
         product.delete()
         messages.success(request, 'Product Deleted!')
         return redirect(reverse('products'))
- 
+
     template = 'products/delete_product.html'
     context = {
         'product': product,
