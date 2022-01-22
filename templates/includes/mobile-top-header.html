@@ -1,4 +1,27 @@
 <ul class="mobile-top-header">
+     <!-- ACCOUNT -->
+     <li class="list-inline-item dropdown">
+        <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <div class="text-center">
+                <div><i class="fas fa-user fa-lg"></i></div>
+                <p class="my-0">Account</p>
+            </div>
+        </a>
+        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+            {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+            <a href="{% url 'add_product' %}" class="dropdown-item"><i class="far fa-clipboard"></i> Product
+                Management</a>
+            {% endif %}
+            <a href="{% url 'profile' %}" class="dropdown-item"><i class="fas fa-portrait"></i> Profile</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+            {% else %}
+            <a href="{% url 'account_signup' %}" class="dropdown-item"><i class="fas fa-edit"></i> Sign Up</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item"><i class="fas fa-sign-in-alt"></i></i> Sign In</a>
+            {% endif %}
+        </div>
+    </li>
     <!-- SEARCH BAR -->
     <li class="list-inline-item">
         <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown"
@@ -23,29 +46,6 @@
                     </div>
                 </div>
             </form>
-        </div>
-    </li>
-    <!-- ACCOUNT -->
-    <li class="list-inline-item dropdown">
-        <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <div class="text-center">
-                <div><i class="fas fa-user fa-lg"></i></div>
-                <p class="my-0">Account</p>
-            </div>
-        </a>
-        <div class="dropdown-menu border-0" aria-labelledby="user-options">
-            {% if request.user.is_authenticated %}
-            {% if request.user.is_superuser %}
-            <a href="{% url 'add_product' %}" class="dropdown-item"><i class="far fa-clipboard"></i> Product
-                Management</a>
-            {% endif %}
-            <a href="{% url 'profile' %}" class="dropdown-item"><i class="fas fa-portrait"></i> Profile</a>
-            <a href="{% url 'account_logout' %}" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
-            {% else %}
-            <a href="{% url 'account_signup' %}" class="dropdown-item"><i class="fas fa-edit"></i> Sign Up</a>
-            <a href="{% url 'account_login' %}" class="dropdown-item"><i class="fas fa-sign-in-alt"></i></i> Sign In</a>
-            {% endif %}
         </div>
     </li>
     <!-- BAG -->
