@@ -42,21 +42,21 @@
 .dot2 {
     width: 1rem;
     height: 1rem;
-    background-color: #fff;
     border-radius: 50%;
+    background-color: #fff;
 }
 
 .dot1 {
     position: relative;
-    top: 7%;
-    left: 50%;
+    top: 5%;
+    left: 46%;
     transform: translate(-50%, -50%);
 }
 
 .dot2 {
     position: relative;
     top: 75%;
-    left: 25%;
+    left: 40%;
     transform: translate(-50%, -50%);
 }
 
@@ -78,9 +78,10 @@
     font-weight: 700;
 }
 
-
 .dot-text a:hover, 
-.dot-text2 a:hover {
+.dot-text2 a:hover,
+.dot1:hover,
+.dot2:hover {
     color: #764c87;
     transition: .5s ease-in-out;
 }
@@ -329,7 +330,6 @@ a.shopnow {
     .shopnow:last-child {
         padding-top: 6px;
     }
-
 }
 
 /* Small devices (landscape phones, less than 768px) */
