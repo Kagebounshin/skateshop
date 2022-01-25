@@ -1,10 +1,15 @@
 
 ## Table Of Content
-- [ **Code Validation**](#code-validation)
+1. [**Testing User Stories**](#testing-user-stories)
+    - [*First Time Visitor Goals*](#first-time-visitor-goals)
+    - [*Frequent User Goals*](#frequent-user-goals)
+    - [*Product Manager Goals*](#product-manager-goals)
+2. [ **Code Validation**](#code-validation)
     - [*W3C Markup Validator*](#w3c-markup-validator)
     - [*W3C CSS Validator*](#w3c-css-validator)
     - [*PEP8 Online*](#pep8-online)
-- [ **Lighthouse Testing**](#lighthouse-testing)
+    - [*JSHint*](#jshint)
+3. [ **Lighthouse Testing**](#lighthouse-testing)
     - [*Home*](#home)
     - [*Bag*](#bag)
     - [*Checkout*](#checkout)
@@ -14,6 +19,45 @@
     - [*Profile*](#profile)
 
  
+## Testing User Stories
+---
+
+### First Time Visitor Goals
+- "As a first time visitor, at the first look, I want to understand what the   site is all about. for example, wich products you can purchase here."
+    - When I enter the site i'm greeted by the websites logo, a text underneath the logo, with a short explanation of the site, and a button that takes me to the products. 
+
+- "As a first time visitor, I want the site to be easliy navigated, I would like to find what i'm searching for quick and easy."
+    - I can easily navigate myself across the site using the navbar at the top of the screen. When shown on small & medium devieces the navbar collapses into a burger menu. The navbar is fixed to the top of the page. So it follows me when i'm navigating my way further down all the diffrent pages. 
+
+- "As a first time visitor, I want the site to be well structred the sites features should be where there expected to be."
+    - The navigationbar is at the top, where I can use a searchbar, go to account pages, see bag, and navigate between categorys. 
+    - Buttons having a consitancy in coloring.
+    - Footer has extra information.
+
+- "As a first time visitor, I would like the site to look clean and modern. Good color matching, readble texts etc."
+    - The text is easy to read, the color matching is good and consistant. 
+
+- "As a first time visitor, I Would like to register to the page."
+    - By clicking the account link in the navbar or the "Sign up" link in the footer I get to the register page. Here I'm asked to type in my email adress, choose a username, and choose a password. 
+    - By leaving one of these field empty will result in an error, telling me to fill out that field. 
+    - If I dont match either my email adress or password, it will throw an error saying they must match. 
+    - If I dont use an password with at least 8 characters it will throw an error saying "This password is too short. It must contain at least 8 characters.". 
+    - I fill in all the field correctly and then I click the sign up button. I now get a message telling me to verify my email adress.
+    - I go to the confirmation email, clicking the link to confirm my email. I get back to the site, asked if this email belongs to the users that was just created. I click the "Confirm" button, and now I'm registred.  
+
+-  "As a first time visitor, I want to be able to contact the site owner if I have a problem or just need some information."
+    - Down at the footer I can see various way to contact the store owners. Either the old fanshioned way, by sending a letter to there adress or just by calling their phone under their opening hours. 
+    - If I want to send an email I can click on the "Contact Us" link down at the footer, in the "Customer Support" section. 
+    - Well at that page, I can enter my name, email, subject and my message to send a mail to the owners. 
+    - Leaving any of the fields empty or not correctly filled, will throw an error, telling me to fill it out correctly. 
+    - I fill it out correctly and click the send button, I get a top right message, saying that my message was sent. 
+
+
+### Frequent User Goals
+
+### Product Manager Goals
+
+
 ---
 ## Code Validation
 ---
@@ -91,13 +135,6 @@ The code was validated by direct input.
 - [Desktop](pdf/profile_desktop.pdf)
 - [Mobile](pdf/profile_mobile.pdf)
 ---
-## Testing User Stories from User Experience (UX) Section
-
----
-
--   #### First Time Visitor Goals
-  
--   #### Frequent User Goals
 
 
 ### Further Testing

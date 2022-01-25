@@ -226,12 +226,17 @@
                 <p class="text-left uppercase support-header">Customer Support</p>
                 <a href="{% url 'contact' %}">Contact Us</a> <br>
                 {% if request.user.is_authenticated %}
-                <a href="{% url 'profile' %}">My Account</a> <br>
+                <a href="{% url 'profile' %}">My Profile</a> <br>
+                {% else %}
+                <a href="{% url 'account_signup' %}">Sign
+                    Up</a> <br>
+                <a href="{% url 'account_login' %}">
+                    Sign In</a>
                 {% endif %}
 
             </div>
             <div class="col-12 col-md-4">
-                <p class="text-left uppercase support-header">Contact Us</p>
+                <p class="text-left uppercase support-header">Contact Info</p>
                 <p class="text-left">ADDRESS:<br><small>Something Street, Stockholm, Sweden</small></p>
                 <p class="text-left">PHONE:<br><small>(+48) 01234 567890</small></p>
                 <p class="text-left">HOURS:<br><small>Mon-Fri : 9.30am - 3.00pm</small></p>
