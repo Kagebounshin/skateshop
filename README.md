@@ -106,12 +106,12 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
     #### Bag
     - If the bag has no item, it will have a text, saying that the bag is empty. And a button directing you back to the shopping page.
     - If you have added something to your bag, you will see the total price displayed next to the bag link at the navbar or below the bag icon on mobile/tablet view.
-    - By adding a product, See a quick preview of the bag and it's current products and total amount in a [toasts](). 
+    - By adding a product, See a quick preview of the bag and it's current products and total amount in a toast at the top right of the screen. 
     - When choosing the option to go to the bag you will be able to increase or decrease the quantity of each item, remove a item from the bag, see the total amount. If your happy with your bag items you can proceed to the checkout page.
     #### Checkout
     - Enter your shipping credentials and card credentials to complete your order.
     #### Toast
-    - Bootsrap has a component called ["Toasts"](), wich is notifications designed to mimic the push notifications.
+    - Bootsrap has a component called ["Toasts"](https://getbootstrap.com/docs/4.3/components/toasts/), wich is notifications designed to mimic the push notifications.
     - The bag when clicked will show a quick preview of it's current products using the toast component. 
     - The toast component will also display warning, info, success or error messages, giving the user quick feedback, for example, if something unexcpected happens. 
     #### Allauth 
@@ -155,8 +155,11 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
     #### Colour Scheme
     - The body of this site and the navigationbar is set to have the background color of white (#ffffff). 
     - The footer has two section, the top section has the background color of "Jet" (#333333), the lower part of the footer has the background color of "Eerie Black" (#222222).
-    - The site has four different types of CTA ("Call To Action") buttons. 
+    - The site has three different types of CTA ("Call To Action") buttons. 
         - The first [Button](img-readme/ctabutton1.png) has the background color of "Razzmic Berry" (#764C87), and when ["Hovered"](img-readme/ctabutton2.png) the background color eases in to "Russian Violet" (#492857).
+        - The secound [Button](img-readme/ctabutton3.png) has the background color of "White" (#fff) with a "Razzmic Berry" (#764C87) colored border & text. When ["Hovered"](img-readme/ctabutton4.png) the background eases in to the "Razzmic Berry" (#764C87) background color, and the text turns "White" (#fff). 
+        - The third [Button](img-readme/ctabutton5.png) has the background color of "White" (#fff) with a "Red" (#ff0505) colored border & text. When ["Hovered"](img-readme/ctabutton6.png) the background eases in to the "Rosso Corsa" (#cc0101) background color, and the text turns "White" (#fff).
+      
     #### Colour Palette
     - [Colour Palette](img-readme/skateShopPalette.png)
     #### Typography
@@ -164,8 +167,10 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
         - [Oswald](https://fonts.google.com/?query=Oswald&preview.text=Oswald&preview.text_type=custom) has been used as the main font of this project. Looks really good in all the different weights, it's readble. Simpley a fine peace of sans serif typeface. 
         - [Pacifico](https://fonts.google.com/specimen/Pacifico?preview.text=Pacifico&preview.text_type=custom&category=Sans+Serif,Display,Handwriting,Monospace&query=Pacifico) is used for the sites [logo](img-readme/logo.png). The font is inspired by the 1950s American surf culture. Works perfect for this site, becouse the skateboarding sport was created by surfers in San Fransico, CA.
     #### Imagery
-
-    #### Icons
+    - Products
+        - I've choosed images that would help you to quickly indentify a specific product. So images with a white background, product placed at the center of the image. 
+    - Other
+        - The other images of the website, where choosen to match the theme of the website, in this case, skateboarding. So that the user would get a quick understanding of the sites purpose.
 
 ---
 
@@ -174,6 +179,11 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
 ### Schema
 ---
 A relational database was used to structure this project. A relational database is a collection of data items with pre-defined relationships between them.
+
+#### Account
+The allauth Django Account app includes a number of models. I didn't create this models becouse they come with the use of django. Their purpose is to act as the basis for user authentication.
+
+#### Category
 
 ## Features
 
