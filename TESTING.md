@@ -19,6 +19,16 @@
 ---
 ### [W3C Markup Validator](https://validator.w3.org/)
 
+- [Home](img-readme/home_html.png)
+- [Bag](img-readme/bag_html.png)
+- [Checkout](img-readme/checkout_html.png)
+- [Contact](img-readme/contact_html.png)
+- [Products](img-readme/products_html.png)
+- [Product Detail](img-readme/product_detail_html.png)
+- [Profile](img-readme/profile_html.png)
+- [Add](img-readme/add_html.png)
+- [Edit](img-readme/edit_html.png)
+
 
 ### [W3C CSS Validator](https://jigsaw.w3.org/) 
 The code was validated by direct input.
