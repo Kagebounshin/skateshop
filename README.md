@@ -75,13 +75,12 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
     -   ### Frequent User Goals
         1. As a Frequent User, I Like the login process to be smooth.
         2. As a Frequent User, I would like to access a profile page to manage my order history, and save personal details. 
-        3. As a Frequent User, I if I lost my password, I want to have the choice to set a new password. 
-        4. As a Frequent User, I want to search for specific products on the site. 
-        5. As a Frequent User, I want to search for a specific category on the site.
-        6. As a Frequent User, I would like to add products to my bag easily.
-        7. As a Frequent User, I would like to remove/update products in my bag. 
-        8. As a Frequent User, I want to see the shopping bag total amount all the time. 
-        9. As a Frequent User, I want to review my cart	before checkout. 
+        3. As a Frequent User, I want to search for specific products on the site. 
+        4. As a Frequent User, I want to search for a specific category on the site.
+        5. As a Frequent User, I would like to add products to my bag easily.
+        6. As a Frequent User, I would like to remove/update products in my bag. 
+        7. As a Frequent User, I want to see the shopping bag total amount all the time. 
+        8. As a Frequent User, I want to review my cart	before checkout. 
         9. As a Frequent User, I want to View confirmation of order before completing purchase.
         10. As a Frequent User, I want to easily enter my payment information, so that the checkout is quick and easy. 
         11. As a Frequent User, I want to feel that my payment and personal information is secured. 

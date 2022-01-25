@@ -1,15 +1,19 @@
 
 ## Table Of Content
-1. [**Testing User Stories**](#testing-user-stories)
+1. [ **Testing User Stories**](#testing-user-stories)
     - [*First Time Visitor Goals*](#first-time-visitor-goals)
     - [*Frequent User Goals*](#frequent-user-goals)
     - [*Product Manager Goals*](#product-manager-goals)
-2. [ **Code Validation**](#code-validation)
+2. [ **Further Testing**](#further-testing)
+3. [ **Known Bugs**](#known-bugs)
+4. [ **Resolved Bugs**](#resolved-bugs)
+5. [ **Security**](#security)
+6. [ **Code Validation**](#code-validation)
     - [*W3C Markup Validator*](#w3c-markup-validator)
     - [*W3C CSS Validator*](#w3c-css-validator)
     - [*PEP8 Online*](#pep8-online)
     - [*JSHint*](#jshint)
-3. [ **Lighthouse Testing**](#lighthouse-testing)
+7. [ **Lighthouse Testing**](#lighthouse-testing)
     - [*Home*](#home)
     - [*Bag*](#bag)
     - [*Checkout*](#checkout)
@@ -18,7 +22,7 @@
     - [*Product Detail*](#product-detail)
     - [*Profile*](#profile)
 
- 
+---
 ## Testing User Stories
 ---
 
@@ -54,10 +58,34 @@
 
 
 ### Frequent User Goals
-
+- "As a Frequent User, I Like the login process to be smooth."
+- "As a Frequent User, I would like to access a profile page to manage my order history, and save personal details."
+- "As a Frequent User, I want to search for specific products on the site."
+- "As a Frequent User, I want to search for a specific category on the site."
+- "As a Frequent User, I would like to add products to my bag easily."
+- "As a Frequent User, I would like to remove/update products in my bag."
+- "As a Frequent User, I want to see the shopping bag total amount all the time."
+- "As a Frequent User, I want to review my bag before checkout."
+- "As a Frequent User, I want to View confirmation of order before completing purchase."
+- "As a Frequent User, I want to easily enter my payment information, so that the checkout is quick and easy."
+- "As a Frequent User, I want to feel that my payment and personal information is secured."
+- "As a Frequent User, I would like to get better shipping prices as my bags total increases."
 ### Product Manager Goals
+- "As a Product Manager, I Would like to add products easily."
+- "As a Product Manager, I Would like to edit/update products easily."
+- "As a Product Manager, I Would like to delete products easily."
 
+---
+## Further Testing
+---
 
+## Known Bugs 
+---
+
+## Resolved Bugs
+---
+
+## Security
 ---
 ## Code Validation
 ---
@@ -134,14 +162,4 @@ The code was validated by direct input.
 ### Profile 
 - [Desktop](pdf/profile_desktop.pdf)
 - [Mobile](pdf/profile_mobile.pdf)
----
-
-
-### Further Testing
-
-### Known Bugs 
-
-
-### Resolved Bugs
-
 ---
