@@ -18,6 +18,8 @@
 ## Code Validation
 ---
 #### [W3C Markup Validator](https://validator.w3.org/)
+
+
 #### [W3C CSS Validator](https://jigsaw.w3.org/) 
 
 

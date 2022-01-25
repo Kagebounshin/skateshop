@@ -111,7 +111,7 @@ a.shopnow {
     padding-right: 6px;
 }
 
-#shopnow-inner {
+.shopnow-inner {
     position: relative;
     background-color: #764c87;
     width: 100%;
@@ -121,7 +121,7 @@ a.shopnow {
     box-shadow: 8px 5px 18px -3px rgba(0,0,0,0.70);
 }
 
-#shopnow-inner h3 {
+.shopnow-inner h3 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -235,8 +235,8 @@ a.shopnow {
         min-height: 9rem;
     }
 
-    #shopnow-inner img,
-    .shopnow:last-child #shopnow-inner img:first-child {
+    .shopnow-inner img,
+    .shopnow:last-child .shopnow-inner img:first-child {
         width: 3rem!important;
         height: 3rem!important;
     } 
@@ -308,7 +308,7 @@ a.shopnow {
         font-size: 1.5rem;
     }
 
-    .shopnow:last-child #shopnow-inner img:first-child {
+    .shopnow:last-child .shopnow-inner img:first-child {
         width: 5rem;
         height: 5rem;
     }

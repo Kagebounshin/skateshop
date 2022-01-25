@@ -213,7 +213,7 @@
                         <input type="email" class="form-control rounded-0" id="email" name="email"
                             placeholder="Enter your e-mail">
                         <button class="btn subscribe-button rounded-0" type="submit" aria-label="Subscribe">
-                            <p class="d-none d-sm-block uppercase">Subscribe</p> <i
+                            <span class="d-none d-sm-block uppercase">Subscribe</span> <i
                                 class="far fa-envelope d-sm-none"></i>
                         </button>
                     </div>
@@ -273,7 +273,7 @@
 
     {% block postloadjs %}
     <script src="{% static 'js/back_to_top.js' %}"></script>
-    <script type="text/javascript">
+    <script>
         // TOAST
         $('.toast').toast('show');
         // FOR COPYRIGHT YEAR

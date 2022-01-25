@@ -26,8 +26,8 @@
             </h2>
         </div>
     </div>
-    {% if bag_items %}
     <div class="row">
+    {% if bag_items %}
         {% for item in bag_items %}
         <div class="col-12 col-md-6 col-lg-4 bag-item-container">
             <div class="col-5 col-md-4 bag-image pb-2">
@@ -127,7 +127,7 @@
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
 
-<script type="text/javascript">
+<script>
     // UPDATE QUANTITY ON CLICK
     $('.update-link').click(function (e) {
         var form = $(this).prev('.update-form');
