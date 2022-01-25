@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     # Other
     'crispy_forms',
     'storages',
+    "django_extensions",
 ]
 
 MIDDLEWARE = [
@@ -71,6 +72,17 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'skateshop.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+GRAPH_MODELS = {
+  "app_labels": [
+        "bag",
+        "checkout",
+        "contact",
+        "products",
+        "profiles",
+        "subscribe",
+    ],
+}
 
 TEMPLATES = [
     {
