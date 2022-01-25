@@ -97,7 +97,7 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
     - On Mobile and Tablet, the product links and the logo are hidden in a collapsable menu, show them by clicking at the burger menu. The search, account management and the bag links will still be displayed to the right.
     - The search bar will be in a dropdown menu both on deskttop, tablet & mobile view, always accesible and easy for the user to search for a product at any time. 
     - The account management links will be in a dropdown menu, wich will have the choices to register, login, logout, and your own profile page, with order history and personal information.  
-    ## Home
+    ### Home
     - The homepage, will greet you with the sites brand, and a paragrapf, this should be enough to explain the sites purpose. 
     - Below that, I want to make like a tutorial for how to setup a skateboard properly. explaining step by step what you need to get started. At each step, have the option to go to that specific product. 
     ### Products
@@ -177,7 +177,7 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
 # Database Setup
 
 ## Schema
----
+
 A relational database was used to structure this project. A relational database is a collection of data items with pre-defined relationships between them.
 
 <details>
@@ -220,12 +220,12 @@ For storing a product's data.
 | ---- | --------- | ------ |
 | category | foreign key | A foreign key wich will indentify wich category the product belongs to. |
 | sku | charfield | Numbers to indentify a product. |
-| name | string | The product's name. |
-| description | string | The product's description. Keyword searchable to users. |
-| has_sizes | boolean | See if the product has a size. |
-| price | decimal | The product's price |
-| image_url | string | The product's url. |
-| image | string | An image associated with the product. Stored as a varchar file path. |
+| name | string | Product's name. |
+| description | string | Product's description. |
+| has_sizes | boolean | Product's size. |
+| price | decimal | Product's price |
+| image_url | string | Product's url. |
+| image | string | An image associated with the product. |
 
 ---
 
@@ -348,17 +348,13 @@ Stores users billing information.
 
 - [Bootstrap](https://getbootstrap.com/) - Front-end toolkit
 
-- [Flask](https://flask.palletsprojects.com/en/1.1.x/) - The project uses Flask, which is a Python microframework. 
-
-- [PyMongo](https://pypi.org/project/pymongo/) - The project uses PyMongo as the Python API for MongoDB. To link the backend data to frontend application. 
-
 - [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Jinja was used with flask in the HTML code. For simple linking between the backend and frontend. 
 
 - [Heroku](https://id.heroku.com/login) - Heroku was used as the hosting platform to deploy my project.
 
 - [FontAwesome](https://fontawesome.com/) - Provides icons across the site
 
-- [icons8](https://icons8.com/) - Setup section.
+- [icons8](https://icons8.com/) - Icons for Shop By Category section.
 
 - [GoogleFonts](https://fonts.google.com/) - Used for the sites typography
 
