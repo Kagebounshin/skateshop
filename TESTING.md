@@ -46,18 +46,25 @@ The code was validated by direct input.
 - [profile.css](img-readme/profile_css.png)
 
 
-
-
 ### [PEP8 Online](http://pep8online.com/)
 - Validation for Python Code
-    - Views results
-        - [Home](img-readme/home_views.png)
-        - [Bag](img-readme/bag_views.png)
-        - [Checkout](img-readme/checkout_views.png)
-        - [Contact](img-readme/contact_views.png)
-        - [Product](img-readme/product_views.png)
-        - [Profile](img-readme/profile_views.png)
-        - [Subscribe](img-readme/sub_views.png)
+    - [Home](img-readme/home_views.png)
+    - [Bag](img-readme/bag_views.png)
+    - [Checkout](img-readme/checkout_views.png)
+    - [Contact](img-readme/contact_views.png)
+    - [Product](img-readme/product_views.png)
+    - [Profile](img-readme/profile_views.png)
+    - [Subscribe](img-readme/sub_views.png)
+
+### [JSHint](https://jshint.com/)
+- Validation for javascript code
+    - [back_to_top.js](img-readme/back_to_top_js.png)
+    - [countryfield.js](img-readme/countryfield_js.png)
+    - [dot_hover.js](img-readme/dot_hover_js.png)
+    - [load_more.js](img-readme/load_more_js.png)
+    - [sort_selector.js](img-readme/sort_selector_js.png)
+    - [stripe_elements.js](img-readme/stripe_elements_js.png)
+
 
 ---
 ## Lighthouse Testing

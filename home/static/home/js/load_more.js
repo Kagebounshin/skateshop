@@ -14,7 +14,7 @@ function disable_loadless() {
     } 
 }
 
-disable_loadless()
+disable_loadless();
 
 // Add eventlistener
 btn_loadmore.addEventListener('click', (e) => {
@@ -44,7 +44,7 @@ btn_loadless.addEventListener('click', (e) => {
         }
     }
     currentImages -= 4;
-    // Disable loadmore button 
+    // Disable loadless button 
     if (currentImages === 4) {
         btn_loadless.classList.add('disabled');
     } else {
