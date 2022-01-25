@@ -26,23 +26,32 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
 - [**Skeleton**](#skeleton)
     - [*Wireframes*](#wireframes)
 - [**Surface**](#surface)
-    - [*Colour Scheme*](#colour-scheme)
     - [*Colour Palette*](#colour-palette)
+    - [*Colour Scheme*](#colour-scheme)
     - [*Typography*](#typography)
     - [*Imagery*](#imagery)
-    - [*Icons*](#icons)
 
+2.[ **Database Setup**](#database-setup)
+- [**Schema**](#schema)
+    - [*Account*](#account)
+    - [*Category Model*](#category-model)
+    - [*Product Model*](#product-model)
+    - [*Review Model*](#review-model)
+    - [*Contact Model*](#contact-model)
+    - [*Subscribe Model*](#subscribe-model)
+    - [*Order Model*](#order-model)
+    - [*Order Line Item Model*](#order-line-item-model)
+    - [*Profile Model*](#profile-model)
 
-2.[ **Features**](#features)
+3.[ **Features**](#features)
 - [**Features For The Future**](#features-for-the-future)
 
-3.[ **Technologies**](#technologies-used)
+4.[ **Technologies**](#technologies-used)
 
-4.[ **Testing**](#testing)
+5.[ **Testing**](#testing)
 
-5.[ **Database Setup**](#database-setup)
 
-6.[ **Deployment**](#deployment)
+7.[ **Deployment**](#deployment)
 
 7.[ **Credits**](#credits)
 - [**Code**](#code)
@@ -109,16 +118,16 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
     - By adding a product, See a quick preview of the bag and it's current products and total amount in a toast at the top right of the screen. 
     - When choosing the option to go to the bag you will be able to increase or decrease the quantity of each item, remove a item from the bag, see the total amount. If your happy with your bag items you can proceed to the checkout page.
     ### Checkout
-    - Enter your shipping credentials and card credentials to complete your order.
+    - the user's choosen items will be displayed here. You will see the price of your order. The you can enter your shipping credentials and card credentials to complete the order.
     ### Toast
     - Bootsrap has a component called ["Toasts"](https://getbootstrap.com/docs/4.3/components/toasts/), wich is notifications designed to mimic the push notifications.
     - The bag when clicked will show a quick preview of it's current products using the toast component. 
     - The toast component will also display warning, info, success or error messages, giving the user quick feedback, for example, if something unexcpected happens. 
-    ### Allauth 
-    - These pages will be clean looking, centered at the page & be easily accessible at all time. 
     ### Contact 
     - At the contact page, you will be able to send mails to the sites admin. See other ways to contact the sites admins, and wich time of the day they reachable. 
     - The admin can access these emails from the django admin terminal. 
+    ### Allauth 
+    - These pages will be clean looking, centered at the page & be easily accessible at all time. 
  
 ---
 
@@ -152,6 +161,8 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
 
 - ## Surface
 
+    ### Colour Palette
+    - [Colour Palette](img-readme/skateShopPalette.png)
     ### Colour Scheme
     - The body of this site and the navigationbar is set to have the background color of white (#ffffff). 
     - The footer has two section, the top section has the background color of "Jet" (#333333), the lower part of the footer has the background color of "Eerie Black" (#222222).
@@ -159,9 +170,6 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
         - The first [Button](img-readme/ctabutton1.png) has the background color of "Razzmic Berry" (#764C87), and when ["Hovered"](img-readme/ctabutton2.png) the background color eases in to "Russian Violet" (#492857).
         - The secound [Button](img-readme/ctabutton3.png) has the background color of "White" (#fff) with a "Razzmic Berry" (#764C87) colored border & text. When ["Hovered"](img-readme/ctabutton4.png) the background eases in to the "Razzmic Berry" (#764C87) background color, and the text turns "White" (#fff). 
         - The third [Button](img-readme/ctabutton5.png) has the background color of "White" (#fff) with a "Red" (#ff0505) colored border & text. When ["Hovered"](img-readme/ctabutton6.png) the background eases in to the "Rosso Corsa" (#cc0101) background color, and the text turns "White" (#fff).
-      
-    ### Colour Palette
-    - [Colour Palette](img-readme/skateShopPalette.png)
     ### Typography
     - The fonts I've used for this project are from [Google Fonts](https://fonts.google.com/). The fonts are ["Oswald"](img-readme/mainfont.png) & ["Pacifico"](img-readme/logofont.png).
         - [Oswald](https://fonts.google.com/?query=Oswald&preview.text=Oswald&preview.text_type=custom) has been used as the main font of this project. Looks really good in all the different weights, it's readble. Simpley a fine peace of sans serif typeface. 
