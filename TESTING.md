@@ -17,13 +17,28 @@
 ---
 ## Code Validation
 ---
-#### [W3C Markup Validator](https://validator.w3.org/)
+### [W3C Markup Validator](https://validator.w3.org/)
 
 
-#### [W3C CSS Validator](https://jigsaw.w3.org/) 
+### [W3C CSS Validator](https://jigsaw.w3.org/) 
+The code was validated by direct input.
+- [base.css](img-readme/base_css.png)
+    - [*Warnings*](img-readme/base_warnings_css.png) due to imported fonts from google, and copied text from Code Institutes Boutique Ado project.
+    
+- [bag.css](img-readme/bag_css.png)
+- [checkout.css](img-readme/checkout_css.png)
+- [contact.css](img-readme/contact_css.png)
+- [home.css](img-readme/home_css.png)
+- Product
+    - [products.css](img-readme/products_css.png)
+    - [product_detail.css](img-readme/product_detail_css.png)
+    - [add_edit_product.css](img-readme/add_edit_product_css.png)
+- [profile.css](img-readme/profile_css.png)
 
 
-#### [PEP8 Online](http://pep8online.com/)
+
+
+### [PEP8 Online](http://pep8online.com/)
 - Validation for Python Code
     - Views results
         - [Home](img-readme/home_views.png)
@@ -37,29 +52,29 @@
 ---
 ## Lighthouse Testing
 ---
-#### Home 
+### Home 
 - [Desktop](pdf/home_desktop.pdf)
 - [Mobile](pdf/home_mobile.pdf)
-#### Bag 
+### Bag 
 - [Desktop](pdf/bag_desktop.pdf)
 - [Mobile](pdf/bag_mobile.pdf)
-#### Checkout
+### Checkout
 - [Desktop](pdf/checkout_desktop.pdf)
 - [Mobile](pdf/checkout_mobile.pdf)
-#### Contact 
+### Contact 
 - [Desktop](pdf/contact_desktop.pdf)
 - [Mobile](pdf/contact_mobile.pdf)
-#### Product 
+### Product 
 - [Desktop](pdf/product_desktop.pdf)
 - [Mobile](pdf/product_mobile.pdf)
-#### Product Detail 
+### Product Detail 
 - [Desktop](pdf/product_detail_desktop.pdf)
 - [Mobile](pdf/product_detail_mobile.pdf)
-#### Profile 
+### Profile 
 - [Desktop](pdf/profile_desktop.pdf)
 - [Mobile](pdf/profile_mobile.pdf)
 ---
-### Testing User Stories from User Experience (UX) Section
+## Testing User Stories from User Experience (UX) Section
 
 ---
 
