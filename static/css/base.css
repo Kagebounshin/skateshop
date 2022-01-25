@@ -147,7 +147,7 @@ li.nav-item {
 }
 
 .dropdown-search input[type="text"]:focus {
-    border-color: none!important;
+    border-color: transparent!important;
     box-shadow: none!important;
     outline: 0 none;
 }
@@ -483,7 +483,7 @@ a.nav-link:hover,
 
 .form-check-input:checked {
     background-color: #764c87;
-    border-color: #764c87;
+    border-color: transparent;
 }
 
 .account-button {
@@ -713,7 +713,7 @@ input#id_qty_2 {
 .increment-qty:focus,
 .decrement-qty:focus,
 .qty_input:focus {
-    border-color: none!important;
+    border-color: transparent!important;
     box-shadow: none!important;
     outline: 0 none!important;
 }
