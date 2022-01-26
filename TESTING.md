@@ -103,9 +103,29 @@
     - I can see that I get free shipping if my bags amount is more than $50. So I add an item to see if a get free shipping. And yes, it [looks](img-readme/shipping_price.png) that I it. 
 ### Product Manager Goals
 - "As a Product Manager, I Would like to add products easily."
-    - I Sign In as a superuser, and locate the "Product Managment" link in the account dropdown menu. 
+    - I Sign In as a superuser, and locate the ["Product Managment"](img-readme/management_link.png) link in the account dropdown menu. 
+    - I start by just filling out the required fields and then add a product without any image.
+    - The product get added to the store. See [here](img-readme/add_product.png) & [here](img-readme/add_product01.png).
+    - If I try to add the product without the required fields fill out in the form, the form will tell me to fill out the required fields, See [here](img-readme/add_product02.png).
+    - I fill out all the fields and adds the product with an image. 
+    - The product is added to the store. See [here](img-readme/add_product03.png) & [here](img-readme/add_product04.png).
 - "As a Product Manager, I Would like to edit/update products easily."
+    - I Sign In as a superuser, and locate the ["Product Managment"](img-readme/management_link.png) link in the account dropdown menu. 
+    - Now I can click on the "Edit" link, either on the product [page](img-readme/edit01.png) or on the more detailed product [page](img-readme/edit02.png).
+    - When clicking the "Edit" link, I end up on the edit page with the fields already [prefilled](img-readme/edit03.png).
+    - I update the products price, and the product is succsessfuly [updated](img-readme/edit04.png) 
+    - Go back and trying to edit the price again, I write a ridiculous amount and trying to update, the form tells me to fill it out correctley, see [here](img-readme/edit05.png).
+    - Now I try to remove the image, by checking the remove [checkbox](img-readme/edit06.png) and clicking the "Update Product" button.
+    - The image is successfully removed from the product, see [here](img-readme/edit07.png).
+    - I try to add back the image to the product, and the click the update button. The product was successfully updated, and the image is back, see [here](img-readme/edit08.png)
+    - If I try to access the edit page when not signed in, I will be redirected to the Sign In page.
 - "As a Product Manager, I Would like to delete products easily."
+    - I Sign In as a superuser, and locate the ["Product Managment"](img-readme/management_link.png) link in the account dropdown menu. 
+    - Now I can click on the "Delete" link, either on the product [page](img-readme/edit01.png) or on the more detailed product [page](img-readme/edit02.png).
+    - When clicking the "Delete" link, I end up on the delete confirmation [page](img-readme/delete01.png). Asking me if I really want to delete the product. I have the chocies to do just that or cancel my request of deleting. 
+    - I click on the delete button, and the product is [deleted](img-readme/delete02.png) and nowhere to be found on the site. 
+    - I Sign out and trying to enter the product delete page, I get redirected to the Sign In page.
+
 
 ---
 ## Further Testing
