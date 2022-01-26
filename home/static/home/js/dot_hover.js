@@ -6,7 +6,7 @@ $(document).ready(function () {
             $('.dot-text').fadeIn('slow');
         },
         function () {
-            $('.dot-text').fadeOut('slow')
+            $('.dot-text').fadeOut('slow');
         }
     );
 
@@ -15,7 +15,7 @@ $(document).ready(function () {
             $('.dot-text2').fadeIn('slow');
         },
         function () {
-            $('.dot-text2').fadeOut('slow')
+            $('.dot-text2').fadeOut('slow');
         }
     );
 }); 

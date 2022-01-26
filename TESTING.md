@@ -151,8 +151,9 @@ When adding or updating a product, where you add your image. When adding a image
 All pages were tested with a standard account without any permissions, to make sure that no special features were available. Attempt to access a page that requires special permissions results in a 403 Error or a redirect to the login page. See more at the [Product Manager Goals](#product-manager-goals) section where I tested the security for the profile page, and the add/edit & delete pages. 
 
 ---
+
 ## Code Validation
----
+
 ### [W3C Markup Validator](https://validator.w3.org/)
 
 - [Home](img-readme/home_html.png)
@@ -200,6 +201,7 @@ The code was validated by direct input.
     - [load_more.js](img-readme/load_more_js.png)
     - [sort_selector.js](img-readme/sort_selector_js.png)
     - [stripe_elements.js](img-readme/stripe_elements_js.png)
+    - [quantity_input_script.html](img-readme/quantity_input_script_js.png)
 
 
 ---
