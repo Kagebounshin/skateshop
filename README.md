@@ -50,8 +50,9 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
 
 5.[ **Testing**](#testing)
 
-
-7.[ **Deployment**](#deployment)
+6.[ **Deployment**](#deployment)
+- [**Heroku**](#heroku)
+- [**Aws**](#aws)
 
 7.[ **Credits**](#credits)
 - [**Code**](#code)
@@ -386,15 +387,78 @@ Stores users billing information.
 
 ---
 
-## Testing
+# Testing
 
 [**Test Docmentation**](TESTING.md)
 
 ---
 
-## Deployment
+# Deployment
+The site was deployed to Heroku. Following the steps below.
 
-## Credits
+## Heroku Deployment Steps
+
+1. Log in to [Heroku](https://dashboard.heroku.com/apps) and create an account and a new Heroku application, and select the region that is closest to you.
+2. In the __Resourses__ tab at your desktop provision a new Postgres database. Search for ```Heroku Postgres```, and add it to your project, like [this](img-readme/heroku_deploy.png).
+3. Move back to your IDE and ```pip install dj_database_url``` & ```pip install psycopg2-binary``` to access the use of the postgres database.
+4. Then run: 
+```
+pip3 freeze > requirements.txt
+```
+5. In the projects ```settings.py``` file, add the following lines:
+
+```
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+
+```
+6. Create a superuser with:
+```
+python3 manage.py createsuperuser
+```
+7. Then install gunicorn with:
+```
+pip3 install gunicorn
+```
+8. Then run: 
+```
+pip3 freeze > requirements.txt
+```
+9. Create a Procfile, and add the following to it:
+```
+web: gunicorn appname.wsgi:application
+```
+10. Temporarily disable COLLECTSTATIC by running:
+```
+heroku config:set  DISABLE_COLLECTSTATIC=1 --app username-appname
+```
+11. Add the applications __Heroku__ hostname to __ALLOWED_HOSTS__ in ```settings.py``` 
+```
+ALLOWED_HOSTS = ['username-appname.herokuapp.com',]
+
+```
+12. ```git push``` your changes, initialize a heroku git remote by running:
+```
+heroku git:remote -a username-appname
+```
+13. Push to heroku master deploy by running:
+```
+git push heroku main
+```
+13. Go to your __Deploy__ tab in Heroku to set up automatic deployments by connecting to your github repository. Look [here](img-readme/heroku_deploy01.png)
+
+## AWS
+
+# Credits
 
 ### Code
 
