@@ -24,7 +24,7 @@
 
 ---
 ## Testing User Stories
----
+
 
 ### First Time Visitor Goals
 - "As a first time visitor, at the first look, I want to understand what the   site is all about. for example, wich products you can purchase here."
@@ -138,12 +138,12 @@
 
 ## Known Bugs
 
-When adding or updating a product, where you add your image. When adding a image, a preview of that image should appear. But it dosen't, see [here](img-readme/add_bug01.png) 
+When adding or updating a product. When adding a image, a preview of that image should appear. But it dosen't, see [here](img-readme/add_bug01.png). If there is time left I will look into it. 
 
 ---
 
 ## Resolved Bugs
-1. When updating my bag items by typing in the input area at the bag view. There was no cap on the amount I could choose. (See [here](img-readme/bag_bug.png)). So I changed [this](img-readme/bag_bug02.png) code little snippet in my "adjust_bag" view. And added [this](img-readme/bag_bug03.png) line of code. So now if the quantity is higher than 99, a [error message](img-readme/bag_bug04.png) is displayed. 
+1. When updating my bag items by typing in the input area at the bag view. There was no cap on the amount I could choose. (See [here](img-readme/bag_bug.png)). So I changed [this](img-readme/bag_bug02.png) code snippet in my "adjust_bag" view. And added [this](img-readme/bag_bug03.png) line of code. So now if the quantity is higher than 99, a [error message](img-readme/bag_bug04.png) is displayed. 
 ---
 
 ## Security
@@ -171,20 +171,18 @@ All pages were tested with a standard account without any permissions, to make s
 The code was validated by direct input.
 - [base.css](img-readme/base_css.png)
     - [*Warnings*](img-readme/base_warnings_css.png) due to imported fonts from google, and copied text from Code Institutes Boutique Ado project.
-    
 - [bag.css](img-readme/bag_css.png)
 - [checkout.css](img-readme/checkout_css.png)
 - [contact.css](img-readme/contact_css.png)
 - [home.css](img-readme/home_css.png)
-- Product
-    - [products.css](img-readme/products_css.png)
-    - [product_detail.css](img-readme/product_detail_css.png)
-    - [add_edit_product.css](img-readme/add_edit_product_css.png)
+- [products.css](img-readme/products_css.png)
+- [product_detail.css](img-readme/product_detail_css.png)
+- [add_edit_product.css](img-readme/add_edit_product_css.png)
 - [profile.css](img-readme/profile_css.png)
 
 
 ### [PEP8 Online](http://pep8online.com/)
-- Validation for Python Code
+- Validation for Python Code, Tested the apps views.
     - [Home](img-readme/home_views.png)
     - [Bag](img-readme/bag_views.png)
     - [Checkout](img-readme/checkout_views.png)

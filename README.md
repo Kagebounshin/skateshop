@@ -54,6 +54,7 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
 - [**Heroku**](#heroku)
 - [**Aws**](#aws)
     - [*Setting Up AWS S3*](#setting-up-aws-s3)
+    - [*Setting up AWS Identity and Access Management Configuration*](#setting-up-aws-identity-and-access-management-configuration)
 
 7.[ **Credits**](#credits)
 - [**Code**](#code)
@@ -492,12 +493,64 @@ username-appname
 9. Still in the bucket's __Permisions__ tab, at the "Bucket Policy" tab, click on "Policy generator" and create a new policy which should then be added to the "Bucket Policy".
 10. Still in the bucket's __Permisions__ tab, at the "Access Control List" tab, check the list objects box under the "Everyone (public access)" header.
 
+### Setting up AWS Identity and Access Management Configuration
+
+1. Go to services and click on IAM.
+2. In the IAM dashboard click to the __"User Groups"__ tab and create a new group.
+3. In the IAM dashboard click to the __"Policies"__, tab and create a new policy. 
+4. Go to the JSON tab and then click on __"Import managed policy"__.
+5. Select the __S3FullAccess__ policy and click on import.
+4. Edit the imported JSON code to allow full access to the your bucket and its' associated files, using the your bucket's ARN. You can find the ARN in __Permissons__ in your bucket, in the __"Bucket Policy"__ tab.
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "s3-object-lambda:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::your-arn",
+                "arn:aws:s3:::your-arn/*"
+            ]
+        }
+    ]
+}
+```
+5. Click on __"Review Policy"__, give the policy a name and description and then create the policy.
+6. Go back to the IAM dashboard, click the __"User groups"__ tab, click on the your newly created group. Then go to the __"Permissions"__, click the dropdown menu __"Add permission"__ and then __"Attach Policies"__. Then click the checkbox on the policy that was just created and then click to __"Add permissions"__.
+7. Go back to the IAM dashboard, click the __"Users"__ tab, click on __"Add Users"__, select a username, check the box for __"Programmatic access"__ the select next.
+8. Add the newly created user to your group, click the next button til the end, then click __"Create User"__.
+9. Download the CSV file, it containing the new user's access key and secret access key in order to add them to Django and authenticate this user.
+10. ```pip3 install boto3``` & ```pip3 install django-storages``` in your IDE.
+11. Then run: 
+```
+pip3 freeze > requirements.txt
+```
+12. Then add 'storages', to the installed apps list in ``````settings.py``````
+13. Add the following AWS config variables to the ``````settings.py`````` to use if you have the __USE_AWS__ varibale in os.environ:
+```
+if 'USE_AWS' in os.environ:
+    AWS_STORAGE_BUCKET_NAME = 'Your_Bucket_Name'
+    AWS_S3_REGION_NAME = 'Your_Region'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+``` 
+14. Add the Access Keys and USE_AWS=True to the __Heroku__ config variables.
+15. Commit these changes and push, the build will collect all the Static files and place them in the S3 bucket and Heroku will then serve them successfully.
+16. Go back to your S3 Bucket, create a new folder in the S3 bucket called Media and set __"Permissons"__ to grant __"Public-read Access"__.
+17. Then upload all the images for your app into that folder.
+
+
+
 # Credits
 
 ### Code
-
-
 ### Media
 ### Acknowledgements
 
 ### Disclaimer
+For educational purpose only!
