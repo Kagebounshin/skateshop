@@ -109,14 +109,21 @@
 
 ---
 ## Further Testing
+
+- Tested all the links, to see if they behave as they should.
+- Tested different webbrowsers, Google Chrome & Microsoft Edge, Safari.
+- Tested different devices such as Desktop, Laptop, Ipad, Iphone 12 Pro, Iphone X, Iphone 8.
+- Friend & Family members has tested the site, looking for bugs and other issues.
 ---
 
-## Known Bugs 
+## Known Bugs
+
+
 
 ---
 
 ## Resolved Bugs
-1. When updating my bag items by typing in the input area at the bag view. There was no cap on the amount I could choose. (Look [here](img-readme/bag_bug.png)). So I changed [this](img-readme/bag_bug02.png) code little snippet in my "adjust_bag" view. And added [this](img-readme/bag_bug03.png) line of code. So now if the quantity is higher than 99, a [error message](img-readme/bag_bug04.png) is displayed. 
+1. When updating my bag items by typing in the input area at the bag view. There was no cap on the amount I could choose. (See [here](img-readme/bag_bug.png)). So I changed [this](img-readme/bag_bug02.png) code little snippet in my "adjust_bag" view. And added [this](img-readme/bag_bug03.png) line of code. So now if the quantity is higher than 99, a [error message](img-readme/bag_bug04.png) is displayed. 
 ---
 
 ## Security
