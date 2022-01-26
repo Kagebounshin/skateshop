@@ -148,7 +148,7 @@ When adding or updating a product. When adding a image, a preview of that image 
 
 ## Security
 
-All pages were tested with a standard account without any permissions, to make sure that no special features were available. Attempt to access a page that requires special permissions results in a 403 Error or a redirect to the login page. See more at the [Product Manager Goals](#product-manager-goals) section where I tested the security for the profile page, and the add/edit & delete pages. 
+All pages were tested with a standard account without any permissions, to make sure that no special features were available. Attempt to access a page that requires special permissions results in a 403 Error or a redirect to the sign in page. See more at the [Frequent User Goals](#frequent-user-goals) & [Product Manager Goals](#product-manager-goals) section where I tested the security for the profile page, and the add/edit & delete pages. 
 
 ---
 

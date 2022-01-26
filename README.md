@@ -44,6 +44,17 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
     - [*Profile Model*](#profile-model)
 
 3.[ **Features**](#features)
+- [**Navbar**](#navbar)
+- [**Home**](#home)
+- [**Product**](#product)
+- [**Product Details**](#product-details)
+- [**Bag**](#bag) 
+- [**Checkout**](#checkout)
+- [**Review**](#review)
+- [**Contact**](#contact)
+- [**Subscribe**](#subscribe)
+- [**Profile**](#profile)
+- [**Product Managment**](#product-managment)
 - [**Features For The Future**](#features-for-the-future)
 
 4.[ **Technologies**](#technologies-used)
@@ -338,6 +349,17 @@ Stores users billing information.
 
 ## Features
 
+- Navbar
+- Home
+- Product
+- Product Details
+- Bag 
+- Checkout
+- Review
+- Contact
+- Subscribe
+- Profile
+- Product Managment
 
 ### Features for the future 
 
