@@ -53,6 +53,7 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
 6.[ **Deployment**](#deployment)
 - [**Heroku**](#heroku)
 - [**Aws**](#aws)
+    - [*Setting Up AWS S3*](#setting-up-aws-s3)
 
 7.[ **Credits**](#credits)
 - [**Code**](#code)
@@ -396,7 +397,7 @@ Stores users billing information.
 # Deployment
 The site was deployed to Heroku. Following the steps below.
 
-## Heroku Deployment Steps
+## Heroku
 
 1. Log in to [Heroku](https://dashboard.heroku.com/apps) and create an account and a new Heroku application, and select the region that is closest to you.
 2. In the __Resourses__ tab at your desktop provision a new Postgres database. Search for ```Heroku Postgres```, and add it to your project, like [this](img-readme/heroku_deploy.png).
@@ -444,19 +445,52 @@ heroku config:set  DISABLE_COLLECTSTATIC=1 --app username-appname
 11. Add the applications __Heroku__ hostname to __ALLOWED_HOSTS__ in ```settings.py``` 
 ```
 ALLOWED_HOSTS = ['username-appname.herokuapp.com',]
-
 ```
-12. ```git push``` your changes, initialize a heroku git remote by running:
+12. Add a __SECRET_KEY__ config variable in Heroku settings.
+
+13. ```git push``` your changes, then initialize a heroku git remote by running:
 ```
 heroku git:remote -a username-appname
 ```
-13. Push to heroku master deploy by running:
+14. Push to heroku master deploy by running:
 ```
 git push heroku main
 ```
-13. Go to your __Deploy__ tab in Heroku to set up automatic deployments by connecting to your github repository. Look [here](img-readme/heroku_deploy01.png)
+15. Go to your __Deploy__ tab in Heroku to set up automatic deployments by connecting to your github repository. Look [here](img-readme/heroku_deploy01.png)
 
 ## AWS
+
+### Setting Up AWS S3
+
+1. Go to [Amazon](https://aws.amazon.com/) and set up your AWS account.
+2. Search for S3 in the AWS Managment Console under "My Account".
+3. Open S3 and create a new "Bucket", for best practices, name your bucket like your __Heroku__ appname. 
+```
+username-appname
+```
+4. Select the region closest to your location.
+5. Uncheck "Block all public access" and aknowledge that the bucket will be public.
+6. The click "Create Bucket".
+7. Go to __Properties__ inside your newly created bucket, and enable "Static website hosting".
+8. Go to the bucket's __Permisions__ tab, add the following to the CORS confiquration:
+```
+[
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
+```
+9. Still in the bucket's __Permisions__ tab, at the "Bucket Policy" tab, click on "Policy generator" and create a new policy which should then be added to the "Bucket Policy".
+10. Still in the bucket's __Permisions__ tab, at the "Access Control List" tab, check the list objects box under the "Everyone (public access)" header.
 
 # Credits
 
