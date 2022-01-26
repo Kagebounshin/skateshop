@@ -59,19 +59,51 @@
 
 ### Frequent User Goals
 - "As a Frequent User, I Like the login process to be smooth."
+    - When I want to Sign In I locate the "Account" link in the upper right corner, same on mobile and on desktop.
+    - I click the "Account" link an a dropdown menu is revealed, there I can find the chocice to Sign In.
+    - I get to the sign in page, I can sign in by entering my correct email address and passowrd. I Do so and I get a [message](img-readme/toast_success_sign_in.png) that I the sign in was successful.
+    - If I type in one or both of my "Sign in" credentials faulty, an [error message](img-readme/signin_fail.png) is displayed at the top of the form.
 - "As a Frequent User, I would like to access a profile page to manage my order history, and save personal details."
+    - When signed in, I can locate my profile page at the "Account" dropdown menu at the navbar, or at the footer in the customer support section.
+    - At my profile page I can save my shipping information by filling out the [form](img-readme/profile_form.png) and click on the "Update Information" button. Now my shipping details is saved, and will be preloaded when at the checkout page. For the shipping details to be preloaded you need to be signed in.
+    - If I want to see my [order history](img-readme/profile_order.png), I can do so on the profile page. If I click on the Order Number I will be redirected to a past order confirmation [page](img-readme/profile_past_order_information.png), with a [message](img-readme/profile_past_order.png) saying that this is an old order. 
 - "As a Frequent User, I want to search for specific products on the site."
-- "As a Frequent User, I want to search for a specific category on the site."
+    - At the top right of the navbar I can locate a "Search" link. 
+    - I click the link and the search form input reavels itself in a dropdown menu both on mobile and desktop views. 
+    - I can now type in what i'm looking for, I enter the keyword "skate" and click on magnifying glass. 
+    - I get redirected to a page with my search [results](img-readme/search_keyword.png) displayed. I found 9 products with the keyword of "skate".
 - "As a Frequent User, I would like to add products to my bag easily."
+    - If I go to a product I want to purchase, I click on the products image to get to it's details.
+    - There I can choose the [quantity](img-readme/quantity_input.png) that I want to order, and click the ["Add to bag"](img-readme/add_bag_button.png) Button. And the product is added to my bag and a toast [message](img-readme/toast_bag.png) appears with what I just added. 
+    - If I try to order a rediculus amount of a specific product, it will throw an [error](img-readme/quantity_input_fail.png).
+    - Or if I try to add nothing to the bag, it will also throw an [error](img-readme/quantity_input_fail2.png)
+
 - "As a Frequent User, I would like to remove/update products in my bag."
-- "As a Frequent User, I want to see the shopping bag total amount all the time."
+    - I go to my current bag item, by clicking on the bag link at the top right of the navigation bar. I'm not satisfied with the amount I've ordered of a product so I decrease the amount and click on the update button. A [message](img-readme/bag_update.png) is displayed saying that my update was successful.
+    - I increase the amount and click on the update button. The update was successful once again.
+    - If I try to increase the amount to a rediculus number using the input, it will throw an [error](img-readme/bag_bug04.png).
+    - Or if I input the number "0" in the input field. I will remove the bag item from the bag.
+    - I want to delete a product. I click on the [trash can](img-readme/bag_trash.png) for the product I want to remove. And the product gets [removed](img-readme/bag_removed.png) from the bag 
+- "As a Frequent User, I want to see the shopping bags total amount all the time."
+    - When I add any product to the bag, the total amount is displayed below the Bag link. Include the shipping. On [desktop](img-readme/bag_total_desk.png), on [mobile](img-readme/bag_total_mobile.png). If I go to any of the pages I fancy on the website, my bags total is always with me at the navbar. 
 - "As a Frequent User, I want to review my bag before checkout."
-- "As a Frequent User, I want to View confirmation of order before completing purchase."
+    - Just by clicking the [bag](img-readme/bag_total_desk.png) link at the navbar or by clicking the ["GO TO BAG"](img-readme/go_to_bag.png) button displayed in a toast when adding an item. I can see a preview of my [bags](img-readme/bag_items.png) current items before going to the checkout. 
+- "As a Frequent User, I want to view the order before completing purchase."
+    - When I'm satisfied with my order, I can click on the [Secure Checkout](img-readme/secure_checkout.png) button to move on. 
+    - Here I can see my [order summary](img-readme/checkout_order_sum.png).
 - "As a Frequent User, I want to easily enter my payment information, so that the checkout is quick and easy."
-- "As a Frequent User, I want to feel that my payment and personal information is secured."
-- "As a Frequent User, I would like to get better shipping prices as my bags total increases."
+    - I check if my order is in place, I fill out my order details and payment credentials, like [this](img-readme/order_pay_details.png), and click on the [complete order](img-readme/complete_order.png) button.
+    - A [preloader](img-readme/preloader.png) appears, waiting for respone. 
+    - If everything went well, I get to a confirmation [page](img-readme/order_complete.png) saying that the order was a success. I also get a [confirmation email](img-readme/order_confirm.png) to my sent to my email adress.
+    - If I dosen't fill out my order details correctley the form will tell me to fill it out, like [this](img-readme/field_error.png) and  if I dont fill out my payment credentials correctly it will also throw an [error](img-readme/card_error.png), saying I need to fill out my card credentials correctly.
+- "As a Frequent User, I want to feel that my personal information is secured."
+    - I go to my profile page an copies the [adress](img-readme/secure_profile.png). I then sign out and then I paste in the adress and press enter. I get redirected to the sign in page.
+    - I go to one of my past orders and copies the [adress](img-readme/secure_profile01.png). I sign out and then I paste in the adress and press enter. Then I'm redirected to a [403 Error](img-readme/secure_profile02.png) page, saying that I'm not allowed to to that.
+- "As a Frequent User, I would like to get free shipping as my bags total increases."
+    - I can see that I get free shipping if my bags amount is more than $50. So I add an item to see if a get free shipping. And yes, it [looks](img-readme/shipping_price.png) that I it. 
 ### Product Manager Goals
 - "As a Product Manager, I Would like to add products easily."
+    - I Sign In as a superuser, and locate the "Product Managment" link in the account dropdown menu. 
 - "As a Product Manager, I Would like to edit/update products easily."
 - "As a Product Manager, I Would like to delete products easily."
 
@@ -80,9 +112,11 @@
 ---
 
 ## Known Bugs 
+
 ---
 
 ## Resolved Bugs
+1. When updating my bag items by typing in the input area at the bag view. There was no cap on the amount I could choose. (Look [here](img-readme/bag_bug.png)). So I changed [this](img-readme/bag_bug02.png) code little snippet in my "adjust_bag" view. And added [this](img-readme/bag_bug03.png) line of code. So now if the quantity is higher than 99, a [error message](img-readme/bag_bug04.png) is displayed. 
 ---
 
 ## Security

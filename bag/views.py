@@ -74,10 +74,13 @@ def adjust_bag(request, item_id):
             messages.success(request, f'Removed size {size.upper()} \
                 {product.name} from your bag')
     else:
-        if quantity > 0:
+        if quantity <= 99:
             bag[item_id] = quantity
             messages.success(request, f'Updated {product.name} \
                 quantity to {bag[item_id]}')
+        elif quantity >= 100:
+            messages.error(request, f'Quantity of {product.name} \
+                must be less or equal to 99')
         else:
             bag.pop(item_id)
             messages.success(request, f'Removed {product.name} from your bag')
