@@ -544,8 +544,6 @@ if 'USE_AWS' in os.environ:
 16. Go back to your S3 Bucket, create a new folder in the S3 bucket called Media and set __"Permissons"__ to grant __"Public-read Access"__.
 17. Then upload all the images for your app into that folder.
 
-
-
 # Credits
 
 ### Code
