@@ -55,6 +55,9 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
 - [**Aws**](#aws)
     - [*Setting Up AWS S3*](#setting-up-aws-s3)
     - [*Setting up AWS Identity and Access Management Configuration*](#setting-up-aws-identity-and-access-management-configuration)
+- [**Github**](#github)
+    - [*Forking the GitHub Repository*](#forking-the-github-repository)
+    - [*Making a Local Clone*](#making-a-local-clone)
 
 7.[ **Credits**](#credits)
 - [**Code**](#code)
@@ -381,9 +384,9 @@ Stores users billing information.
 
 - [favicon](https://favicon.io/) - Sites favicon
 
-- [Coolors](https://coolors.co/) - For creating the colorpalette at the Design section of this README
+- [Coolors](https://coolors.co/) - For creating the color palette at the Design section of this README.
 
-- [Unsplash](https://unsplash.com/s/photos/skateboarders) - Images for the homepage
+- [Unsplash](https://unsplash.com/s/photos/skateboarders) - Images for the homepage.
 
 - [Tinyjpg](https://tinyjpg.com/) - Resizing images
 
@@ -552,7 +555,7 @@ if 'USE_AWS' in os.environ:
 
 ## Github
 
-### Forking the GitHub Repository
+### Forking the Github Repository
 
 By forking the GitHub Repository you can make a copy of the original repository to your GitHub account to just view or make changes without affecting the original. Use these steps or press this [link](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
@@ -589,7 +592,11 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 # Credits
 
 ### Code
+
+
 ### Media
+
+- Product images for this project was borrowed from [Junkyard](https://junkyard.com/)
 ### Acknowledgements
 
 ### Disclaimer
