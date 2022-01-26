@@ -459,6 +459,8 @@ git push heroku main
 ```
 15. Go to your __Deploy__ tab in Heroku to set up automatic deployments by connecting to your github repository. Look [here](img-readme/heroku_deploy01.png)
 
+---
+
 ## AWS
 
 ### Setting Up AWS S3
@@ -492,6 +494,8 @@ username-appname
 ```
 9. Still in the bucket's __Permisions__ tab, at the "Bucket Policy" tab, click on "Policy generator" and create a new policy which should then be added to the "Bucket Policy".
 10. Still in the bucket's __Permisions__ tab, at the "Access Control List" tab, check the list objects box under the "Everyone (public access)" header.
+
+---
 
 ### Setting up AWS Identity and Access Management Configuration
 
@@ -543,6 +547,44 @@ if 'USE_AWS' in os.environ:
 15. Commit these changes and push, the build will collect all the Static files and place them in the S3 bucket and Heroku will then serve them successfully.
 16. Go back to your S3 Bucket, create a new folder in the S3 bucket called Media and set __"Permissons"__ to grant __"Public-read Access"__.
 17. Then upload all the images for your app into that folder.
+
+---
+
+## Github
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository you can make a copy of the original repository to your GitHub account to just view or make changes without affecting the original. Use these steps or press this [link](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
+
+1. Log in to [GitHub](https://github.com/) and locate the [GitHub Repository](https://github.com/Kagebounshin/skateshop).
+2. In the top-right corner of the page, click Fork.
+3. Now you will have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+7. Press Enter. Your local clone will be created.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+
+Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
 # Credits
 
