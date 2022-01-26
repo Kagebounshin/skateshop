@@ -118,13 +118,13 @@
     - Now I try to remove the image, by checking the remove [checkbox](img-readme/edit06.png) and clicking the "Update Product" button.
     - The image is successfully removed from the product, see [here](img-readme/edit07.png).
     - I try to add back the image to the product, and the click the update button. The product was successfully updated, and the image is back, see [here](img-readme/edit08.png)
-    - If I try to access the edit page when not signed in, I will be redirected to the Sign In page.
+    - If I try to access the edit page when not signed in, I will be redirected to the Sign In page. If I then sign in not as a superuser I end up on the [403 Error](img-readme/edit09.png) page, saying that only store owners can do that.
 - "As a Product Manager, I Would like to delete products easily."
     - I Sign In as a superuser, and locate the ["Product Managment"](img-readme/management_link.png) link in the account dropdown menu. 
     - Now I can click on the "Delete" link, either on the product [page](img-readme/edit01.png) or on the more detailed product [page](img-readme/edit02.png).
     - When clicking the "Delete" link, I end up on the delete confirmation [page](img-readme/delete01.png). Asking me if I really want to delete the product. I have the chocies to do just that or cancel my request of deleting. 
     - I click on the delete button, and the product is [deleted](img-readme/delete02.png) and nowhere to be found on the site. 
-    - I Sign out and trying to enter the product delete page, I get redirected to the Sign In page.
+    - I Sign out and trying to enter the product delete page, I get redirected to the Sign In page. If I then sign in not as a superuser I end up on the [403 Error](img-readme/delete03.png) page, saying that only store owners can do that.
 
 
 ---
@@ -138,7 +138,7 @@
 
 ## Known Bugs
 
-
+When adding or updating a product, where you add your image. When adding a image, a preview of that image should appear. But it dosen't, see [here](img-readme/add_bug01.png) 
 
 ---
 
@@ -147,6 +147,9 @@
 ---
 
 ## Security
+
+All pages were tested with a standard account without any permissions, to make sure that no special features were available. Attempt to access a page that requires special permissions results in a 403 Error or a redirect to the login page. See more at the [Product Manager Goals](#product-manager-goals) section where I tested the security for the profile page, and the add/edit & delete pages. 
+
 ---
 ## Code Validation
 ---
