@@ -81,7 +81,6 @@ def add_review(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ReviewForm(request.POST)
-
         if form.is_valid():
             review = form.save(commit=False)
             review.product = product
@@ -106,6 +105,27 @@ def add_review(request, product_id):
     return render(request, template, context)
 
 
+def delete_review(request, review_id):
+    """ Delete a product from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that')
+        raise PermissionDenied()
+
+    review = get_object_or_404(ProductReview, pk=review_id)
+
+    if request.method == 'POST':
+        review.delete()
+        messages.success(request, 'Review Deleted!')
+        return redirect(reverse('home'))
+
+    template = 'products/delete_review.html'
+    context = {
+        'review': review,
+    }
+
+    return render(request, template, context)
+
+
 @login_required
 def add_product(request):
     """ Add a Product to the Store """
@@ -125,7 +145,7 @@ def add_product(request):
     else:
         form = ProductForm()
 
-    template = 'products/add_product.html'
+    template = 'products/delete_review.html'
     context = {
         'form': form,
     }
