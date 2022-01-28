@@ -1,4 +1,4 @@
-<h1 align="center">Skate Shop</h1>
+# SkateShop
 
 [View the live project here.](https://kagebounshin-skateshop.herokuapp.com/)
 
@@ -185,6 +185,8 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
     - Other
         - The other images of the website, where choosen to match the theme of the website, in this case, skateboarding. So that the user would get a better understanding of the sites purpose.
 
+[Back To Top 🡅](#skateshop)
+
 ---
 
 # Database Setup
@@ -335,6 +337,8 @@ Stores users billing information.
 | default_county | string | User's county. |
 | default_country | string | User's country |
 
+[Back To Top 🡅](#skateshop)
+
 ---
 
 ## Features
@@ -480,6 +484,9 @@ And you can update the product, using the [plus/minus](img-readme/bag05.png) ico
 - More Products and Categories.
 - Tutorial's for setting up a skateboard. 
 - Discount's if you purchase a fully asembled skateboard.  
+
+[Back To Top 🡅](#skateshop)
+
 ---
 
 ## Technologies Used
@@ -531,11 +538,15 @@ And you can update the product, using the [plus/minus](img-readme/bag05.png) ico
 
 - [GoFullPage](https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl?hl=sv) - used for capturing an full page view. 
 
+[Back To Top 🡅](#skateshop)
+
 ---
 
 # Testing
 
 [**Test Docmentation**](TESTING.md)
+
+[Back To Top 🡅](#skateshop)
 
 ---
 
@@ -730,15 +741,31 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
+[Back To Top 🡅](#skateshop)
+
 # Credits
 
 ### Code
 
+- The loadmore.js script was inspired from a script from [markuptag](https://www.markuptag.com/javascript-load-more-content-on-click-button/).
+- The back_to_top.js script was inspired script from [w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top).
+- The Code to make you smooth scroll back to the top when clicking the "Back To Top Button" was borrowed from [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo).
+- The review model was inspired from [this](https://www.youtube.com/watch?v=YhbuBD3N1-c) youtube video.
+- For some structure of this website I followed Code Institute's video lessons.
+
 
 ### Media
+- Product images for this project was borrowed from [Junkyard](https://junkyard.com/).
+- The carousel images was obtained from [Unsplash](https://unsplash.com/s/photos/skateboarders).
+- Contact page image was from [Alamy](https://www.alamy.com/stock-photo/skater-girl.html)
+- All the text and images are used for educational purpose only.
 
-- Product images for this project was borrowed from [Junkyard](https://junkyard.com/)
 ### Acknowledgements
+- Slack Community
+- Family & Friends
+- Mentor Daisy
+- Code Institute for inspiration from their Boutique Ado project.
+- The layout inspration for this README.md is from Code Institute's own [Sample README](https://github.com/Code-Institute-Solutions/SampleREADME).
 
 ### Disclaimer
 For educational purpose only!
