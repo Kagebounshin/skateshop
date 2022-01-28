@@ -349,17 +349,85 @@ Stores users billing information.
 
 ## Features
 
-- Navbar
-- Home
-- Product
-- Product Details
-- Bag 
-- Checkout
-- Review
-- Contact
-- Subscribe
-- Profile
-- Product Managment
+### Navbar
+#### Desktop
+- The [navbar](img-readme/navbar_desk.png) is set to the top of the screen, it's fixed to the top, so it will be following you around, making it easy to quickly navigate your way around the website. 
+- To the left you go the site's [brand](img-readme/navbar_brand.png). If you are lost the site's brand will take you back to the homepage. Then brand change's color when [hovered](img-readme/navbar_brand_hovered.png).
+- In the middle you can see the links to the sites [category's](img-readme/navbar_links.png). When the links are [hovered](img-readme/navbar_links_hovered.png) they change color, and get's an underline. 
+- The the right, is the "Account", "Search" and "Bag" [links](img-readme/navbar_right_links.png).
+    - The Account link is a [dropdown](img-readme/navbar_account.png) menu. And when not logged in, you have the choices to "Sign Up" or "Sign In". 
+    - When logged in as a regular user, the chocices in the account [dropdown](img-readme/navbar_account01.png) are to go to your "Profile" page or "Sign Out". 
+    - When logged in as a superuser, the chocices in the account [dropdown](img-readme/navbar_account02.png) are to go to "Product Management", "Profile" page or "Sign Out". 
+    - The Search link, will [reveal](img-readme/navbar_search.png) a searchfield. There you can search for products on the site. 
+    - The bag link will take you to your bag. The link will [display](img-readme/navbar_bag.png) your total cost for all your bag items. 
+#### Tablet
+- On tablet the site's [brand](img-readme/navbar_tablet.png) get's a new position in the middle of the navbar. Works in the same way, still take's you back to the home page if you are lost. 
+- The links are hidden inside of a [burger menu](img-readme/navbar_burger.png), click the menu to [reveal](img-readme/navbar_tablet01.png) the category links. 
+- The "Account", "Search" and "Bag" [links](img-readme/navbar_tablet02.png), works the same, but they all got an icon.
+
+#### Mobile
+
+- On mobile the navbar looks like [this](img-readme/navbar_mobile.png).
+- The site's brand is now inside the [burger menu](img-readme/navbar_burger.png), click on the menu to [reveal](img-readme/navbar_mobile01.png) the brand & the category links wich are displayed to the center of the site. 
+- The "Account", "Search" and "Bag" [links](img-readme/navbar_tablet02.png), works the same, and they all got an icon.
+
+---
+
+### Home
+
+- Upon entering the site, first thing you'll see below the navbar is a header-text, a short but informative text about the site and a choice to "Shop now". All together looks like [this](img-readme/home.png).
+- The "Shop now" button takes tou to the all products page. 
+- The you can see a [carousel](img-readme/home01.png) with two images. 
+- The first images has two white [dots](img-readme/home02.png) when displayed on desktop, if you hover over the dots, text and a category choice will be [revealed](img-readme/home03.png) for the user. 
+- After the carousel you can see the highest rated [products](img-readme/home04.png) for the site. Use the arrows to [reveal](img-readme/home05.png) more or less products. Click on a product to get to that products details page. 
+- After the highly rated section, you have all the category's [displayed](img-readme/home05.png). When you [hover](img-readme/home07.png) over on of the category, a overlay fades in with the name of that category. Click a category to display all the products of the category.
+
+---
+
+### Product
+- If you click on the ["Shop now"](img-readme/home08.png) button at the home page. You will get to the page containing all the [products](img-readme/products.png) for the site. 
+- If on the page with all products, the page's header just say's ["Products"](img-readme/products01.png). But If you're on a page for a specific category, that category name is [displayed](img-readme/products02.png) instead.
+- If on a page with specific category, you can go back to all the products by clicking the ["All Products"](img-readme/products03.png) link. As you can see on that picture, it currently display's how many products that or shown on the page. 
+- You can use a dropdown [sorting menu](img-readme/products03.png), to display the products in a specific order of your choosing. 
+- Each [Product](img-readme/products05.png) is displayed with an image (if it doesn't have an image, [this](img-readme/noimage.jpg.png) image is displayed), the products name, price & wich category it belongs to.
+- If you are a superuser, you also have the options to [Edit/Delete](img-readme/products06.png) a product. 
+
+---
+
+### Product Details
+
+- If you click on a product's image, you will get to the products [details](img-readme/pd.png) page. 
+- First you have an [image](img-readme/pd01.png) of the product you have choosed to go to. 
+- Then you have the products category, name & price [displayed](img-readme/pd02.png)
+- There is a ["Details"](img-readme/pd03.png) link you can click, and it will take you down to more specific [details & shipping](img-readme/pd05.png) information.
+- If signed in as a superuser, you have the options to [Edit/Delete](img-readme/pd04.png) the product.
+- If the products price is in range to get you free delivery, [this](img-readme/pd06.png) text will be displayed. 
+- If you want to add the item to your page, click the ["ADD TO BAG"](img-readme/pd07.png) button. 
+- The [quantity](img-readme/pd08.png) selector is by default set to 1. And the minus symbol is not visible. You can choose the quantiy with the [plus/minus](img-readme/pd09.png) icons or by using the [input field](img-readme/pd10.png).
+- If you want to look for other products, click the ["KEEP SHOPING"](img-readme/pd11.png) button.
+- At the bottom of the page is the User review section. Where if you are signed in, you can review the product of your choice. 
+- If not signed in the section looks like [this](img-readme/pd12.png), telling you to sign in or sign up to be able to review.
+- When signed in you are able to review the product in a [review form](img-readme/pd13.png). The review want's a title, a review text, and a rating from 1 to 5 where, 5 is great and 1 is bad. 
+- After filling out the review form, click the "ADD REVIEW" button. The review is [displayed](img-readme/pd14.png) in a newest to oldest order, with the title, review, the username of the reviewer, and a review date.
+- If signed in as a superuser you have the option to ["Delete"](img-readme/pd15.png) the review. Click on the delete button, and your directed to the [delete review](img-readme/pd16.png) page, there you can choose to delete in permanatley or just cancel the request. 
+
+---
+
+### Bag 
+- If you click on the bag link at the navbar, you get to the bag page. 
+- If the bag is ["empty"](img-readme/bag.png) it will tell you that and you have the option to get back to your shopping. 
+- If you have one or more items in your shopping bag, your items will be [displayed](img-readme/bag01.png).
+- Looking at one specific [product](img-readme/bag02.png) in your bag. You can see the [name/sku & price](img-readme/bag03.png) for that product. You can delete the product by clicking on the [trash can](img-readme/bag04.png).
+And you can update the product, using the [plus/minus](img-readme/bag05.png) icons or by using the [input field](img-readme/bag06.png) and the clicking on the ["UPDATE"](img-readme/bag07.png) button. The price changes for a product if the quantity is [updated](img-readme/bag08.png).
+- Beneath the products you can see the total price of your bag & two buttons, one say's "KEEP SHOPPING" wich will get you to the products, the other say's "SECURE CHECKOUT" wich will take you to the checkout page. It look's like [this](img-readme/bag09.png). 
+- If the current price doesn't get you free delivery, a [text](img-readme/bag00.png) will be visible above the two said buttons. 
+
+### Checkout
+### Review
+### Contact
+### Subscribe
+### Profile
+### Product Managment
 
 ### Features for the future 
 

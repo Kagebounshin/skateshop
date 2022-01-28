@@ -155,6 +155,7 @@
                 <small>By: <strong>{{ review.user }}</strong></small> <br>
                 <small>Review date: {{ review.date|date:"d-m-y" }}</small>
                 {% if request.user.is_superuser %}
+                <br>
                 <small class="ml-3"><a class="text-danger" href="{% url 'delete_review' review.id %}">Delete</a></small>
                 {% endif %}
             </div>
@@ -162,7 +163,7 @@
                 <p class="pt-4">{{ review.review }}</p>
             </div>
             {% empty %}
-            <p class="text-center">Nobody has yet reviewed this product from <strong
+            <p class="text-center">Nobody has reviewed this product from <strong
                     class="uppercase">"{{ product.name }}"</strong> yet!</p>
             {% endfor %}
         </div>
