@@ -178,7 +178,8 @@ a.nav-link:hover,
     text-transform: capitalize;
 } 
 
-.error-container {
+.error-container,
+.sub-container {
     min-height: 70vh;
     margin-top: 10rem;
 }

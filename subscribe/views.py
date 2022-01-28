@@ -19,8 +19,9 @@ def sub_form(request):
         form = SubForm(request.POST)
         emails = Subscribe.objects.values_list('email', flat=True)
         if request.POST['email'] in emails:
-            messages.error(request, "You have already subscribed to our newsletter")
-            return HttpResponseRedirect(request.path_info)
+            messages.error(request, "You have already subscribed \
+                to our newsletter!")
+            return render(request, "subscribe/subscribe.html")
         elif form.is_valid():
             form.save()
             messages.success(request,
@@ -33,7 +34,7 @@ def sub_form(request):
     else:
         form = SubForm()
 
-    template = 'home/index.html'
+    template = 'subscribe/subscribe.html'
 
     context = {
         'form': form,
