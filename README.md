@@ -437,19 +437,44 @@ And you can update the product, using the [plus/minus](img-readme/bag05.png) ico
 - You can also see your [order history](img-readme/profile02.png). Displayed there is the order number(truncated), order date, items, and the cost of that order. 
 - If you hover on the [order number](img-readme/profile03.png) you can see the full length of the order number. When clicking on the order number, you'll the [checkout success](img-readme/profile04.png) page, saying that this is a past order, an at the button a button to take you back to your profile page. 
 
+---
+
 ### Product Managment
 
-- Being a superuser you can access the [Product Managment]() page.
+- Being a superuser you can access the [Product Managment](pdf/add_full.pdf) page. This is a place for the store owners to add products quickly. You choose the [category](img-readme/add.png) for the product you would like to add. 
+- Add all the details for your new product. Add an image, the click on the "Add Product" button.
+- The new [product](img-readme/add01.png) get's sucessfully added to your store.
+
+---
+
 ### Footer
 
-### Error
+- Down at the [footer](img-readme/footer.png) you can [subscribe](img-readme/footer01.png) to a newsletter, by typing in your email address an click on ["SUBSCRIBE"](img-readme/footer02.png). On smaller devices the send button has an [envelope](img-readme/footer03.png) icon. 
+- You get to the contact page by clicking on the "Contact Us" link in the ["CUSTOMER SUPPORT"](img-readme/footer04.png) section of the footer. When not signed in or signed up, you have the choice to do in the ["CUSTOMER SUPPORT"](img-readme/footer05.png) aswell. 
+- If signed in you can got to your "Profile" page in the ["CUSTOMER SUPPORT"](img-readme/footer06.png)
+- You can see basic store information in the ["CONTACT INFO"](img-readme/footer07.png) section.
+- Visit the store's social media accounts using the icons in the ["VISIT US HERE"](img-readme/footer08.png) section.
+
+---
+
+### Additional Features
+
+- When scrolling down a page, a ["Back to Top"](img-readme/additional.png) button fades in to the lower right part of the screen. Click the button and smooth scroll you're way back to the top of the page. 
+- Error, Info, Success & Warning message's are mostly displayed in a [toast](img-readme/additional01.png) at the top right part of the screen.
+
+---
+
+### Error Pages
 
 - [403 Error](img-readme/403error.png)
 - [404 Error](img-readme/404error.png)
 - [500 Error](img-readme/500error.png)
 
+---
+
 ### Features for the future 
 
+- Would like you to add more then one product at the time. 
 ---
 
 ## Technologies Used
