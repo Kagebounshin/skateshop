@@ -100,7 +100,9 @@
     - I go to my profile page an copies the [adress](img-readme/secure_profile.png). I then sign out and then I paste in the adress and press enter. I get redirected to the sign in page.
     - I go to one of my past orders and copies the [adress](img-readme/secure_profile01.png). I sign out and then I paste in the adress and press enter. Then I'm redirected to a [403 Error](img-readme/secure_profile02.png) page, saying that I'm not allowed to to that.
 - "As a Frequent User, I would like to get free shipping as my bags total increases."
-    - I can see that I get free shipping if my bags amount is more than $50. So I add an item to see if a get free shipping. And yes, it [looks](img-readme/shipping_price.png) that I it. 
+    - I can see that I get free shipping if my bags amount is more than $50. So I add an item to see if a get free shipping. And yes, it [looks](img-readme/shipping_price.png) that I do get it. 
+- "As a Frequent User, I Would like to review a product."
+    - I Sign in as a user, I go to one specific product that I want to review. I Scroll down to the review form, and fill out the [form](img-readme/review.png) correctly, I click on the ["ADD REVIEW"](img-readme/review01.png) button. The [review](img-readme/review01.png) is added to that products page. 
 ### Product Manager Goals
 - "As a Product Manager, I Would like to add products easily."
     - I Sign In as a superuser, and locate the ["Product Managment"](img-readme/management_link.png) link in the account dropdown menu. 
