@@ -379,7 +379,7 @@ Stores users billing information.
 - If on a page with specific category, you can go back to all the products by clicking the ["All Products"](img-readme/products03.png) link. As you can see on that picture, it currently display's how many products that or shown on the page. 
 - You can use a dropdown [sorting menu](img-readme/products03.png), to display the products in a specific order of your choosing. 
 - Each [Product](img-readme/products05.png) is displayed with an image (if it doesn't have an image, [this](img-readme/noimage.jpg.png) image is displayed), the products name, price & wich category it belongs to.
-- If you are a superuser, you also have the options to [Edit/Delete](img-readme/products06.png) a product. Click on the delete button, and your directed to the [delete product](img-readme/products07.png) page, there you can choose to delete in permanatley or just cancel the request.  
+- If you are a superuser, you also have the options to [Edit/Delete](img-readme/products06.png) a product. Click on the delete link, and your directed to the [delete product](img-readme/products07.png) page, there you can choose to delete in permanatley or just cancel the request. Click on the edit link and your are directed to the [Edit Product](pdf/edit_full.pdf) page, the page is preloaded with the products details. You can change any field in the form, remove the products image, add a new image, by entering a url or click the "Choose Image" button, and then click on the ["Update Product"](img-readme/products08.png) button to update the product.
 
 ---
 
@@ -403,20 +403,43 @@ Stores users billing information.
 ---
 
 ### Bag 
-- If you click on the bag link at the navbar, you get to the bag page. 
+- If you click on the bag link at the navbar, you get to the bag page or by clicking on the ["GO TO BAG"](img-readme/bag12.png) button, displayed in a toast to the upper right, just when adding a product to your bag. 
 - If the bag is ["empty"](img-readme/bag.png) it will tell you that and you have the option to get back to your shopping. 
 - If you have one or more items in your shopping bag, your items will be [displayed](img-readme/bag01.png).
 - Looking at one specific [product](img-readme/bag02.png) in your bag. You can see the [name/sku & price](img-readme/bag03.png) for that product. You can delete the product by clicking on the [trash can](img-readme/bag04.png).
 And you can update the product, using the [plus/minus](img-readme/bag05.png) icons or by using the [input field](img-readme/bag06.png) and the clicking on the ["UPDATE"](img-readme/bag07.png) button. The price changes for a product if the quantity is [updated](img-readme/bag08.png).
 - Beneath the products you can see the total price of your bag & two buttons, one say's "KEEP SHOPPING" wich will get you to the products, the other say's "SECURE CHECKOUT" wich will take you to the checkout page. It look's like [this](img-readme/bag09.png). 
-- If the current price doesn't get you free delivery, a [text](img-readme/bag00.png) will be visible above the two said buttons. 
+- If the current price doesn't get you free delivery, a [text](img-readme/bag10.png) will be visible above the two said buttons. 
 
 ---
 
 ### Checkout
+- You can go to the checkout page, by clicking the ["SECURE CHECKOUT"](img-readme/bag11.png) button from the bag page.
+- Here you can see an [Order Summary](img-readme/checkout.png) for the products that you wish to order. Containing the products, quantity & total cost for what you're about to order. 
+- You start with [entering](img-readme/checkout01.png) your shipping information. If signed in you can click on a [checkbox](img-readme/checkout02.png) for saving your information to your account. If not signed in, you can choose to [Create an Account/Sign up](img-readme/checkout03.png). 
+- When your shipping details is in order, [enter](img-readme/checkout04.png) your card number and click on the ["COMPLETE ORDER"](img-readme/checkout05.png) button.
+- Next to the "COMPLETE ORDER" button is a button that say's ["ADJUST BAG"](img-readme/checkout07.png). Wich takes you back to your bag, if you'd like to change anything. 
+- Underneath these two buttons is a [text](img-readme/checkout08.png) saying how much will be charged from your card. 
+- If the order is successfully done, you will land up on the [checkout success](img-readme/checkout06.png) page. Saying thank you for ordering, and displaying the shipping information and total cost of your purchase. You will also recive a confirmation [email](img-readme/checkout09.png) for the order.
+
+---
+
 ### Contact
+
+- At the [Contact](pdf/contact_full.pdf) page, you can send a message to the store owners by entering your full name, email, the subject & a message in a [form](img-readme/contact.png) displayed on the page. Click on the ["SEND"](img-readme/contact01.png) button, and the message is successfully sent.
+- Below the form you can find the store's [phone number/open hours](img-readme/contact02.png) & a [image](img-readme/contact03.png) with a text attached to it. Shown on smaller devices, the [image text](img-readme/contact04.png) is displayed above the image. 
+
+---
+
 ### Profile
+
+- At the profile page you can set your [delivery information](img-readme/profile01.png) so it will automatically added to the checkout page, when signed in and your about to place an order.
+- You can also see your [order history](img-readme/profile02.png). Displayed there is the order number(truncated), order date, items, and the cost of that order. 
+- If you hover on the [order number](img-readme/profile03.png) you can see the full length of the order number. When clicking on the order number, you'll the [checkout success](img-readme/profile04.png) page, saying that this is a past order, an at the button a button to take you back to your profile page. 
+
 ### Product Managment
+
+- Being a superuser you can access the [Product Managment]() page.
 ### Footer
 
 ### Features for the future 
