@@ -44,17 +44,6 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
     - [*Profile Model*](#profile-model)
 
 3.[ **Features**](#features)
-- [**Navbar**](#navbar)
-- [**Home**](#home)
-- [**Product**](#product)
-- [**Product Details**](#product-details)
-- [**Bag**](#bag) 
-- [**Checkout**](#checkout)
-- [**Review**](#review)
-- [**Contact**](#contact)
-- [**Subscribe**](#subscribe)
-- [**Profile**](#profile)
-- [**Product Managment**](#product-managment)
 - [**Features For The Future**](#features-for-the-future)
 
 4.[ **Technologies**](#technologies-used)
@@ -390,7 +379,7 @@ Stores users billing information.
 - If on a page with specific category, you can go back to all the products by clicking the ["All Products"](img-readme/products03.png) link. As you can see on that picture, it currently display's how many products that or shown on the page. 
 - You can use a dropdown [sorting menu](img-readme/products03.png), to display the products in a specific order of your choosing. 
 - Each [Product](img-readme/products05.png) is displayed with an image (if it doesn't have an image, [this](img-readme/noimage.jpg.png) image is displayed), the products name, price & wich category it belongs to.
-- If you are a superuser, you also have the options to [Edit/Delete](img-readme/products06.png) a product. 
+- If you are a superuser, you also have the options to [Edit/Delete](img-readme/products06.png) a product. Click on the delete button, and your directed to the [delete product](img-readme/products07.png) page, there you can choose to delete in permanatley or just cancel the request.  
 
 ---
 
@@ -405,7 +394,7 @@ Stores users billing information.
 - If you want to add the item to your page, click the ["ADD TO BAG"](img-readme/pd07.png) button. 
 - The [quantity](img-readme/pd08.png) selector is by default set to 1. And the minus symbol is not visible. You can choose the quantiy with the [plus/minus](img-readme/pd09.png) icons or by using the [input field](img-readme/pd10.png).
 - If you want to look for other products, click the ["KEEP SHOPING"](img-readme/pd11.png) button.
-- At the bottom of the page is the User review section. Where if you are signed in, you can review the product of your choice. 
+- At the bottom of the page is the "User review" section. Where if you are signed in, you can review the product of your choice. 
 - If not signed in the section looks like [this](img-readme/pd12.png), telling you to sign in or sign up to be able to review.
 - When signed in you are able to review the product in a [review form](img-readme/pd13.png). The review want's a title, a review text, and a rating from 1 to 5 where, 5 is great and 1 is bad. 
 - After filling out the review form, click the "ADD REVIEW" button. The review is [displayed](img-readme/pd14.png) in a newest to oldest order, with the title, review, the username of the reviewer, and a review date.
@@ -422,12 +411,13 @@ And you can update the product, using the [plus/minus](img-readme/bag05.png) ico
 - Beneath the products you can see the total price of your bag & two buttons, one say's "KEEP SHOPPING" wich will get you to the products, the other say's "SECURE CHECKOUT" wich will take you to the checkout page. It look's like [this](img-readme/bag09.png). 
 - If the current price doesn't get you free delivery, a [text](img-readme/bag00.png) will be visible above the two said buttons. 
 
+---
+
 ### Checkout
-### Review
 ### Contact
-### Subscribe
 ### Profile
 ### Product Managment
+### Footer
 
 ### Features for the future 
 
