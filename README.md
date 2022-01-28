@@ -504,6 +504,8 @@ And you can update the product, using the [plus/minus](img-readme/bag05.png) ico
 
 - [PostgreSQL](https://www.postgresql.org/) - Used to create relational databases
 
+- [AWS](https://aws.amazon.com/) - used for hosting of images & static files.
+
 - [Bootstrap](https://getbootstrap.com/) - Front-end toolkit
 
 - [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Jinja was used with flask in the HTML code. For simple linking between the backend and frontend. 
