@@ -145,7 +145,7 @@ def add_product(request):
     else:
         form = ProductForm()
 
-    template = 'products/delete_review.html'
+    template = 'products/add_product.html'
     context = {
         'form': form,
     }

@@ -442,6 +442,12 @@ And you can update the product, using the [plus/minus](img-readme/bag05.png) ico
 - Being a superuser you can access the [Product Managment]() page.
 ### Footer
 
+### Error
+
+- [403 Error](img-readme/403error.png)
+- [404 Error](img-readme/404error.png)
+- [500 Error](img-readme/500error.png)
+
 ### Features for the future 
 
 ---
