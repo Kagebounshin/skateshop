@@ -90,6 +90,7 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
         9. As a Frequent User, I want to easily enter my payment information, so that the checkout is quick and easy. 
         10. As a Frequent User, I want to feel that my payment and personal information is secured. 
         11. As a Frequent User, I would like to get free shipping as my bags total increases. 
+        12. As a Frequent User, I Would like to review a product.
 
     -   ### Product Manager Goals
         1. As a Product Manager, I Would like to add products easily.
@@ -182,7 +183,7 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
     - Products
         - I've choosed images that would help you to quickly indentify a specific product. So images with a white background, product placed at the center of the image. 
     - Other
-        - The other images of the website, where choosen to match the theme of the website, in this case, skateboarding. So that the user would get a quick understanding of the sites purpose.
+        - The other images of the website, where choosen to match the theme of the website, in this case, skateboarding. So that the user would get a better understanding of the sites purpose.
 
 ---
 
@@ -364,6 +365,7 @@ Stores users billing information.
 
 ### Home
 
+- [Full Page Capture](pdf/home_full.pdf)
 - Upon entering the site, first thing you'll see below the navbar is a header-text, a short but informative text about the site and a choice to "Shop now". All together looks like [this](img-readme/home.png).
 - The "Shop now" button takes tou to the all products page. 
 - The you can see a [carousel](img-readme/home01.png) with two images. 
@@ -374,7 +376,7 @@ Stores users billing information.
 ---
 
 ### Product
-- If you click on the ["Shop now"](img-readme/home08.png) button at the home page. You will get to the page containing all the [products](img-readme/products.png) for the site. 
+- If you click on the ["Shop now"](img-readme/home08.png) button at the home page. You will get to the page containing all the [products](pdf/product_full.pdf) for the site. 
 - If on the page with all products, the page's header just say's ["Products"](img-readme/products01.png). But If you're on a page for a specific category, that category name is [displayed](img-readme/products02.png) instead.
 - If on a page with specific category, you can go back to all the products by clicking the ["All Products"](img-readme/products03.png) link. As you can see on that picture, it currently display's how many products that or shown on the page. 
 - You can use a dropdown [sorting menu](img-readme/products03.png), to display the products in a specific order of your choosing. 
@@ -385,7 +387,7 @@ Stores users billing information.
 
 ### Product Details
 
-- If you click on a product's image, you will get to the products [details](img-readme/pd.png) page. 
+- If you click on a product's image, you will get to the products [details](pdf/details_full.pdf) page. 
 - First you have an [image](img-readme/pd01.png) of the product you have choosed to go to. 
 - Then you have the products category, name & price [displayed](img-readme/pd02.png)
 - There is a ["Details"](img-readme/pd03.png) link you can click, and it will take you down to more specific [details & shipping](img-readme/pd05.png) information.
@@ -475,6 +477,9 @@ And you can update the product, using the [plus/minus](img-readme/bag05.png) ico
 ### Features for the future 
 
 - Would like you to add more then one product at the time. 
+- More Products and Categories.
+- Tutorial's for setting up a skateboard. 
+- Discount's if you purchase a fully asembled skateboard.  
 ---
 
 ## Technologies Used
@@ -523,6 +528,8 @@ And you can update the product, using the [plus/minus](img-readme/bag05.png) ico
 - [Unsplash](https://unsplash.com/s/photos/skateboarders) - Images for the homepage.
 
 - [Tinyjpg](https://tinyjpg.com/) - Resizing images
+
+- [GoFullPage](https://chrome.google.com/webstore/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl?hl=sv) - used for capturing an full page view. 
 
 ---
 
