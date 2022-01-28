@@ -752,6 +752,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - The Code to make you smooth scroll back to the top when clicking the "Back To Top Button" was borrowed from [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo).
 - The review model was inspired from [this](https://www.youtube.com/watch?v=YhbuBD3N1-c) youtube video.
 - For some structure of this website I followed Code Institute's video lessons.
+- How to use django's [GRAPH_MODELS](https://django-extensions.readthedocs.io/en/latest/graph_models.html).
+- How to draw django's [GRAPH_MODELS ](https://dreampuf.github.io/GraphvizOnline/).
 
 
 ### Media
