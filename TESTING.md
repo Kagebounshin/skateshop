@@ -100,12 +100,13 @@
     - Just by clicking the [bag](img-readme/bag_total_desk.png) link at the navbar or by clicking the ["GO TO BAG"](img-readme/go_to_bag.png) button displayed in a toast when adding an item. I can see a preview of my [bags](img-readme/bag_items.png) current items before going to the checkout. 
 - "As a Frequent User, I want to view the order before completing purchase."
     - When I'm satisfied with my order, I can click on the [Secure Checkout](img-readme/secure_checkout.png) button to move on. 
-    - Here I can see my [order summary](img-readme/checkout_order_sum.png).
+    - At the checkout page I can see my [order summary](img-readme/checkout_order_sum.png).
 - "As a Frequent User, I want to easily enter my payment information, so that the checkout is quick and easy."
     - I check if my order is in place, I fill out my order details and payment credentials, like [this](img-readme/order_pay_details.png), and click on the [complete order](img-readme/complete_order.png) button.
     - A [preloader](img-readme/preloader.png) appears, waiting for respone. 
     - If everything went well, I get to a confirmation [page](img-readme/order_complete.png) saying that the order was a success. I also get a [confirmation email](img-readme/order_confirm.png) to my sent to my email adress.
-    - If I dosen't fill out my order details correctley the form will tell me to fill it out, like [this](img-readme/field_error.png) and if I dont fill out my payment credentials correctly it will also throw an [error](img-readme/card_error.png), saying I need to fill out my card credentials correctly.
+    - If I dosen't fill out my order details correctley the form will tell me to fill it out, like [this](img-readme/field_error.png). 
+    - If I dont fill out my payment credentials correctly it will also throw an [error](img-readme/card_error.png), saying I need to fill out my card credentials correctly.
 - "As a Frequent User, I want to feel that my personal information is secured."
     - I go to my profile page an copies the [adress](img-readme/secure_profile.png). I then sign out and then I paste in the adress and press enter. I get redirected to the sign in page.
     - I go to one of my past orders and copies the [adress](img-readme/secure_profile01.png). I sign out and then I paste in the adress and press enter. Then I'm redirected to a [403 Error](img-readme/secure_profile02.png) page, saying that I'm not allowed to to that.
@@ -172,11 +173,11 @@ When adding or updating a product. When adding a image, a preview of that image 
 All pages were tested with a standard account without any permissions, to make sure that no special features were available. Attempt to access a page that requires special permissions results in a 403 Error or a redirect to the sign in page. See more at the [Frequent User Goals](#frequent-user-goals) & [Product Manager Goals](#product-manager-goals) section where I tested the security for the profile page, and the add/edit & delete pages. 
 
 ### CSRF Protection
-- All POST forms are embedded with the ```{% csrf_token %}``` from Django.
+- All POST forms are embedded with the ```{% csrf_token %}``` from [Django](https://docs.djangoproject.com/en/4.0/ref/csrf/).
 
 ### Chrome Dev Tools Security
-- Checked the security [summary](img-readme/security.png) using Chrome Dev Tools
-- [Certificate](img-readme/security01.png)
+- Checked the security [summary](img-readme/security.png) using Chrome Dev Tools.
+- Website's [Certificate](img-readme/security01.png).
 
 #### 
 

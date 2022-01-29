@@ -757,6 +757,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - For some structure of this website I followed Code Institute's video lessons.
 - How to use django's [GRAPH_MODELS](https://django-extensions.readthedocs.io/en/latest/graph_models.html).
 - How to draw django's [GRAPH_MODELS ](https://dreampuf.github.io/GraphvizOnline/).
+- Help with writing ```SimpleTestCase```'s was found [here](https://www.youtube.com/playlist?list=PLbpAWbHbi5rMF2j5n6imm0enrSD9eQUaM).
 
 
 ### Media
