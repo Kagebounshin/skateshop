@@ -4,9 +4,11 @@
 {% block content %}
 
 {% if messages %}
+<!-- MESSAGES FOR SUBSCRIPTION -->
     {% for message in messages %}
     {% with message.level as level %}
     {% if level == 40 %}
+    <!-- ERROR -->
     <div class="container-fluid sub-container">
         <div class="row">
             <div class="col text-center">
@@ -18,6 +20,7 @@
         </div>
     </div>
     {% elif level == 30 %}
+    <!-- WARNING -->
     <div class="container-fluid sub-container">
         <div class="row">
             <div class="col text-center">
@@ -29,6 +32,7 @@
         </div>
     </div>
     {% elif level == 25 %}
+    <!-- SUCCESS -->
     <div class="container-fluid sub-container">
         <div class="row">
             <div class="col text-center">
@@ -40,6 +44,7 @@
         </div>
     </div>
     {% else %}
+    <!-- INFO -->
     <div class="container-fluid sub-container">
         <div class="row">
             <div class="col text-center">
