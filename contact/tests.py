@@ -1,7 +1,7 @@
 from django.test import SimpleTestCase
 from contact.forms import UserContactForm
 
-class TestContactForm(SimpleTestCase):
+class TestUserContactForm(SimpleTestCase):
 
     def test_subject_is_required(self):
         form = UserContactForm({'subject': ''})
