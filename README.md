@@ -77,6 +77,7 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
         4.  As a first time visitor, I would like the site to look clean and modern. Good color matching, readble texts etc. 
         5.  As a first time visitor, I Would like to register to the page. 
         6.  As a first time visitor, I want to be able to contact the site owner if I have a problem or just need some information.
+        7. As a first time visitor, I would like to option of subscribing to a newsletter.
 
     -   ### Frequent User Goals
         1. As a Frequent User, I Like the login process to be smooth.

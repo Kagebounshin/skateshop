@@ -56,6 +56,16 @@
     - Leaving any of the fields empty or not correctly filled, will throw an error, telling me to fill it out correctly. 
     - I fill it out correctly and click the send button, I get a top right message, saying that my message was sent. 
 
+- "As a first time visitor, I would like to option of subscribing to a newsletter."
+    - Down at the footer I can find a [field](img-readme/sub.png) to fill out if I want to subscribe to a newsletter. 
+    - I click on the "SUBSCRIBE" button without filling out the form, I get a [message](img-readme/sub01.png) telling me to fill it out correctly.
+    - If I fill out anything other than an email adress, I get a [message](img-readme/sub02.png) saying I requires an email address.
+    - I fill out the form using a correct [email](img-readme/sub03.png) address and the click on the "SUBSCRIBE" button.
+    - I get to a [page](img-readme/sub04.png) saying thanks for subscribing.
+    - I try to enter the same email address and click on the "SUBSCRIBE" button once again. 
+    - Then I get to a [page](img-readme/sub05.png) saying that I'm already a subscriber. 
+
+
 
 ### Frequent User Goals
 - "As a Frequent User, I Like the login process to be smooth."
@@ -102,7 +112,8 @@
 - "As a Frequent User, I would like to get free shipping as my bags total increases."
     - I can see that I get free shipping if my bags amount is more than $50. So I add an item to see if a get free shipping. And yes, it [looks](img-readme/shipping_price.png) that I do get it. 
 - "As a Frequent User, I Would like to review a product."
-    - I Sign in as a user, I go to one specific product that I want to review. I Scroll down to the review form, and fill out the [form](img-readme/review.png) correctly, I click on the ["ADD REVIEW"](img-readme/review01.png) button. The [review](img-readme/review01.png) is added to that products page. 
+    - I Sign in as a user, I go to one specific product that I want to review. I Scroll down to the review form, and fill out the [form](img-readme/review.png) correctly, I click on the ["ADD REVIEW"](img-readme/review01.png) button. The [review](img-readme/review02.png) is added to that products page. 
+    - If I leave any of the fields empty and click on "ADD REVIEW", a [message](img-readme/review03.png) is displayed from the form, telling me to fill it out in the correct way.
 ### Product Manager Goals
 - "As a Product Manager, I Would like to add products easily."
     - I Sign In as a superuser, and locate the ["Product Managment"](img-readme/management_link.png) link in the account dropdown menu. 
@@ -145,8 +156,16 @@ When adding or updating a product. When adding a image, a preview of that image 
 ---
 
 ## Resolved Bugs
-1. When updating my bag items by typing in the input area at the bag view. There was no cap on the amount I could choose. (See [here](img-readme/bag_bug.png)). So I changed [this](img-readme/bag_bug02.png) code snippet in my "adjust_bag" view. And added [this](img-readme/bag_bug03.png) line of code. So now if the quantity is higher than 99, a [error message](img-readme/bag_bug04.png) is displayed. 
----
+1. Bag Bug
+- When updating my bag items by typing in the input area at the bag view. There was no cap on the amount I could choose. (See [here](img-readme/bag_bug.png)). 
+- I changed [this](img-readme/bag_bug02.png) code snippet in my ```adjust_bag``` view. And added [this](img-readme/bag_bug03.png) line of code. 
+- So now if the quantity is higher than 99, a [error message](img-readme/bag_bug04.png) is displayed. 
+2. Subsribe Bug 
+- Had a bug where when I entered the subscibtion for on any page where I have products on, the products disapeard like [this](img-readme/bug_subscribe.png). 
+- I understand that's becouse the subscribe [urls](img-readme/bug_subscribe01.png) didn't have the ```product_id``` argument pasted through to it. 
+- I solved it buy adding a ```subscribe.html``` document, pointedd the subscribe view to end up there after submitting the form, like [so](img-readme/sub04.png).
+- Maybe not the quickest solution, but I've got rid of the problem
+ ---
 
 ## Security
 
