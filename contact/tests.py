@@ -4,6 +4,7 @@ from contact.forms import UserContactForm
 class TestUserContactForm(SimpleTestCase):
 
     def test_subject_is_required(self):
+        """ Testing required fields """
         form = UserContactForm({'subject': ''})
         self.assertFalse(form.is_valid())
         self.assertIn('subject', form.errors.keys())
