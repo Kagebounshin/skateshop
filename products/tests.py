@@ -1,7 +1,7 @@
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
 from products.models import Category
-from products.views import all_products, add_product
+from products.views import all_products, add_product, product_detail
 
 
 class TestUrls(SimpleTestCase):
