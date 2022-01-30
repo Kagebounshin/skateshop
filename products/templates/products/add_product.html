@@ -36,9 +36,9 @@
                     {% endif %}
                 {% endfor %}
                 <div class="text-right">
+                    <a class="btn btn-md rounded-0 remove-button" href="{% url 'products' %}">Cancel</a> 
                     <!-- ADD BUTTON -->
                     <button class="btn btn-md rounded-0 account-secoundary-btn" type="submit">Add Product</button>
-                    <a class="btn btn-md rounded-0 remove-button" href="{% url 'products' %}">Cancel</a> 
                 </div>
             </form>
         </div>
@@ -47,12 +47,12 @@
 
 {% endblock %}
 
-{% block poastloadjs %}
+{% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript">
-        // DISPLAYES A PREVIEW OF THE IMAGE
+    <script>
+        // DISPLAYES TEXT FOR THE NEW IMAGE
         $('#new-image').change(function () {
-            var file = $('#new-image')[0].files[0];
+            let file = $('#new-image')[0].files[0];
             $('#filename').text(`Image will be set to: ${file.name}`);
         });
     </script>

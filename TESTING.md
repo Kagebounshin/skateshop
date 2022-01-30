@@ -152,7 +152,7 @@
 
 ## Known Bugs
 
-When adding or updating a product. When adding a image, a preview of that image should appear. But it dosen't, see [here](img-readme/add_bug01.png). If there is time left I will look into it. 
+When adding a product. When adding a image, a filename for that images should appear just below the "Choose Image" button. But it dosen't, see [here](img-readme/add_bug01.png). If there is time left I will look into it. 
 
 ---
 
@@ -166,6 +166,12 @@ When adding or updating a product. When adding a image, a preview of that image 
 - I understand that's becouse the subscribe [urls](img-readme/bug_subscribe01.png) didn't have the ```product_id``` argument pasted through to it. 
 - I solved it buy adding a ```subscribe.html``` document, pointedd the subscribe view to end up there after submitting the form, like [so](img-readme/sub04.png).
 - Maybe not the quickest solution, but I've got rid of the problem
+3. Add image bug.
+- When adding a product. When adding a image, a filename for that images should appear just below the "Choose Image" button. But it dosen't, see [here](img-readme/add_bug01.png). 
+- The bug was fixed by correcting a [typo](img-readme/add_bug.png) changed the postloadjs block to in ```{% block postloadjs %}``` from this ```{% block poastloadjs %}```, accedentally added the letter a.
+- So by changing it back, it works as it should, see [here](img-readme/add_bug02.png).
+
+
  ---
 
 ## Security
