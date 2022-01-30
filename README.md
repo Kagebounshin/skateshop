@@ -458,7 +458,7 @@ And you can update the product, using the [plus/minus](img-readme/bag05.png) ico
 
 ### Footer
 
-- Down at the [footer](img-readme/footer.png) you can [subscribe](img-readme/footer01.png) to a newsletter, by typing in your email address an click on ["SUBSCRIBE"](img-readme/footer02.png). On smaller devices the send button has an [envelope](img-readme/footer03.png) icon. 
+- Down at the [footer](img-readme/footer.png) you can [subscribe](img-readme/footer01.png) to a newsletter, by typing in your email address an click on ["SUBSCRIBE"](img-readme/footer02.png). On smaller devices the send button has an [envelope](img-readme/footer03.png) icon with o text. 
 - You get to the contact page by clicking on the "Contact Us" link in the ["CUSTOMER SUPPORT"](img-readme/footer04.png) section of the footer. When not signed in or signed up, you have the choice to do in the ["CUSTOMER SUPPORT"](img-readme/footer05.png) aswell. 
 - If signed in you can got to your "Profile" page in the ["CUSTOMER SUPPORT"](img-readme/footer06.png)
 - You can see basic store information in the ["CONTACT INFO"](img-readme/footer07.png) section.

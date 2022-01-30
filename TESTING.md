@@ -36,7 +36,7 @@
 - "As a first time visitor, I want the site to be well structred the sites features should be where there expected to be."
     - The navigationbar is at the top, where I can use a searchbar, go to account pages, see bag, and navigate between categorys. 
     - Buttons having a consitancy in coloring.
-    - Footer has extra information.
+    - Footer is at the bottom and has extra information for the user.
 
 - "As a first time visitor, I would like the site to look clean and modern. Good color matching, readble texts etc."
     - The text is easy to read, the color matching is good and consistant. 
@@ -46,7 +46,7 @@
     - By leaving one of these field empty will result in an error, telling me to fill out that field. 
     - If I dont match either my email adress or password, it will throw an error saying they must match. 
     - If I dont use an password with at least 8 characters it will throw an error saying "This password is too short. It must contain at least 8 characters.". 
-    - I fill in all the field correctly and then I click the sign up button. I now get a message telling me to verify my email adress.
+    - I fill in all the field correctly and then I click the "Sign up" button. I now get a message telling me to verify my email adress.
     - I go to the confirmation email, clicking the link to confirm my email. I get back to the site, asked if this email belongs to the users that was just created. I click the "Confirm" button, and now I'm registred.  
 
 -  "As a first time visitor, I want to be able to contact the site owner if I have a problem or just need some information."
@@ -145,6 +145,7 @@
 ## Further Testing
 
 - Tested all the links, to see if they behave as they should.
+- Tested so that all the form information, can be accesses from the Django Admin Panel. 
 - Tested different webbrowsers, Google Chrome & Microsoft Edge, Safari.
 - Tested different devices such as Desktop, Laptop, Ipad, Iphone 11, Iphone X, Iphone 8, Sony Xperia 10-3.
 - Friend & Family members has tested the site, looking for bugs and other issues.
@@ -173,8 +174,7 @@
 - The bug was fixed by correcting a [typo](img-readme/add_bug.png) changed the postloadjs block to in ```{% block postloadjs %}``` from this ```{% block poastloadjs %}```, accedentally added the letter a.
 - So by changing it back, it works as it should, see [here](img-readme/add_bug02.png).
 
-
- ---
+---
 
 ## Security
 
