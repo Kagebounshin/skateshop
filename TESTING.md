@@ -146,13 +146,15 @@
 
 - Tested all the links, to see if they behave as they should.
 - Tested different webbrowsers, Google Chrome & Microsoft Edge, Safari.
-- Tested different devices such as Desktop, Laptop, Ipad, Iphone 12 Pro, Iphone X, Iphone 8.
+- Tested different devices such as Desktop, Laptop, Ipad, Iphone 11, Iphone X, Iphone 8, Sony Xperia 10-3.
 - Friend & Family members has tested the site, looking for bugs and other issues.
 ---
 
 ## Known Bugs
 
-When adding a product. When adding a image, a filename for that images should appear just below the "Choose Image" button. But it dosen't, see [here](img-readme/add_bug01.png). If there is time left I will look into it. 
+- If I open up the site in the __Chrome Browser__ on my Iphone 11. The "Shop By Category" section at the bottom of the homepage is not visible, see [here](img-readme/Category_bug.png).
+- I sent the link to my brother, who has an Sony Xperia 10-3 mobile. He opened the site in his __Chrome Browser__, and this was the [result](img-readme/Category_bug01.jpg). The "Shop By Category" section was there and worked as it should. 
+- Dont really know how to approach this issue, but since the standard browser for Iphone's is the __Safari Browser__, where this issuse dosen't exist. I've decieded to not put my focus on how to solve this at the moment. 
 
 ---
 
