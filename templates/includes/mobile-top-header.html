@@ -11,8 +11,7 @@
         <div class="dropdown-menu border-0" aria-labelledby="user-options">
             {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
-            <a href="{% url 'add_product' %}" class="dropdown-item"><i class="far fa-clipboard"></i> Product
-                Management</a>
+            <a href="{% url 'add_product' %}" class="dropdown-item"><i class="far fa-clipboard"></i> Management</a>
             {% endif %}
             <a href="{% url 'profile' %}" class="dropdown-item"><i class="fas fa-portrait"></i> Profile</a>
             <a href="{% url 'account_logout' %}" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Sign Out</a>

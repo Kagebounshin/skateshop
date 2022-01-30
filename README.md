@@ -109,7 +109,7 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
     ### Navbar
     - The navbar will be fixed at the top of the page, so it's always accessible for the user. 
     - On Desktop view, the navbar will have the sites logo to the left, the produt links centered, an the search, account management and the bag links will be displayed to the right.
-    - On Mobile and Tablet, the product links and the logo are hidden in a collapsable menu, show them by clicking at the burger menu. The search, account management and the bag links will still be displayed to the right.
+    - On Mobile and Tablet, the product links and the logo are hidden in a collapsable menu, show them by clicking at a "__burger menu__". The search, account management and the bag links will still be displayed to the right.
     - The search bar will be in a dropdown menu both on deskttop, tablet & mobile view, always accesible and easy for the user to search for a product at any time. 
     - The account management links will be in a dropdown menu, wich will have the choices to register, login, logout, and your own profile page, with order history and personal information.  
     ### Home
@@ -176,6 +176,8 @@ The SkateShop is a place where you can assemble a skateboard of you choice, or j
         - The first [Button](img-readme/ctabutton1.png) has the background color of "Razzmic Berry" (#764C87), and when ["Hovered"](img-readme/ctabutton2.png) the background color eases in to "Russian Violet" (#492857).
         - The secound [Button](img-readme/ctabutton3.png) has the background color of "White" (#fff) with a "Razzmic Berry" (#764C87) colored border & text. When ["Hovered"](img-readme/ctabutton4.png) the background eases in to the "Razzmic Berry" (#764C87) background color, and the text turns "White" (#fff). 
         - The third [Button](img-readme/ctabutton5.png) has the background color of "White" (#fff) with a "Red" (#ff0505) colored border & text. When ["Hovered"](img-readme/ctabutton6.png) the background eases in to the "Rosso Corsa" (#cc0101) background color, and the text turns "White" (#fff).
+    - The site links when [hovered](img-readme/navbar_links_hovered.png) get's the color "Razzmic Berry" (#764C87) and an underline.
+    - The site's Social media Icons get the color "Razzmic Berry" (#764C87) when [hovered](img-readme/links_hovered.png).
     ### Typography
     - The fonts I've used for this project are from [Google Fonts](https://fonts.google.com/). The fonts are ["Oswald"](img-readme/mainfont.png) & ["Pacifico"](img-readme/logofont.png).
         - [Oswald](https://fonts.google.com/?query=Oswald&preview.text=Oswald&preview.text_type=custom) has been used as the main font of this project. Looks really good in all the different weights, it's readble. Simpley a fine peace of sans serif typeface. 
@@ -234,7 +236,7 @@ For storing a product's data.
 
 | Name | Data Type | Intent |
 | ---- | --------- | ------ |
-| category | foreign key | A foreign key wich will indentify wich category the product belongs to. |
+| category | foreign key | A foreign key for category indentification. |
 | sku | charfield | Numbers to indentify a product. |
 | name | string | Product's name. |
 | description | string | Product's description. |
@@ -347,12 +349,12 @@ Stores users billing information.
 ### Navbar
 #### Desktop
 - The [navbar](img-readme/navbar_desk.png) is set to the top of the screen, it's fixed to the top, so it will be following you around, making it easy to quickly navigate your way around the website. 
-- To the left you go the site's [brand](img-readme/navbar_brand.png). If you are lost the site's brand will take you back to the homepage. Then brand change's color when [hovered](img-readme/navbar_brand_hovered.png).
+- To the left you got the site's [brand](img-readme/navbar_brand.png). If you are lost the site's brand will take you back to the homepage. Then brand change's color when [hovered](img-readme/navbar_brand_hovered.png).
 - In the middle you can see the links to the sites [category's](img-readme/navbar_links.png). When the links are [hovered](img-readme/navbar_links_hovered.png) they change color, and get's an underline. 
 - The the right, is the "Account", "Search" and "Bag" [links](img-readme/navbar_right_links.png).
     - The Account link is a [dropdown](img-readme/navbar_account.png) menu. And when not logged in, you have the choices to "Sign Up" or "Sign In". 
     - When logged in as a regular user, the chocices in the account [dropdown](img-readme/navbar_account01.png) are to go to your "Profile" page or "Sign Out". 
-    - When logged in as a superuser, the chocices in the account [dropdown](img-readme/navbar_account02.png) are to go to "Product Management", "Profile" page or "Sign Out". 
+    - When logged in as a superuser, the chocices in the account [dropdown](img-readme/navbar_account02.png) are to go to "Management", "Profile" page or "Sign Out". 
     - The Search link, will [reveal](img-readme/navbar_search.png) a searchfield. There you can search for products on the site. 
     - The bag link will take you to your bag. The link will [display](img-readme/navbar_bag.png) your total cost for all your bag items. 
 #### Tablet
@@ -485,7 +487,6 @@ And you can update the product, using the [plus/minus](img-readme/bag05.png) ico
 - More Products and Categories.
 - Tutorial's for setting up a skateboard. 
 - Discount's if you purchase a fully asembled skateboard.  
-
 [Back To Top 🡅](#skateshop)
 
 ---
